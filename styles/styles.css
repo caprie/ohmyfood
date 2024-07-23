@@ -1,39 +1,18 @@
 /*description*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0px;
-  font-family: "Shrikhand", cursive;
-}
-
 header {
-  font-family: "Roboto" sans-serif;
+  font-family: "Shrikhand";
   text-align: center;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: 0.5rem;
-  height: 60px;
-  margin: 0;
-  position: relative;
-  z-index: 20;
 }
-
-h1 {
-  text-align: center;
-  height: 36px;
-  align-items: center;
-  font-weight: 400;
-  font-style: normal;
+header h1 {
+  font-family: "Shrikhand";
   font-size: 30px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
 
 main .location {
   background-color: #eaeaea;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  gap: 17px;
+  gap: 10px;
   height: 50px;
   font-weight: 500;
   text-align: center;
@@ -41,17 +20,17 @@ main .location {
   justify-content: center;
   padding: 0px;
   align-items: center;
-  font-family: "Shrikhand", cursive;
-  font-size: 11px;
-  color: #000000;
+  font-family: "Roboto";
+  font-size: 10px;
+  color: #353535;
   z-index: 10;
   position: relative;
 }
 main .location i {
-  color: #000000;
-  width: 12px;
+  color: #353535;
+  width: 10px;
   font-weight: 900;
-  font-size: 1.1rem;
+  font-size: 14px;
 }
 
 .description {
@@ -62,11 +41,11 @@ main .location i {
   font-weight: 700;
   margin-bottom: 20px;
   margin-top: 2rem;
-  font-family: "Shrikhand", cursive;
+  font-family: "Roboto";
 }
 .description p {
   font-size: 18px;
-  font-family: "Shrikhand", cursive;
+  font-family: "Roboto";
   font-weight: 300;
   padding: 20px;
   display: flex;
@@ -75,7 +54,7 @@ main .location i {
   text-align: center;
 }
 .description button {
-  color: #353535;
+  color: white;
   font-weight: 400;
   padding: 1rem 2rem;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 0.9));
@@ -83,13 +62,13 @@ main .location i {
   border-radius: 2rem;
   box-shadow: 2px 1px 16px -3px;
   margin-top: 2rem;
-  font-family: "Shrikhand", cursive;
+  font-family: "Roboto";
 }
 
-.description-content {
+.explain-content {
   height: 220px;
-  background-color: #f6f6f6;
-  font-family: "Shrikhand", cursive;
+  background-color: #e9e9e9;
+  font-family: "Roboto";
 }
 
 .process {
@@ -127,8 +106,8 @@ main .location i {
 }
 .process__steps .process__step .process__number {
   margin-right: 10px;
-  color: #353535;
-  background-color: purple;
+  color: white;
+  background-color: #9356DC;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -153,13 +132,13 @@ main .location i {
 }
 
 .menus {
-  background-color: #f6f6f6;
+  background-color: #ececec;
   margin-bottom: 2rem;
 }
 .menus h2 {
   margin-bottom: 1rem;
   padding: 25px;
-  font-family: "Shrikhand", cursive;
+  font-family: "Roboto";
 }
 
 .menus__cards {
@@ -176,7 +155,9 @@ main .location i {
   position: absolute;
   height: 2rem;
   width: 2rem;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
+  font-family: "Roboto";
+  color: white;
   display: grid;
   place-items: center;
   right: 1rem;
@@ -216,7 +197,7 @@ main .location i {
 }
 .cards .card__description i {
   font-size: 2rem;
-  position: absolute;
+  position: relative;
   right: 1rem;
   top: 50%;
 }
@@ -224,8 +205,15 @@ main .location i {
   background-color: #353535;
   padding: 0 3rem;
 }
-.cards .footer h2 {
+.cards .footer logo {
   font-family: "Shrikhand";
+}
+.cards .footer logo .center {
+  text-align: center;
+  border: 3px solid green;
+}
+.cards .footer logo h2 {
+  font-family: "Roboto";
 }
 
 img {
@@ -251,15 +239,4 @@ img {
   transition: 0.3s;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-}
-
-header {
-  font-family: "Shrikhand", cursive;
-  text-align: center;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: 0.5rem;
-  height: 60px;
-  margin: 0;
-  position: relative;
-  z-index: 20;
 }
