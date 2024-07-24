@@ -3,12 +3,13 @@
 *,
 ::before,
 ::after {
-	width: 375px;
+	
 	box-sizing: border-box;
 }
 
 body {
-	margin: 0px;	
+	margin: 0px;
+	font-family: $roboto-font;	
 }
 
 header {
@@ -16,51 +17,51 @@ header {
 	text-align: center;
 	justify-content: center;
 	box-shadow: $box-shadow;
-	
+	margin: 0;
 	height: 63px; // hauteur de la banniere
 	display: flex;
 	align-items: center;
+	position: relative;	// là ou il se trouve nativement 
+}
+
+main .location {
+	background-color: #eaeaea;
+	text-align: center;
+	justify-content: center;
+	height: 50px; // hauteur de la banniere
+	display: flex;
+	align-items: center;
+	gap: 17px;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	i {
+		font-weight: 900;
+		font-size: 16px;
+
+	}
+	h2 {
+		font-size: 16px;
+		font-weight: 400;	
+	}
 	
 }
 
 .explain-content {
 	background-color: #f6f6f6;	
 }
-header {
-	font-family: "Shrikhand";
-	text-align: center;
-	box-shadow: 0px 2px 4px 0px #00000026;
-	  h1 {
-		font-family: "Shrikhand";
-		font-size: 30px;
-	}
-}
 
-main {
-	.location {
-		background-color: $grey-location-bacground;
-		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-		gap: 10px;
-		height: 50px;
-		font-weight: 500;
+
+.location {
+		background-color: #eaeaea;
 		text-align: center;
-		display: flex;
-		justify-content: center;
-		padding: 0px;
-		align-items: center;
-		font-family: $roboto-font;
-		font-size: 10px;
+		
+	i {
 		color: $color-font-footer-p-home;
-		z-index: 10;
-		position: relative;
-		i {
-			color: $color-font-footer-p-home;
-			width: 10px;
-			font-weight: 900;
-			font-size: 14px;
+		width: 10px;
+		font-weight: 900;
+		font-size: 14px;
 		}
 	}
-}
+
 .description {
 	text-align: center;
 	h2 {
