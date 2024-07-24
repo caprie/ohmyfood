@@ -19,6 +19,7 @@ header {
   display: flex;
   align-items: center;
   position: relative;
+  z-index: 20;
 }
 
 main .location {
@@ -30,18 +31,19 @@ main .location {
   align-items: center;
   gap: 17px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #353535;
+  position: relative;
+  z-index: 10;
 }
 main .location i {
   font-weight: 900;
-  font-size: 16px;
+  font-size: 12px;
+  color: #353535;
 }
 main .location h2 {
   font-size: 16px;
   font-weight: 400;
-}
-
-.explain-content {
-  background-color: #f6f6f6;
+  color: #353535;
 }
 
 .location {
@@ -57,6 +59,12 @@ main .location h2 {
 
 .description {
   text-align: center;
+  padding-bottom: 50px;
+  background-color: #f6f6f6;
+}
+.description .explain-content {
+  background-color: #f6f6f6;
+  padding-bottom: 50px;
 }
 .description h2 {
   font-size: 24px;
@@ -81,10 +89,15 @@ main .location h2 {
   padding: 1rem 2rem;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 0.9));
   border: none;
-  border-radius: 2rem;
-  box-shadow: 2px 1px 16px -3px;
-  margin-top: 2rem;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-top: 50px;
   font-family: "Roboto";
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: transform 200ms;
+}
+.description button:hover {
+  transform: scale(1.02);
 }
 
 .explain-content {
