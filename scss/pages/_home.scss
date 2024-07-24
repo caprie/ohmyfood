@@ -1,15 +1,27 @@
 @import "../variables";
 
-
-/*description*/
-* {
-	margin: 0;
-	padding: 0;
+*,
+::before,
+::after {
+	width: 375px;
 	box-sizing: border-box;
 }
+
 body {
-	margin: 0px;
+	margin: 0px;	
+}
+
+header {
+	font-family: $shrikhand-font;
+	text-align: center;
+	justify-content: center;
+	box-shadow: $box-shadow;
 	
+	height: 63px; // hauteur de la banniere
+	display: flex;
+	align-items: center;
+	
+}
 
 .explain-content {
 	background-color: #f6f6f6;	
@@ -18,15 +30,11 @@ header {
 	font-family: "Shrikhand";
 	text-align: center;
 	box-shadow: 0px 2px 4px 0px #00000026;
-
-	
 	  h1 {
 		font-family: "Shrikhand";
 		font-size: 30px;
-	   
-		
-		}
-	  }
+	}
+}
 
 main {
 	.location {
@@ -44,7 +52,6 @@ main {
 		font-size: 10px;
 		color: $color-font-footer-p-home;
 		z-index: 10;
-		
 		position: relative;
 		i {
 			color: $color-font-footer-p-home;
@@ -225,7 +232,7 @@ main {
 		font-family: "Shrikhand";
     	.center {
 			text-align: center;
-			
+			border: 3px solid green;
 		}
 	h2 {
     	font-family: $roboto-font;
@@ -233,4 +240,4 @@ main {
 	}
 }
 }
-}
+
