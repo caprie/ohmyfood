@@ -11,20 +11,6 @@ body {
 	margin: 0px;
 	font-family: $roboto-font;	
 }
-
-header {
-	font-family: $shrikhand-font;
-	text-align: center;
-	justify-content: center;
-	box-shadow: $box-shadow;
-	margin: 0;
-	height: 63px; // hauteur de la banniere
-	display: flex;
-	align-items: center;
-	position: relative;	// là ou il se trouve nativement 
-	z-index: 20;
-}
-
 main .location {
 	background-color: #eaeaea;
 	text-align: center;
@@ -57,8 +43,7 @@ main .location {
 
 .location {
 		background-color: #eaeaea;
-		text-align: center;
-		
+		text-align: center;	
 	i {
 		color: $color-font-footer-p-home;
 		width: 10px;
@@ -70,7 +55,6 @@ main .location {
 	// presentation //
 .description {
 	text-align: center;
-	
 	padding-bottom: 50px;
 	background-color: $grey-label-background;
 	.explain-content {
@@ -80,7 +64,7 @@ main .location {
 	h2 {
 		font-size: 24px;
 		font-weight: 700;
-		margin-bottom: 20px;
+		margin-bottom: -20px;
 		margin-top: 2rem;
 		font-family: $roboto-font;
 	}
@@ -95,22 +79,7 @@ main .location {
 		text-align: center;
 		
 	}
-	button {
-		color: $white;
-		font-weight: 400;
-		padding: 1rem 2rem;
-		background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 0.9));
-		border: none;
-		border-radius: 25px;
-		font-size: 16px;
-		margin-top: 50px;
-		font-family: $roboto-font;
-		box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-		transition: transform 200ms;
-		&:hover {
-			transform: scale(1.02);
-		}
-	}
+
 }
 .explain-content {
 	height: 220px;
@@ -123,15 +92,17 @@ main .location {
 	align-items: center;
 	text-align: center;
 	margin-bottom: 2rem;
+
 	.container {
 		margin-right: 20px;
+		padding: 10px;
 	}
 	h2 {
 		margin-bottom: 20px;
 		width: 100%;
 		text-align: left;
 	}
-	ol {
+	ul {
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
@@ -141,12 +112,23 @@ main .location {
 		padding: 1rem 2rem;
 		background-color: $grey-label-background;
 		flex-grow: 1;
-		border-radius: 2rem;
+		border-radius: 20px;
 		box-shadow: 2px 1px 8px -3px;
+		display: flex;
+		align-items: center;
+
+	
+		i.fas {
+			padding-right: 20px;
+			
+			color: #7e7e7e;
+		}
+		}
 	}
-}
+
+
 .process__steps {
-	list-style: none;
+
 	padding: 0;
 	.process__step {
 		.process__number {
@@ -158,7 +140,7 @@ main .location {
 			border-radius: 50%;
 			display: grid;
 			place-items: center;
-			position: relative;
+			position: relative; // sinon static
 			left: -40px;
 		}
 	}
@@ -168,11 +150,10 @@ main .location {
 	display: flex;
 	align-items: center;
 }
-.process__number {
-	margin-right: 10px;
-}
+
 .process__icon {
-	margin-right: 10px;
+	margin-left: -10px;
+	
 }
 .menus {
 	background-color: $grey-resto-background;
@@ -188,7 +169,7 @@ main .location {
 	grid-template-columns: repeat(1, 1fr);
 	gap: 1rem;
   .new {
-    border: 1x solid red;
+   
     position: relative;
   }
   .new::before {
