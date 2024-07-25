@@ -155,77 +155,20 @@ main .location {
 	margin-left: -10px;
 	
 }
+
+// restaurants//
+main {
+	margin: 18px;
+}
 .menus {
-	background-color: $grey-resto-background;
-  	margin-bottom: 2rem;
-	h2 {
-		margin-bottom: 1rem;
-		padding: 25px;
-		font-family: $roboto-font;
+	background-color: #f6f6f6;
+	.card {
+		border: 1px solid red;
+		height: 4rem;
 	}
 }
-.menus__cards {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	gap: 1rem;
-  .new {
-   
-    position: relative;
-  }
-  .new::before {
-    content: "nouveau";
-    position: absolute;
-    height: 2rem;
-    width: 2rem;
-    background-color: $nouveau-card-color;
-	font-family: $roboto-font;
-	color: $white;
-    display: grid;
-    place-items: center;
-    right: 1rem;
-    top: 1rem;
 
-  }
-
-  h3, 
-  p {
-    margin: 0;
-  }
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-}
-.cards {
-	height: 4rem;
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	flex-grow: 1;
-	gap: 17rem;
-	min-width: 10rem;
-	margin: 20px;
-	border-radius: 1rem 1rem 0 0;
-	.cards__image {
-    
-    	height: 15rem;
-    	border-radius: 1rem;
-    	background-size: cover;
-  	}
-  	.card__description {
-    	position: relative;
-    h3,
-    p {
-      margin: 0.5rem;
-    }
-    i{
-      font-size: 2rem;
-      position: relative;
-      right: 1rem;
-      top: 50%;
-    }
-  	}
+// footer//
 .footer {
 	background-color: #353535;
 	padding: 0 3rem;
@@ -240,5 +183,5 @@ main .location {
 	}
 	}
 }
-}
+
 
