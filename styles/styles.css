@@ -1,15 +1,19 @@
 *,
 ::before,
 ::after {
+  margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0px;
-  font-family: "Roboto";
+  margin: 0;
 }
 
-main .location {
+main {
+  margin: 10px;
+}
+
+.main .location {
   background-color: #eaeaea;
   text-align: center;
   justify-content: center;
@@ -22,25 +26,29 @@ main .location {
   position: relative;
   z-index: 10;
 }
-main .location i {
+.main .location i {
   font-weight: 900;
   font-size: 12px;
   color: #353535;
+  height: 50px;
 }
-main .location h2 {
+.main .location h2 {
   font-size: 16px;
   font-weight: 400;
   color: #353535;
 }
 
 .location {
-  background-color: #eaeaea;
-  text-align: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
 }
 .location i {
   color: #353535;
   width: 10px;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 14px;
 }
 
@@ -59,6 +67,7 @@ main .location h2 {
   margin-bottom: -20px;
   margin-top: 2rem;
   font-family: "Roboto";
+  padding-bottom: 50px;
 }
 .description p {
   font-size: 18px;
@@ -69,6 +78,7 @@ main .location h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .explain-content {
@@ -139,29 +149,65 @@ main .location h2 {
   margin-left: -10px;
 }
 
+main {
+  padding: 0 0rem;
+}
+
 .menus {
   background-color: #ececec;
   margin-bottom: 2rem;
+  padding: 0 1rem;
 }
 .menus h2 {
-  margin-bottom: 1rem;
-  padding: 25px;
-  font-family: "Roboto";
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: left;
 }
-
-.menus__cards {
+.menus .menus__cards {
+  display: flex;
+  flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
 }
-.menus__cards .new {
+.menus .menus__cards .cards {
+  height: 4rem;
+  display: flex;
+  min-width: 10rem;
+  margin-bottom: 2rem;
+  margin: 10px;
+  border-radius: 1rem 1rem 0 0;
+  border: 1px solid red;
+}
+.menus .menus__cards .cards .card__image {
+  background-image: url("../../assets/menu1.jpg");
+  height: 15rem;
+  background-size: cover;
+}
+.menus .menus__cards .cards h2 {
+  margin-bottom: 1rem;
+  padding: 25px;
+  font-family: "Roboto";
+  background-color: #ececec;
+}
+.menus .menus__cards .menus__cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 400px) {
+  .menus .menus__cards .menus__cards {
+    grid-template-columns: repeat(1 1fr);
+  }
+}
+.menus .menus__cards .menus__cards .new {
   position: relative;
 }
-.menus__cards .new::before {
+.menus .menus__cards .menus__cards .new::before {
   content: "nouveau";
   position: absolute;
   height: 2rem;
-  width: 2rem;
+  min-width: 2rem;
   background-color: #99E2D0;
   font-family: "Roboto";
   color: white;
@@ -170,16 +216,15 @@ main .location h2 {
   right: 1rem;
   top: 1rem;
 }
-.menus__cards h3,
-.menus__cards p {
+.menus .menus__cards .menus__cards h3,
+.menus .menus__cards .menus__cards p {
   margin: 0;
 }
-.menus__cards a {
+.menus .menus__cards .menus__cards a {
   text-decoration: none;
   color: inherit;
 }
-
-.cards {
+.menus .menus__cards .cards {
   height: 4rem;
   display: flex;
   justify-content: center;
@@ -190,46 +235,37 @@ main .location h2 {
   margin: 20px;
   border-radius: 1rem 1rem 0 0;
 }
-.cards .cards__image {
+.menus .menus__cards .cards .cards__image {
   height: 15rem;
   border-radius: 1rem;
   background-size: cover;
 }
-.cards .card__description {
+.menus .menus__cards .cards .card__description {
   position: relative;
 }
-.cards .card__description h3,
-.cards .card__description p {
+.menus .menus__cards .cards .card__description h3,
+.menus .menus__cards .cards .card__description p {
   margin: 0.5rem;
 }
-.cards .card__description i {
+.menus .menus__cards .cards .card__description i {
   font-size: 2rem;
   position: relative;
   right: 1rem;
   top: 50%;
 }
-.cards .footer {
+.menus .menus__cards .cards .footer {
   background-color: #353535;
   padding: 0 3rem;
 }
-.cards .footer logo {
+.menus .menus__cards .cards .footer logo {
   font-family: "Shrikhand";
 }
-.cards .footer logo .center {
+.menus .menus__cards .cards .footer logo .center {
   text-align: center;
   border: 3px solid green;
 }
-.cards .footer logo h2 {
+.menus .menus__cards .cards .footer logo h2 {
   font-family: "Roboto";
-}
-
-img {
-  max-width: 100%;
-}
-
-.banner img {
-  width: 375px;
-  height: 275px;
 }
 
 button {
