@@ -145,7 +145,7 @@ main {
 	.process__step {
 		.process__number {
 			margin-right: 10px;
-			color: $white;
+			color: white;
 			background-color: $purple-dark;
 			width: 24px;
 			height: 24px;
@@ -184,13 +184,26 @@ main {
 		text-align: left;
 	}
 	.menus__cards {
-		display: flex;
+		
 		flex-wrap: wrap;
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		gap: 1rem;
-		@media (max-width: 500px) {
+		
 	
+	}
+	.new {
+		border: 1px solid purple;
+		position: relative;
+		padding: 140px;
+	}
+	new::before {
+		content: "Nouveau";
+		position: absolute;
+		height: 2rem;
+		width: 2rem;
+		background-color: $nouveau-card-color;
+		
 	}
 
 	 
@@ -202,11 +215,23 @@ main {
 		margin: 10px;
 		border-radius: 1rem 1rem 0 0;
 		border: 1px solid red;
-		& .card__image {
-			background-image: url("../../assets/menu1.jpg");
+		padding: 140px;
+		&__image {
 			height: 15rem;
 			background-size: cover;
+		&__image-1 {
+			background-image: url("../../assets/menu1.jpg");
+		&__image-2 {
+			background-image: url("../../assets/menu2.jpg");
+		&__image-3 {
+			background-image: url("../../assets/menu3.jpg");
+		&__image-4 {
+			background-image: url("../../assets/menu4.jpg");
 		}
+	}
+}
+		}
+
 	h2 {
 		
 		margin-bottom: 1rem;
@@ -229,19 +254,21 @@ main {
 
     position: relative;
   }
-  .new::before {
+  &::before {
     content: "nouveau";
     position: absolute;
     height: 2rem;
+	width: 5rem;
     min-width: 2rem;
     background-color: $nouveau-card-color;
 	font-family: $roboto-font;
-	color: $white;
+	color: darken($color: $nouveau-text-color, $amount: 50%);
     display: grid;
-    place-items: center;
+  
     right: 1rem;
     top: 1rem;
-
+	
+  }
   }
 
   h3, 
@@ -264,32 +291,36 @@ main {
 	min-width: 10rem;
 	margin: 20px;
 	border-radius: 1rem 1rem 0 0;
-	.cards__image {
+	&__image {
 
     	height: 15rem;
     	border-radius: 1rem;
     	background-size: cover;
   	}
-  	.card__description {
+  	&__description {
     	position: relative;
     h3,
     p {
       margin: 0.5rem;
     }
-    i{
+	h3 {
+		padding-top: 0.5rem;
+	}
+    i {
       font-size: 2rem;
-      position: relative;
+      position: absolute;
       right: 1rem;
       top: 50%;
+	  transform: translateY(-50%);
     }
   	}
+}
 
 
-// footer//
-.footer {
+footer {
 	background-color: #353535;
 	padding: 0 3rem;
-	logo {
+	.logo {
 		font-family: "Shrikhand";
     	.center {
 			text-align: center;
@@ -297,11 +328,8 @@ main {
 		}
 	h2 {
     	font-family: $roboto-font;
-	}
+
 	}
 }
-
-
-
 }
-}}
+		}
