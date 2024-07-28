@@ -1,5 +1,12 @@
 @import "../variables";
 
+body {
+	color: #000;
+}
+
+#page-resto {
+
+
 header {
 	font-family: $shrikhand-font;
 	text-align: center;
@@ -12,4 +19,88 @@ header {
 	position: relative;	// là ou il se trouve nativement 
 	z-index: 20;
 }
+img {
+	display: block;
+	max-width: 400px;
+	height: 70vh;
+	object-fit: cover;
+	object-position: bottom;
+}
+
+resto__title { 
+	padding: 0 1rem;
+	margin-top: -2rem;
+	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	p{
+		padding: 0;
+		margin: 0;
+	}
+
+	p {
+	background-color: #f6f6f6;
+	font-family: $shrikhand-font;
+	padding: 2rem 1rem;
+	position: relative;
+	width: 100%;
+	border-radius: 2rem 1rem;
+}	
+}
+
+.menus {
+	background-color: #f6f6f6;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	max-width: 400px;
+		grid-template-columns: 1fr;
+}
+
+.menu__category {
+	border-radius: 1rem;
+	background-color: white;
+	.menu-item {
+			display: flex;
+			align-items: center;
+			padding: 1rem;
+			overflow: hidden;
+			
+		.menu-item__prix {
+			margin-left: auto;
+			font-weight: 900;
+			
+		}
+		.menu-item__check {
+			background-color: #52a591;
+			margin-right: -4rem;
+			width: 4rem;
+			border-radius: 0 1rem 1rem 0;
+			display: grid;
+			place-items: center;
+			i {
+				display: grid;
+				place-items: center;
+				background: white;
+
+			}
+
+		}
+
+:hover .menu-item__check{
+	margin-right: 0;
+}
+		}
+	}
+}
+.resto-main {
+	padding: 0 2rem;
+	background-color: #f6f6f6;
+}
+
+
+
 

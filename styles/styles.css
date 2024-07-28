@@ -163,25 +163,29 @@ main {
   width: 100%;
   text-align: left;
 }
-.menus .menus__cards {
+
+.menus__cards {
   flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
 }
-.menus .new {
+
+.new {
   border: 1px solid purple;
   position: relative;
   padding: 140px;
 }
-.menus new::before {
+
+new::before {
   content: "Nouveau";
   position: absolute;
   height: 2rem;
   width: 2rem;
   background-color: #99E2D0;
 }
-.menus .cards {
+
+.cards {
   height: 4rem;
   display: flex;
   min-width: 10rem;
@@ -191,42 +195,42 @@ main {
   border: 1px solid red;
   padding: 140px;
 }
-.menus .cards__image {
+.cards__image {
   height: 15rem;
   background-size: cover;
 }
-.menus .cards__image__image-1 {
+.cards__image__image-1 {
   background-image: url("../../assets/menu1.jpg");
 }
-.menus .cards__image__image-1__image-2 {
+.cards__image__image-1__image-2 {
   background-image: url("../../assets/menu2.jpg");
 }
-.menus .cards__image__image-1__image-2__image-3 {
+.cards__image__image-1__image-2__image-3 {
   background-image: url("../../assets/menu3.jpg");
 }
-.menus .cards__image__image-1__image-2__image-3__image-4 {
+.cards__image__image-1__image-2__image-3__image-4 {
   background-image: url("../../assets/menu4.jpg");
 }
-.menus .cards__image h2 {
+.cards__image h2 {
   margin-bottom: 1rem;
   padding: 25px;
   font-family: "Roboto";
   background-color: #ececec;
 }
-.menus .cards .menus__cards {
+.cards .menus__cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
 }
 @media (max-width: 400px) {
-  .menus .cards .menus__cards {
+  .cards .menus__cards {
     grid-template-columns: repeat(1 1fr);
   }
 }
-.menus .cards .menus__cards .new {
+.cards .menus__cards .new {
   position: relative;
 }
-.menus .cards .menus__cards::before {
+.cards .menus__cards::before {
   content: "nouveau";
   position: absolute;
   height: 2rem;
@@ -239,15 +243,16 @@ main {
   right: 1rem;
   top: 1rem;
 }
-.menus .cards h3,
-.menus .cards p {
+.cards h3,
+.cards p {
   margin: 0;
 }
-.menus .cards a {
+.cards a {
   text-decoration: none;
   color: inherit;
 }
-.menus .cards {
+
+.cards {
   height: 4rem;
   display: flex;
   justify-content: center;
@@ -258,41 +263,46 @@ main {
   margin: 20px;
   border-radius: 1rem 1rem 0 0;
 }
-.menus .cards__image {
+.cards__image {
   height: 15rem;
   border-radius: 1rem;
   background-size: cover;
 }
-.menus .cards__description {
+.cards__description {
   background-color: white;
   position: relative;
   border-radius: 0 0 1rem 1rem;
 }
-.menus .cards__description p,
-.menus .cards__description h3 {
+.cards__description p,
+.cards__description h3 {
   padding: 0.3rem;
 }
-.menus .cards__description i {
+.cards__description i {
   font-size: 2rem;
   position: absolute;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
 }
-.menus footer {
+
+footer {
   background-color: #353535;
   padding: 1rem 2rem;
   color: white;
 }
-.menus footer h2 {
+footer h2 {
   font-family: "Shrikhand";
   font-weight: 500;
 }
-.menus footer p {
+footer p {
   padding: 1rem 0;
 }
 
-header {
+body {
+  color: #000;
+}
+
+#page-resto header {
   font-family: "Shrikhand";
   text-align: center;
   justify-content: center;
@@ -304,8 +314,85 @@ header {
   position: relative;
   z-index: 20;
 }
+#page-resto img {
+  display: block;
+  max-width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+#page-resto resto__title {
+  padding: 0 1rem;
+  margin-top: -2rem;
+}
+#page-resto resto__title h1,
+#page-resto resto__title h2,
+#page-resto resto__title h3,
+#page-resto resto__title h4,
+#page-resto resto__title h5,
+#page-resto resto__title p {
+  padding: 0;
+  margin: 0;
+}
+#page-resto resto__title p {
+  background-color: #f6f6f6;
+  font-family: "Shrikhand";
+  padding: 2rem 1rem;
+  position: relative;
+  width: 100%;
+  border-radius: 2rem 1rem;
+}
+#page-resto .menus {
+  background-color: #f6f6f6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 400px;
+  grid-template-columns: 1fr;
+}
+#page-resto .menu__category {
+  border-radius: 1rem;
+  background-color: white;
+}
+#page-resto .menu__category .menu-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+#page-resto .menu__category .menu-item .menu-item__prix {
+  margin-left: auto;
+  font-weight: 900;
+}
+#page-resto .menu__category .menu-item .menu-item__check {
+  background-color: #52a591;
+  margin-right: -4rem;
+  width: 4rem;
+  border-radius: 0 1rem 1rem 0;
+  display: grid;
+  place-items: center;
+}
+#page-resto .menu__category .menu-item .menu-item__check i {
+  display: grid;
+  place-items: center;
+  background: white;
+}
+#page-resto .menu__category .menu-item :hover .menu-item__check {
+  margin-right: 0;
+}
 
-header {
+.resto-main {
+  padding: 0 2rem;
+  background-color: #f6f6f6;
+}
+
+body {
+  color: #000;
+}
+
+#page-resto header {
   font-family: "Shrikhand";
   text-align: center;
   justify-content: center;
@@ -317,8 +404,85 @@ header {
   position: relative;
   z-index: 20;
 }
+#page-resto img {
+  display: block;
+  max-width: 400px;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+#page-resto resto__title {
+  padding: 0 1rem;
+  margin-top: -2rem;
+}
+#page-resto resto__title h1,
+#page-resto resto__title h2,
+#page-resto resto__title h3,
+#page-resto resto__title h4,
+#page-resto resto__title h5,
+#page-resto resto__title p {
+  padding: 0;
+  margin: 0;
+}
+#page-resto resto__title p {
+  background-color: #f6f6f6;
+  font-family: "Shrikhand";
+  padding: 2rem 1rem;
+  position: relative;
+  width: 100%;
+  border-radius: 2rem 1rem;
+}
+#page-resto .menus {
+  background-color: #f6f6f6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 400px;
+  grid-template-columns: 1fr;
+}
+#page-resto .menu__category {
+  border-radius: 1rem;
+  background-color: white;
+}
+#page-resto .menu__category .menu-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+#page-resto .menu__category .menu-item .menu-item__prix {
+  margin-left: auto;
+  font-weight: 900;
+}
+#page-resto .menu__category .menu-item .menu-item__check {
+  background-color: #52a591;
+  margin-right: -4rem;
+  width: 4rem;
+  border-radius: 0 1rem 1rem 0;
+  display: grid;
+  place-items: center;
+}
+#page-resto .menu__category .menu-item .menu-item__check i {
+  display: grid;
+  place-items: center;
+  background: white;
+}
+#page-resto .menu__category .menu-item :hover .menu-item__check {
+  margin-right: 0;
+}
 
-header {
+.resto-main {
+  padding: 0 2rem;
+  background-color: #f6f6f6;
+}
+
+body {
+  color: #000;
+}
+
+#page-resto header {
   font-family: "Shrikhand";
   text-align: center;
   justify-content: center;
@@ -330,8 +494,85 @@ header {
   position: relative;
   z-index: 20;
 }
+#page-resto img {
+  display: block;
+  max-width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+#page-resto resto__title {
+  padding: 0 1rem;
+  margin-top: -2rem;
+}
+#page-resto resto__title h1,
+#page-resto resto__title h2,
+#page-resto resto__title h3,
+#page-resto resto__title h4,
+#page-resto resto__title h5,
+#page-resto resto__title p {
+  padding: 0;
+  margin: 0;
+}
+#page-resto resto__title p {
+  background-color: #f6f6f6;
+  font-family: "Shrikhand";
+  padding: 2rem 1rem;
+  position: relative;
+  width: 100%;
+  border-radius: 2rem 1rem;
+}
+#page-resto .menus {
+  background-color: #f6f6f6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 400px;
+  grid-template-columns: 1fr;
+}
+#page-resto .menu__category {
+  border-radius: 1rem;
+  background-color: white;
+}
+#page-resto .menu__category .menu-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+#page-resto .menu__category .menu-item .menu-item__prix {
+  margin-left: auto;
+  font-weight: 900;
+}
+#page-resto .menu__category .menu-item .menu-item__check {
+  background-color: #52a591;
+  margin-right: -4rem;
+  width: 4rem;
+  border-radius: 0 1rem 1rem 0;
+  display: grid;
+  place-items: center;
+}
+#page-resto .menu__category .menu-item .menu-item__check i {
+  display: grid;
+  place-items: center;
+  background: white;
+}
+#page-resto .menu__category .menu-item :hover .menu-item__check {
+  margin-right: 0;
+}
 
-header {
+.resto-main {
+  padding: 0 2rem;
+  background-color: #f6f6f6;
+}
+
+body {
+  color: #000;
+}
+
+#page-resto header {
   font-family: "Shrikhand";
   text-align: center;
   justify-content: center;
@@ -342,6 +583,79 @@ header {
   align-items: center;
   position: relative;
   z-index: 20;
+}
+#page-resto img {
+  display: block;
+  max-width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+#page-resto resto__title {
+  padding: 0 1rem;
+  margin-top: -2rem;
+}
+#page-resto resto__title h1,
+#page-resto resto__title h2,
+#page-resto resto__title h3,
+#page-resto resto__title h4,
+#page-resto resto__title h5,
+#page-resto resto__title p {
+  padding: 0;
+  margin: 0;
+}
+#page-resto resto__title p {
+  background-color: #f6f6f6;
+  font-family: "Shrikhand";
+  padding: 2rem 1rem;
+  position: relative;
+  width: 100%;
+  border-radius: 2rem 1rem;
+}
+#page-resto .menus {
+  background-color: #f6f6f6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 400px;
+  grid-template-columns: 1fr;
+}
+#page-resto .menu__category {
+  border-radius: 1rem;
+  background-color: white;
+}
+#page-resto .menu__category .menu-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+#page-resto .menu__category .menu-item .menu-item__prix {
+  margin-left: auto;
+  font-weight: 900;
+}
+#page-resto .menu__category .menu-item .menu-item__check {
+  background-color: #52a591;
+  margin-right: -4rem;
+  width: 4rem;
+  border-radius: 0 1rem 1rem 0;
+  display: grid;
+  place-items: center;
+}
+#page-resto .menu__category .menu-item .menu-item__check i {
+  display: grid;
+  place-items: center;
+  background: white;
+}
+#page-resto .menu__category .menu-item :hover .menu-item__check {
+  margin-right: 0;
+}
+
+.resto-main {
+  padding: 0 2rem;
+  background-color: #f6f6f6;
 }
 
 button {
