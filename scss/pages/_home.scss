@@ -298,13 +298,12 @@ main {
     	background-size: cover;
   	}
   	&__description {
-    	position: relative;
-    h3,
-    p {
-      margin: 0.5rem;
-    }
+    	background-color: white;
+		position: relative;
+		border-radius: 0 0 1rem 1rem;
+    p,
 	h3 {
-		padding-top: 0.5rem;
+      padding: 0.3rem;
 	}
     i {
       font-size: 2rem;
@@ -319,17 +318,13 @@ main {
 
 footer {
 	background-color: #353535;
-	padding: 0 3rem;
-	.logo {
+	padding: 1rem 2rem;
+	color: white;
+h2 {
 		font-family: "Shrikhand";
-    	.center {
-			text-align: center;
-			border: 3px solid green;
-		}
-	h2 {
-    	font-family: $roboto-font;
-
+		font-weight: 500;	
 	}
+p {
+	padding: 1rem 0;
 }
-}
-		}
+}}
