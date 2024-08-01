@@ -924,3 +924,21 @@ header {
   position: relative;
   z-index: 20;
 }
+
+footer {
+  background-color: #353535;
+  padding: 1rem 2rem;
+  color: white;
+  margin-top: auto;
+}
+footer h2 {
+  font-family: "Shrikhand";
+  font-weight: 500;
+}
+footer p {
+  text-decoration: none;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
