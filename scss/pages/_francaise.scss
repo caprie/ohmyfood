@@ -1,4 +1,7 @@
 @import "../variables";
+@import "../layouts/button";
+@import "../layouts/header";
+@import "../layouts/footer";
 
 body {
 	color: #000;
@@ -51,7 +54,7 @@ resto__title {
 }	
 }
 
-.menus {
+.menu-list {
 	background-color: #f6f6f6;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);

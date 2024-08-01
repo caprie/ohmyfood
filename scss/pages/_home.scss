@@ -1,24 +1,28 @@
 @import "../variables";
+@import "../layouts/button";
+@import "../layouts/header";
+@import "../layouts/footer";
 
-*,
-::before,
-::after {
-	margin: 0;
-
-	box-sizing: border-box;
+*
+ {
+	//margin: 0;
+	padding: 0;	
 }
 
 body {
 	margin: 0;
+	min-height: 100vh; // viewport height - 1vh = 1% //
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+}
+
+.main .searchbar {
 	
-}
-
-main {
-	margin: 10px;
-}
-
-.main .location {
-	background-color: #eaeaea;
 	text-align: center;
 	justify-content: center;
 	height: 50px; // hauteur de la banniere
@@ -35,32 +39,30 @@ main {
 		font-size: 12px;
 		color: $color-font-footer-p-home;
 		height: 50px;
-   		
-
 	}
 	h2 {
 		font-size: 16px;
 		font-weight: 400;
-		color: #353535;
-			
+		color: #353535;	
 	}
 	
 }
 
-.location {
+.searchbar {	
 	height: 50px;
     display: flex;
+	gap: 17px;
     justify-content: center;
     align-items: center;
-   
 	font-family: $roboto-font;
+	background-color: $grey-search-bar-background;
+	box-shadow: $box-shadow;
 	i {
 		color: $color-font-footer-p-home;
 		width: 10px;
-		font-weight: 500;
 		font-size: 14px;
-		}
 	}
+}
 
 	// presentation //
 .description {
@@ -88,10 +90,8 @@ main {
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		padding-bottom: 50px;
-		
+		padding-bottom: 50px;	
 	}
-
 }
 .explain-content {
 	height: 220px;
@@ -104,14 +104,13 @@ main {
 	align-items: center;
 	text-align: center;
 	margin-bottom: 2rem;
-
 	.container {
 		margin-right: 20px;
 		padding: 10px;
+		width: 100%;
 	}
 	h2 {
 		margin-bottom: 20px;
-		width: 100%;
 		text-align: left;
 	}
 	ul {
@@ -128,21 +127,17 @@ main {
 		box-shadow: 2px 1px 8px -3px;
 		display: flex;
 		align-items: center;
-
-	
 		i.fas {
 			padding-right: 20px;
-			
 			color: #7e7e7e;
 		}
-		}
 	}
-
+}
 
 .process__steps {
-
 	padding: 0;
-	.process__step {
+	.process__label {
+		width: 90%;
 		.process__number {
 			margin-right: 10px;
 			color: white;
@@ -157,7 +152,7 @@ main {
 		}
 	}
 }
-.process__step {
+.process__label {
 	margin-bottom: 15px;
 	display: flex;
 	align-items: center;
@@ -165,35 +160,26 @@ main {
 
 .process__icon {
 	margin-left: -10px;
-	
 }
-
 
 // restaurants//
 main {
 	padding: 0 0rem;
 }
-.menus {
+.menu-list {
 	background-color: $grey-resto-background;
 	margin-bottom: 2rem;
 	padding: 0 1rem;
 	h2 {
 		margin-bottom: 2rem;
-		
-		width: 100%;
 		text-align: left;
 	}
-
-	
-	}
-	.menus__cards {
-		
+}
+	.menu-list__cards {
 		flex-wrap: wrap;
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		gap: 1rem;
-		
-	
 	}
 	.new {
 		border: 1px solid purple;
@@ -206,10 +192,7 @@ main {
 		height: 2rem;
 		width: 2rem;
 		background-color: $nouveau-card-color;
-		
 	}
-
-	 
 		.cards {
 		height: 4rem;
 		display: flex;
@@ -217,47 +200,42 @@ main {
   		margin-bottom: 2rem;
 		margin: 10px;
 		border-radius: 1rem 1rem 0 0;
-		border: 1px solid red;
+
 		padding: 140px;
 		&__image {
 			height: 15rem;
 			background-size: cover;
 		&__image-1 {
-			background-image: url("../../assets/menu1.jpg");
+			background-image: "../../assets/palettedugout.jpg";
 		&__image-2 {
-			background-image: url("../../assets/menu2.jpg");
+			background-image: "../../assets/delice.jpg";
 		&__image-3 {
-			background-image: url("../../assets/menu3.jpg");
+			background-image: "../../assets/noteenchantée.jpg";
 		&__image-4 {
-			background-image: url("../../assets/menu4.jpg");
+			background-image: "../../assets/francaise.jpg";
 		}
 	}
 }
 		}
 
 	h2 {
-		
 		margin-bottom: 1rem;
 		padding: 25px;
 		font-family: $roboto-font;
 		background-color: $grey-resto-background;
-		 
-	
 	}
 }
-.menus__cards {
+.menu-list__cards {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	gap: 1rem;
-	@media (max-width: 400px) {
-		grid-template-columns: repeat(1 1fr);
+	grid-template-columns: repeat(1 1fr);
+	width: 100%;
 	}
-	 
   .new {
-
     position: relative;
   }
-  &::before {
+  ::before {
     content: "nouveau";
     position: absolute;
     height: 2rem;
@@ -267,13 +245,9 @@ main {
 	font-family: $roboto-font;
 	color: darken($color: $nouveau-text-color, $amount: 50%);
     display: grid;
-  
     right: 1rem;
     top: 1rem;
-	
   }
-  }
-
   h3, 
   p {
     margin: 0;
@@ -283,19 +257,16 @@ main {
     color: inherit;
   }
 
-}
 .cards {
 	height: 4rem;
 	display: flex;
 	justify-content: center;
-	width: 100%;
 	flex-grow: 1;
 	gap: 17rem;
 	min-width: 10rem;
 	margin: 20px;
 	border-radius: 1rem 1rem 0 0;
 	&__image {
-
     	height: 15rem;
     	border-radius: 1rem;
     	background-size: cover;
@@ -315,19 +286,8 @@ main {
       top: 50%;
 	  transform: translateY(-50%);
     }
-  	}
+}
 }
 
 
-footer {
-	background-color: #353535;
-	padding: 1rem 2rem;
-	color: white;
-h2 {
-		font-family: "Shrikhand";
-		font-weight: 500;	
-	}
-p {
-	padding: 1rem 0;
-}
-}
+		}

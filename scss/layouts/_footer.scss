@@ -1,0 +1,21 @@
+@import "../variables";
+
+footer {
+	background-color: #353535;
+	padding: 1rem 2rem;
+	color: white;
+    margin-top: auto;
+    
+h2 {
+		font-family: "Shrikhand";
+		font-weight: 500;	
+	}
+p {
+	//padding: 1rem 0;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;  // Enlever la décoration du texte (soulignement)
+    color: inherit;         // Utiliser la même couleur que le texte environnant
+}
+}
