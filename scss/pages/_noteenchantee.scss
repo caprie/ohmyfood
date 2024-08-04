@@ -1,15 +1,23 @@
 @import "../variables";
-@import "../layouts/button";
-@import "../layouts/header";
-@import "../layouts/footer";
-@import "../layouts/newcard";
-@import "../layouts/restaurants";
+@use './pages/home';
+@use './pages/palette';
+@use './pages/delice';
+@use './pages/noteenchantee';
+@use './pages/francaise';
+@use './layouts/button';
+@use './layouts/header';
+@use './layouts/footer';
+@use './layouts/newcard';
+@use './layouts/restaurants';
+@use './layouts/menu';
+@use './layouts/heart';
+@use './layouts/sous-titres';
+@use './layouts/titres';
 
 body {
 	color: #000;
 }
 
-#page-resto {
 
 
 header {
@@ -32,9 +40,19 @@ img {
 	object-position: bottom;
 }
 
-resto__title { 
+restaurant__name { 
 	padding: 0 1rem;
 	margin-top: -2rem;
+	font-family: $shrikhand-font;
+	text-align: center;
+	justify-content: center;
+	box-shadow: $box-shadow;
+	margin: 0;
+	height: 63px; // hauteur de la banniere
+	display: flex;
+	align-items: center;
+	position: relative;	// là ou il se trouve nativement 
+}
 	
 	h1,
 	h2,
@@ -54,7 +72,7 @@ resto__title {
 	width: 100%;
 	border-radius: 2rem 1rem;
 }	
-}
+
 
 .menu-list {
 	background-color: #f6f6f6;
@@ -95,13 +113,20 @@ resto__title {
 
 		}
 
+		heart {
+			font-size: 1.5rem;
+			position:absolute;
+			right: 25px;
+			bottom: $bottom;
+		}
+
 :hover .menu-item__check{
 	margin-right: 0;
 }
 		}
 	}
-}
-.resto-main {
+
+.restaurant-main {
 	padding: 0 2rem;
 	background-color: #f6f6f6;
 }
