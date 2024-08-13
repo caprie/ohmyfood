@@ -1,23 +1,9 @@
 @import "../variables";
-@use './pages/home';
-@use './pages/palette';
-@use './pages/delice';
-@use './pages/noteenchantee';
-@use './pages/francaise';
-@use './layouts/button';
-@use './layouts/header';
-@use './layouts/footer';
-@use './layouts/newcard';
-@use './layouts/restaurants';
-@use './layouts/menu';
-@use './layouts/heart';
-@use './layouts/sous-titres';
-@use './layouts/titres';
+
 
 body {
-	color: #000;
+	margin: 0;
 }
-
 
 
 header {

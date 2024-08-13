@@ -15,7 +15,7 @@
 //MENU (PAGE MENU)
 .restaurant-page-grey-background{
     position: relative;
-    background-color: $grey-resto-background;
+    background-color: $grey-restaurant-background;
     border-radius: 45px 45px 0px 0px;
     margin-top:-50px;
     padding-bottom:10px;
@@ -119,7 +119,8 @@
         transition-duration: .5s;
     }
     &-insert__text{
-        @include subtitle ($size: 0.85rem);
+        //@include subtitle ($size: 0.85rem);
+        font-size: 0.85rem;
         white-space:nowrap;
         overflow:hidden;
         text-overflow: ellipsis;        
@@ -132,7 +133,7 @@
     }
     &-insert__check{
         position: absolute;
-        background-color: $turquoise;
+        background-color: turquoise;
         top: 0;
         bottom:0;
         right:0;

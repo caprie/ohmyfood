@@ -4,17 +4,25 @@ footer {
 	background-color: #353535;
 	padding: 16px 32px;
 	color: white;
-    margin-top: auto;
+    //margin-top: auto;
     
 h2 {
 		font-family: "Shrikhand";
 		font-weight: 400;	
 		font-size: 18px;
+		padding-top: 20px;
+		padding-bottom: 10px;
 	}
 p {
-	//padding: 1rem 0;
+	font-family: $roboto-font;
+	padding-top: 5px;
+	padding-left: 0px;
+	gap: 10px;
+	font-weight: 400;
+	padding-bottom: 5px;
     text-decoration: none;
 	font-size: 16px;
+	background-color: transparent; // enlever les etiquettes incrustées. Solution de contournement de probleme.
 }
 a {
     text-decoration: none;  // Enlever la décoration du texte (soulignement)

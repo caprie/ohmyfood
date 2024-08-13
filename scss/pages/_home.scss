@@ -1,82 +1,49 @@
 @import "../variables";
-@use './pages/home';
-@use './pages/palette';
-@use './pages/delice';
-@use './pages/noteenchantee';
-@use './pages/francaise';
-@use './layouts/button';
-@use './layouts/header';
-@use './layouts/footer';
-@use './layouts/newcard';
-@use './layouts/restaurants';
-@use './layouts/menu';
-@use './layouts/heart';
-@use './layouts/sous-titres';
-@use './layouts/titres';
 
-*
- {
-	
-	padding: 0;	
-}
+
+
 
 body {
 	margin: 0;
-	
-	display: flex;
-	flex-direction: column;
 }
 
 
-
-.main {
+main {
 	width: 100%;
 	height: 100%;
-	padding: 20px;
-}
+	//padding: 20px;
 
-.main .searchbar {
+	.searchbar {
+		text-align: center;
+		justify-content: center;
+		height: 50px;// hauteur de la barre			
+  		display: flex;
+  		align-items: center;
+  		gap: 17px;
+	  	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  		color: $color-font-footer-p-home;
+		background-color: #e9e9e9;
+		font-family: "Roboto";
+  		position: relative;
+  		z-index: 10;
 	
-	text-align: center;
-	justify-content: center;
-	height: 50px; // hauteur de la banniere
-	display: flex;
-	align-items: center;
-	gap: 17px;
-	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-	color: $color-font-footer-p-home;
-	position: relative;
-	z-index: 10;
+  		i {
+    	font-weight: 900;
+    	font-size: 16px;
+    	color: $color-font-footer-p-home;
+    	//height: 50px;
+		}
 
-	i {
-		font-weight: 900;
-		font-size: 12px;
-		color: $color-font-footer-p-home;
-		height: 50px;
+  		h4 {
+    	font-size: 16px;
+    	font-weight: 00;
+    	
+    	color: $color-font-footer-p-home;
+		}
 	}
-	h2 {
-		font-size: 16px;
-		font-weight: 400;
-		color: $color-font-footer-p-home;	
-	}
-	
 }
 
-.searchbar {	
-	height: 50px;
-    display: flex;
-	gap: 17px;
-    justify-content: center;
-    align-items: center;
-	font-family: $roboto-font;
-	background-color: $grey-search-bar-background;
-	box-shadow: $box-shadow;
-	i {
-		color: $color-font-footer-p-home;
-		width: 10px;
-		font-size: 14px;
-	}
-}
+
 
 	// presentation //
 .description {
@@ -87,11 +54,14 @@ body {
 	
 	h2 {
 		font-size: 24px;
-		font-weight: 700;
-		margin-bottom: 20px;
-		margin-top: 32px;
-		font-family: $roboto-font;
-		font-style: $color-font-footer-p-home;
+		//font-weight: 700;
+		//margin-bottom: 20px;
+		//margin-top: 32px;
+		padding-top: 32px;
+		
+		//font-family: $roboto-font;
+		//font-style: $color-font-footer-p-home;
+		font-family: "Roboto";
 	}
 	p {
 		font-size: 18px; 
@@ -239,4 +209,5 @@ body {
 		padding: 0 15px; // horizontal
 	}
 
+	
 	
