@@ -88,7 +88,6 @@ grey-background{
             bottom: 25px;
         }
         background: $gradient-button;
-        
         -webkit-text-fill-color: transparent;
         opacity: 0;
     }
@@ -98,7 +97,7 @@ grey-background{
             position:absolute;
             right: 25px;
             bottom: 25px;
+            opacity: 1;
         }
-        opacity: 1;
     }
 }
