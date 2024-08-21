@@ -33,8 +33,9 @@ main {
 // presentation //
 .description {
   padding-bottom: 85px;
-  background-color: $grey-label-background;
+  background-color: #eaeaea;
   text-align: center;
+  padding-top: 40px;
 }
   h2 {
     font-size: 24px;
@@ -43,15 +44,22 @@ main {
   }
   p {
     font-size: 18px; 
-    font-family: $roboto-font;
+    font-family: "Roboto";
     font-weight: 300;
-    font-style: $color-font-footer-p-home;
+    font-style: #eaeaea;
     padding-top: 15px;
+    //margin-right: 20px;
+  }
+  .description__subtitle {
+    font-family: $roboto-font;
+    background-color: #eaeaea;
+    font-weight: 300;
+    font-size: 18px;
   }
 .explain-content {
   height: 220px;
   background-color: $explain-background;
-  font-family: $roboto-font;
+  font-family: "Roboto";
 }
 .process {
   padding: 20px;
@@ -93,7 +101,7 @@ main {
   }
     i.fas {
       padding-right: 20px;
-      color: #7e7e7e;
+      color: $gradient-button;
       height: 20px;
     }
 .process__steps {
@@ -149,19 +157,22 @@ main {
     gap: 17px;
   }
   .restaurant__title {
-    background-color: $grey-restaurant-background;
-    padding: 40px;
+    background-color: #eaeaea;
+    padding: 30px;
     font-family: $roboto-font;
     font-weight: 700;
     padding-bottom: 10px;
     padding-left: 20px;
+    position: relative;
+    top: 10px;
   }
   .restaurant-inserts {
-    background-color: $grey-restaurant-background;
+    background-color: #eaeaea;
     font-family: $roboto-font;
     font-weight: 700;
     font-size: 18px;
     color: $color-font-titre-niveau-deux;
+    padding-bottom: 20px;
   }
   .restaurants-level {
     display: flex;
