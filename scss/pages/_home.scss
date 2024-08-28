@@ -1,4 +1,5 @@
 @import "../variables";
+@import "../layouts/mixins";
 
 body {
   margin: 0;
@@ -36,6 +37,9 @@ main {
   background-color: #eaeaea;
   text-align: center;
   padding-top: 40px;
+  button {
+    @include btn-main;
+  }
 }
   h2 {
     font-size: 24px;
@@ -98,18 +102,17 @@ main {
     font-family: $roboto-font;
     font-weight: 500;
     font-size: 16px;
-  }
     i.fas {
       padding-right: 20px;
       color: $gradient-button;
       height: 20px;
     }
+  }
+    
 .process__steps {
   padding: 0;
 }
-  .process__label {
-    width: 90%;
-  }
+  
     .process__number {
       margin-right: 10px;
       color: white;
@@ -122,10 +125,17 @@ main {
       position: relative; // sinon static
       left: -40px;
     }
-.process__label {
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
+  .process__label {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+  &:hover {
+    /*color: red;*/    /*CA FONCTIONNE MALGRE LA MISE ENTRE PARENTHESE */
+    i{
+      color: $purple-dark;   //CA NE FONCTIONNE PLUS!!!!//
+    }
+  }
 }
 .process__icon {
   margin-left: -10px;
@@ -233,4 +243,8 @@ main {
   .card__content-restaurants {
     margin-top: 10px; // ???
     padding: 0 15px; // horizontal
+  }
+
+  .helping span {
+    color: $purple-dark;
   }

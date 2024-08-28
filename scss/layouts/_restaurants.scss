@@ -33,6 +33,7 @@ grey-background{
     &-picture {
         overflow: hidden;
         height: 70%;
+        width: 100%;
     }
     &-picture__img {
         border-radius: 20px 20px 0px 0px;
@@ -99,4 +100,4 @@ grey-background{
             opacity: 1;
         }
     }
-}
+}  

@@ -1,9 +1,10 @@
 @import "../variables";
+@import "../layouts/mixins";
 
 
-body {
+/*body {
 	margin: 0;
-}
+}*/
 
 
 header {
@@ -18,23 +19,29 @@ header {
 	position: relative;	// là ou il se trouve nativement 
 	z-index: 20;
 }
-img {
+	/*&__img {
 	display: block;
 	max-width: 400px;
 	height: 70vh;
 	object-fit: cover;
-	object-position: bottom;
-}
+	object-position: bottom;*/
+
+
+	h1 {
+	
+	font-size: $shrikhand-font;
+	font-size: 60px;
+	color: $color-font-footer-p-home;
+	}
+
 
 	h3 { 
 	padding: 0 1rem;
 	margin-top: -2rem;
-	//font-family: $shrikhand-font;
+	border-radius: 0 16px 16px 0;
+	font-family: "Roboto";
 	//font-size: 28px;
 	//font-weight: 400;
-	
-	
-	
 	position: relative;	// là ou il se trouve nativement 
 }
 	
@@ -68,7 +75,7 @@ img {
 }
 
 .menu__category {
-	border-radius: 1rem;
+	border-radius: 16px;
 	background-color: white;
 	.menu-item {
 			display: flex;
@@ -85,7 +92,7 @@ img {
 			background-color: #52a591;
 			margin-right: -4rem;
 			width: 4rem;
-			border-radius: 0 1rem 1rem 0;
+			border-radius: 0px 116px 16px 0px;
 			display: grid;
 			place-items: center;
 			
@@ -106,10 +113,13 @@ img {
 	}
 
 .restaurant-main {
-	padding: 0 2rem;
+	padding: 0 32px;
 	background-color: #f6f6f6;
 }
 
+.menu__button {
+	@include btn-main;
+}
 
 
 
