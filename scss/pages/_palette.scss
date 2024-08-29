@@ -1,120 +1,69 @@
 @import "../variables";
 @import "../layouts/mixins";
 
-
 body {
+	background-color: lightseagreen;
+}
+#page-resto {
 	margin: 0;
+	background-color: purple; //comment faire disparaitre le fond sans faire disparaitre h1
+	
 }
 
 
-header {
-	font-family: $shrikhand-font;
-	text-align: center;
-	justify-content: center;
-	box-shadow: $box-shadow;
-	margin: 0;
-	height: 63px; // hauteur de la banniere
-	display: flex;
-	align-items: center;
-	position: relative;	// là ou il se trouve nativement 
-	z-index: 20;
-}
-img {
-	display: block;
-	max-width: 400px;
-	height: 70vh;
-	object-fit: cover;
-	object-position: bottom;
-}
-
-
-	h3 { 
-	padding: 0 1rem;
-	margin-top: -2rem;
-	border-radius: 0 16px 16px 0;
-	//font-family: $shrikhand-font;
-	//font-size: 28px;
-	//font-weight: 400;
-	
-	
-	
-	position: relative;	// là ou il se trouve nativement 
-}
-	
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	p{
-		padding: 0;
-		margin: 0;
-	}
-
-	p {
-	background-color: #f6f6f6;
-	font-family: $shrikhand-font;
-	padding: 2rem 1rem;
-	position: relative;
+.banner img {
+	display: block; /* pour prendre toute la banner en taille*/
 	width: 100%;
-	border-radius: 2rem 1rem;
-}	
+	height: 40vh;
+	object-fit: cover;
+	object-position: center bottom;	
+	
+}
+.resto__title {
+	
+	margin-top: -35px;     //chevaucher sur image
+	
+	//background-color: transparent; // red pour
+	//border-radius: 60px 60px 50px 50px;
+	h2 {							
+		
+		
+		//padding-bottom: -30px;
+		font-family: "Shrikhand"; 
+		font-size: 28px;
+		font-weight: 400;
+		height: 50px;
+		border-radius: 50px 50px 0px 0px;
+		padding-left: 20px;
+		background-color: green; /* ne prend pas le background f6f6f6 */
+    } /* coeur non intégré */
+}
 
-
-.menu-list {
-	background-color: #f6f6f6;
+.resto-main {
+	 background-color: #f6f6f6; /* n'a auccun effet */
+}
+.menus {     // pourquoi grid ne faitpas 3 colonnes alignees en desktop?
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 1rem;
-	max-width: 400px;
-		grid-template-columns: 1fr;
-}
+	grid-template-columns: repeat(3 1fr);  // 3 colonnes horizontales + tous la même taille
+	gap: 20px; /* espace entre les colonnes */
+    width: 100%; /* prendre toute la largeur disponible mais pas de fin */
+	padding-left: 20px;
+	background-color: pink;  /* se place par dessus purple body. Comment faire le background f6f6f6 ? */
+	// comment réduire la marge haute et basse des etiquettes? //
 
-.menu__category {
-	border-radius: 16px;
-	background-color: white;
-	.menu-item {
-			display: flex;
-			align-items: center;
-			padding: 1rem;
-			overflow: hidden;
-			
-		.menu-item__prix {
-			margin-left: auto;
-			font-weight: 900;
-			
-		}
-		.menu-item__check {
-			background-color: #52a591;
-			margin-right: -4rem;
-			width: 4rem;
-			border-radius: 0px 116px 16px 0px;
-			display: grid;
-			place-items: center;
-			
-
-		}
-
-		heart {
-			font-size: 1.5rem;
-			position:absolute;
-			right: 25px;
-			bottom: $bottom;
-		}
-
-:hover .menu-item__check{
-	margin-right: 0;
+	.menus__category {
+		border: 1px solid blue;
+		background-color: yellow; /* doit etre white */
+		/* on ne voit pas le bas de l'etiquette */
 	}
-		}
-	}
+}
+            
 
-.restaurant-main {
-	padding: 0 32px;
-	background-color: #f6f6f6;
+
+.btn-order
+ {
+	@include btn-main; /* pourquoi se chevauche avec le footer??? */
 }
 
-.menu__button {
-	@include btn-main;
-}
 
 

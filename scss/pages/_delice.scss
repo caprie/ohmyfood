@@ -7,7 +7,7 @@
 }*/
 
 
-header {
+/*header {
 	font-family: $shrikhand-font;
 	text-align: center;
 	justify-content: center;
@@ -17,25 +17,25 @@ header {
 	display: flex;
 	align-items: center;
 	position: relative;	// là ou il se trouve nativement 
-	z-index: 20;
-}
+	z-index: 20;*/
+
 	/*&__img {
-	display: block;
-	max-width: 400px;
+	
+	max-width: 100%;
 	height: 70vh;
 	object-fit: cover;
 	object-position: bottom;*/
 
 
-	h1 {
+	/*h1 {
 	
-	font-size: $shrikhand-font;
-	font-size: 60px;
+	/*font-size: $shrikhand-font;
+	
 	color: $color-font-footer-p-home;
-	}
+	}*/
 
 
-	h3 { 
+	/*h3 { 
 	padding: 0 1rem;
 	margin-top: -2rem;
 	border-radius: 0 16px 16px 0;
@@ -70,7 +70,7 @@ header {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1rem;
-	max-width: 400px;
+	
 		grid-template-columns: 1fr;
 }
 
@@ -115,7 +115,7 @@ header {
 .restaurant-main {
 	padding: 0 32px;
 	background-color: #f6f6f6;
-}
+}*/
 
 .menu__button {
 	@include btn-main;
