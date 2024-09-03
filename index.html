@@ -20,139 +20,133 @@
 </head>
 
 
-<body>
 
-    <header>
-        <h1>ohmyfood</h1>
-    </header>
-
-    <main>
-        <div class="searchbar">
-            <i class="fa-solid fa-location-dot"></i>
-            <h4>Paris, Belleville</h4>
-        </div>
-
-        <section class="description">
-            <h2>Réservez le menu qui vous convient</h2>
-            <p class="description__subtitle">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-            <button>Explorer nos restaurants</button>
+<header class="header">
+    <a href="index.html" class="header__logo">ohmyfood</a>
+</header>
+        <main>
+        <section class="location">
+            <i class="fas fa-map-marker-alt location__icon"></i>
+            <span class="location__text">Paris, Belleville</span>
         </section>
-
+        <section class="explain">
+            <h2>Réservez le menu qui vous convient</h2>
+        <p class="explain__subtitle">Découvez des restaurants d’exception, séléctionnés par nos soins.</p>
+        <a href="#" class="btn">Explorer nos restaurants</a>
+        </section>
         <section class="process">
+        <div class="container">
+        <h2>Fonctionnement</h2>
+        <ul class="process__steps">
+            <li class="process__step">
+                <span class="process__number">1</span>
+                <i class="fas fa-mobile-alt process__icon"></i>
+                <span>Choisissez un restaurant</span>
+                </li>
+            <li class="process__step">
+                <span class="process__number">2</span>
+                <i class="fas fa-list process__icon"></i>
+                <span>Composez votre menu</span>
+            </li>
+            <li class="process__step last-step"> <!-- Ajout de la classe last-step ici -->
+                <span class="process__number">3</span>
+                <i class="fas fa-store process__icon"></i>
+                <span>Dégustez au restaurant</span>
+            </li>
+            </ul>
+        
+        </div>
+        </section>
+        <section class="restaurants">
             <div class="container">
-                <h3>Fonctionnement</h3>
-                <ul class="process__steps">
-                    <li class="process__label">
-                        <span class="process__number">1</span>
-                        <i class="fas fa-mobile-alt process__icon"></i>
-                        <span class>Choisissez un restaurant</span>
+                <h2>Restaurants</h2>
+                <div class="cards">
+                    <a href="la-palette-du-gout.html" class="card">
+                        <div class="card__image">
+                            <img src="assets/palettedugout.jpg" alt="La palette du goût">
+                            <span class="card__new">Nouveau</span>
+                        </div>
+        <div class="card__footer">
+            <div class="card__content">
+                <h3 class="card__title">La palette du goût</h3>
+                <span class="card__subtitle">Ménilmontant</span>
+            </div>
+            <div class="card__icon btn-heart">
+                <i class="far fa-heart btn-heart--outline"></i>
+                <i class="fas fa-heart btn-heart--solid"></i>
+            </div>
+        </div>
+        </a>
+        <a href="la-note-enchantee.html" class="card">
+            <div class="card__image">
+                <img src="assets/noteenchantee.jpg" alt="La note enchantée">
+                <span class="card__new">Nouveau</span>
+            </div>
+            <div class="card__footer">
+                <div class="card__content">
+                    <h3 class="card__title">La note enchantée</h3>
+                    <span class="card__subtitle">Charonne</span>
+                </div>
+        <div class="card__icon btn-heart">
+            <i class="far fa-heart btn-heart--outline"></i>
+            <i class="fas fa-heart btn-heart--solid"></i>
+        </div>
+        </div>
+        </a>
+        <a href="a-la-francaise.html" class="card">
+            <div class="card__image">
+                <img src="assets/francaise.jpg" alt="À la française">
+            </div>
+        <div class="card__footer">
+            <div class="card__content">
+                <h3 class="card__title">À la française</h3>
+                <span class="card__subtitle">Cité Rouge</span>
+            </div>
+            <div class="card__icon btn-heart">
+                <i class="far fa-heart btn-heart--outline"></i>
+                <i class="fas fa-heart btn-heart--solid"></i>
+            </div>
+        </div>
+        </a>
+        <a href="le-delice-des-sens.html" class="card">
+            <div class="card__image">
+                <img src="assets/delice.jpg" alt="Le délice des sens">
+            </div>
+        <div class="card__footer">
+            <div class="card__content">
+                <h3 class="card__title">Le délice des sens</h3>
+                <span class="card__subtitle">Folie-Méricourt</span>
+            </div>
+            <div class="card__icon btn-heart">
+                <i class="far fa-heart btn-heart--outline"></i>
+                <i class="fas fa-heart btn-heart--solid"></i>
+            </div>
+        </div>
+        </a>
+        </div>
+        </div>
+        </section>
+        </main>
+        <footer class="footer">
+            <div class="container container--footer">
+                <a href="index.html" class="footer__logo">ohmyfood</a>
+                <ul class="footer__list">
+                    <li>
+                        <a href="#"><i class="fas fa-utensils footer__icon"></i>Proposer un restaurant</a>
                     </li>
-                    <li class="process__label">
-                        <span class="process__number">2</span>
-                        <i class="fas fa-list process__icon"></i>
-                        <span>Composez votre menu</span>
+                    <li>
+                        <a href="#"><i class="fas fa-hands-helping footer__icon"></i>Devenir partenaire</a>
                     </li>
-                    <li class="process__label">
-                        <span class="process__number">3</span>
-                        <i class="fas fa-store process__icon"></i>
-                        <span>Dégustez au restaurant</span>
+                    <li>
+                        <a href="#">Mentions légales</a>
                     </li>
+                    <li>
+                        <a href="contact@example.com">Contact</a>
+                    </li>
+            
                 </ul>
             </div>
-        </section>
-
-        <!-- new-->
-        <section class="grey-background" id="restaurant">
-            <h2 class="restaurant__title">Restaurants</h2>
-            <div class="restaurant-inserts">
-                <article class="restaurant-card"> <!-- Le lien enveloppe toute la carte du restaurant -->
-                    <a href="palettedugout.html" class="restaurant-card__link">
-                        <!-- Le conteneur de l'image du restaurant -->
-                        <div class="restaurant-card-picture">
-                            <!-- L'image du restaurant -->
-                            <img src="assets/palettedugout.jpg" alt="la-palette-du-gout"
-                                class="restaurant-card-picture__img">
-                                <!-- L'étiquette "Nouveau" doit être à l'intérieur de ce conteneur pour être positionnée correctement -->
-                        <div class="restaurant-card-new">
-                            <span class="restaurant-card-new__text">Nouveau</span>
-                        </div>
-                    </div> <!-- Fin du conteneur de l'image -->
-                    
-                    <!-- Le conteneur pour les informations textuelles du restaurant (titre, lieu, etc.) -->
-                        <div class="restaurant-card-heading">
-                            <h4 class="restaurant-card-heading__title">La palette du goût</h4>
-                            <p class="restaurant-card-heading__place">Mélimontant</p>
-                            <!-- Icône de cœur pour les favoris -->
-                            <span class="hoverheart">
-                                <i class="far fa-heart hoverheart__content-light"></i>
-                                <i class="fas fa-heart hoverheart__content-solid"></i>
-                            </span>
-                        </div> <!-- Fin du conteneur des informations textuelles -->
-                        </a> <!-- Fin du lien de la carte -->
-                        </article> <!-- Fin de la carte du restaurant -->
-
-                <article class="restaurant-card">
-                    <a href="noteenchantee.html" class="restaurant-card__link">
-                        <div class="restaurant-card-picture">
-                            <img src="assets/noteenchantee.jpg" alt="la-note-enchantee"
-                                class="restaurant-card-picture__img">
-                        </div>
-                        <div class="restaurant-card-new">
-                            <span class="restaurant-card-new__text">Nouveau</span>
-                        </div>
-                        <div class="restaurant-card-heading">
-                            <h4 class="restaurant-card-heading__title">La note enchantée</h4>
-                            <p class="restaurant-card-heading__place">Charonne</p>
-                            <span class="hoverheart">
-                                <i class="far fa-heart hoverheart__content-light"></i>
-                                <i class="fas fa-heart hoverheart__content-solid"></i>
-                            </span>
-                        </div>
-                    </a>
-                </article>
-                <article class="restaurant-card">
-                    <a href="francaise.html" class="restaurant-card__link">
-                        <div class="restaurant-card-picture">
-                            <img src="assets/francaise.jpg" alt="a-la-francaise" class="restaurant-card-picture__img">
-                        </div>
-                        <div class="restaurant-card-heading">
-                            <h4 class="restaurant-card-heading__title">À la française</h4>
-                            <p class="restaurant-card-heading__place">Cité Rouge</p>
-                            <span class="hoverheart">
-                                <i class="far fa-heart hoverheart__content-light"></i>
-                                <i class="fas fa-heart hoverheart__content-solid"></i>
-                            </span>
-                        </div>
-                    </a>
-                </article>
-                <article class="restaurant-card">
-                    <a href="delice.html" class="restaurant-card__link">
-                        <div class="restaurant-card-picture">
-                            <img src="assets/delice.jpg" alt="le-delice-des-sens" class="restaurant-card-picture__img">
-                        </div>
-                        <div class="restaurant-card-heading">
-                            <h4 class="restaurant-card-heading__title">Le délice des sens</h4>
-                            <p class="restaurant-card-heading__place">Folie-Méricourt</p>
-                            <span class="hoverheart">
-                                <i class="far fa-heart hoverheart__content-light"></i>
-                                <i class="fas fa-heart hoverheart__content-solid"></i>
-                            </span>
-                        </div>
-                    </a>
-                </article>
-            </div>
-
-            <!-- fin new-->
-    </main>
-
-<!-- FOOTER-->
-
-    <footer class="footer">
-        <h2>ohmyfood</h2>
-        <p><i class="fa-solid fa-utensils"></i><span class="helping">Proposer un restaurant</span></p>
-        <p><i class="fas fa-hands-helping"></i><span class="helping">Devenir partenaire</span></p>
-        <p>Mentions légales</p>
-        <p><a href="mailto:example@example.com">Contact</a></p>
-    </footer>
+            </footer>
+        
 </body>
 </html>
