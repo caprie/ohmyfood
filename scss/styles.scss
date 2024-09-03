@@ -1,11 +1,9 @@
-
-@use './pages/home';
-@use './pages/palette';
-@use './pages/delice';
-@use './pages/noteenchantee';
-@use './pages/francaise';
-@use './layouts/footer';
 @use './layouts/header';
+@use './pages/home';
+
+@use './pages/francaise';
+
+
 
 @use './layouts/newcard';
 @use './layouts/restaurants';
@@ -13,7 +11,7 @@
 
 @use './layouts/subtitle';
 @use './layouts/title';
-
+@use './layouts/footer';
 
 
 

@@ -1,7 +1,7 @@
 @import "../variables";
 
 header {
-	font-family: $shrikhand-font;
+    font-family: $shrikhand-font;
 	text-align: center;
 	justify-content: center;
 	box-shadow: $box-shadow;
@@ -11,6 +11,5 @@ header {
 	align-items: center;
 	position: relative;	// là ou il se trouve nativement 
 	z-index: 20;
-	
-	
 }
+	

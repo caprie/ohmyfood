@@ -20,7 +20,7 @@
 </head>
 
 
-<body id="homepage">
+<body>
 
     <header>
         <h1>ohmyfood</h1>
@@ -62,28 +62,35 @@
         </section>
 
         <!-- new-->
-        <class="grey-background" id="restaurant">
+        <section class="grey-background" id="restaurant">
             <h2 class="restaurant__title">Restaurants</h2>
-            <section class="restaurant-inserts">
-                <article class="restaurant-card">
+            <div class="restaurant-inserts">
+                <article class="restaurant-card"> <!-- Le lien enveloppe toute la carte du restaurant -->
                     <a href="palettedugout.html" class="restaurant-card__link">
+                        <!-- Le conteneur de l'image du restaurant -->
                         <div class="restaurant-card-picture">
+                            <!-- L'image du restaurant -->
                             <img src="assets/palettedugout.jpg" alt="la-palette-du-gout"
                                 class="restaurant-card-picture__img">
-                        </div>
+                                <!-- L'étiquette "Nouveau" doit être à l'intérieur de ce conteneur pour être positionnée correctement -->
                         <div class="restaurant-card-new">
                             <span class="restaurant-card-new__text">Nouveau</span>
                         </div>
+                    </div> <!-- Fin du conteneur de l'image -->
+                    
+                    <!-- Le conteneur pour les informations textuelles du restaurant (titre, lieu, etc.) -->
                         <div class="restaurant-card-heading">
                             <h4 class="restaurant-card-heading__title">La palette du goût</h4>
                             <p class="restaurant-card-heading__place">Mélimontant</p>
+                            <!-- Icône de cœur pour les favoris -->
                             <span class="hoverheart">
                                 <i class="far fa-heart hoverheart__content-light"></i>
                                 <i class="fas fa-heart hoverheart__content-solid"></i>
                             </span>
-                        </div>
-                    </a>
-                </article>
+                        </div> <!-- Fin du conteneur des informations textuelles -->
+                        </a> <!-- Fin du lien de la carte -->
+                        </article> <!-- Fin de la carte du restaurant -->
+
                 <article class="restaurant-card">
                     <a href="noteenchantee.html" class="restaurant-card__link">
                         <div class="restaurant-card-picture">
@@ -133,7 +140,7 @@
                         </div>
                     </a>
                 </article>
-            </section>
+            </div>
 
             <!-- fin new-->
     </main>
