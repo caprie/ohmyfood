@@ -47,7 +47,7 @@ main {
 			i{
 			font-size: 20px;
 			color: black;
-			padding-right: 25px;
+			//padding-right: 25px;
 			}
 
 			.btn-heart--solid{
@@ -56,9 +56,10 @@ main {
 
 			.btn-heart:hover
 			.btn-heart--solid{
-				color: red;
+				color: red; /* ne fonctionne pas ??? */
 			}
-		}}
+		}
+	}
 	.menu__lists {
 		width: 100%;
 		background-color: pink;
@@ -91,6 +92,8 @@ main {
 					}
 			}
 		}
+
+		
 	.menu__button {
 		@include btn-main;
 		padding: 5px 32px;

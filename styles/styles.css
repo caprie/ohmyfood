@@ -347,13 +347,12 @@ main .container-restaurant .restaurant-title .btn-heart {
 main .container-restaurant .restaurant-title .btn-heart i {
   font-size: 20px;
   color: black;
-  padding-right: 25px;
 }
 main .container-restaurant .restaurant-title .btn-heart .btn-heart--solid {
   color: transparent;
 }
 main .container-restaurant .restaurant-title .btn-heart .btn-heart:hover .btn-heart--solid {
-  color: red;
+  color: red; /* ne fonctionne pas ??? */
 }
 main .container-restaurant .menu__lists {
   width: 100%;
