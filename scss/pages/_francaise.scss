@@ -22,10 +22,38 @@ main {
 	background-color: transparent;
 	margin-top: -30px;
 	.restaurant-title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		width: 100%;
 		background-color: white;
 		border-radius: 25px 25px 0 0 ;	
-	}
+	
+		h4{
+			font-size: 18px;
+			font-weight: 300;
+			margin: 0;
+		}
+
+		.btn-heart{
+			display: flex;
+			gap: 5px;
+		
+
+			i{
+			font-size: 20px;
+			color: black;
+			}
+
+			.btn-heart--solid{
+				color: transparent;
+			}
+
+			.btn-heart:hover
+			.btn-heart--solid{
+				color: red;
+			}
+		}}
 	.menu__lists {
 		width: 100%;
 		background-color: pink;	

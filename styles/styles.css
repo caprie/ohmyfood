@@ -325,9 +325,31 @@ main .container-restaurant {
   margin-top: -30px;
 }
 main .container-restaurant .restaurant-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   background-color: white;
   border-radius: 25px 25px 0 0;
+}
+main .container-restaurant .restaurant-title h4 {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+}
+main .container-restaurant .restaurant-title .btn-heart {
+  display: flex;
+  gap: 5px;
+}
+main .container-restaurant .restaurant-title .btn-heart i {
+  font-size: 20px;
+  color: black;
+}
+main .container-restaurant .restaurant-title .btn-heart .btn-heart--solid {
+  color: transparent;
+}
+main .container-restaurant .restaurant-title .btn-heart .btn-heart:hover .btn-heart--solid {
+  color: red;
 }
 main .container-restaurant .menu__lists {
   width: 100%;
@@ -336,9 +358,9 @@ main .container-restaurant .menu__lists {
 main .container-restaurant .menu__button {
   color: white;
   font-weight: 400;
-  padding: 1rem 2rem;
+  padding: 16px 32px;
   margin-bottom: -10px;
-  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 0.9));
+  margin-top: 5px;
   border: none;
   border-radius: 25px;
   font-size: 16px;
@@ -361,14 +383,13 @@ newcard__text {
   padding: 8px;
 }
 
-img {
-  max-width: 100%;
-}
-
+/*img {
+    max-width: 100%;
+}*/
 heart {
   font-size: 1.5rem;
   position: absolute;
-  right: 25px;
+  justify-content: right;
   bottom: 25px;
 }
 
