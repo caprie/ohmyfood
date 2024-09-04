@@ -18,16 +18,21 @@ main {
 .container-restaurant {
 	display: flex;
 	flex-direction: column;
-	border-radius: 25px 25px 0 0 ;
+	//border-radius: 25px 25px 0 0 ;
 	background-color: transparent;
 	margin-top: -30px;
 	.restaurant-title {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 100%;
+		//width: 100%;
 		background-color: white;
-		border-radius: 25px 25px 0 0 ;	
+		border-radius: 25px 25px 0 0 ;
+		padding: 30px 20px 0;
+		font-family: $shrikhand-font;
+		font-size: 28px;
+		color: $black-font-color;
+		background-color: $grey-label-background;	
 	
 		h4{
 			font-size: 18px;
@@ -39,10 +44,10 @@ main {
 			display: flex;
 			gap: 5px;
 		
-
 			i{
 			font-size: 20px;
 			color: black;
+			padding-right: 25px;
 			}
 
 			.btn-heart--solid{
@@ -56,14 +61,53 @@ main {
 		}}
 	.menu__lists {
 		width: 100%;
-		background-color: pink;	
+		background-color: pink;
+		padding: 12px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		box-sizing: border-box;	
 	}
+		.menu__list{
+			margin: -5px 0;
+
+			h3{
+				font-family: $roboto-font;
+				font-weight: 300;
+				font-size: 16px;
+				position: relative; /* position de la ligne par rapport au titre */
+				margin-bottom: 15px;  /*espace sous le titre */
+				display: inline-block; /* position de la ligne par rapport au titre */
+
+					&::after{
+						content: "";
+						position: absolute;
+						bottom: -5px; /*place la ligne sous le texte */
+						left: 0;
+						width: 40px;  /* longueur de la ligne */
+						height: 3px;  /* largeur de la ligne */
+						background-color: $under-line-color;
+						border-radius: 2px; /* leger arrondit des bords de la ligne */
+					}
+			}
+		}
 	.menu__button {
 		@include btn-main;
+		padding: 5px 32px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		//border: none;
+		box-shadow: $box-shadow;
 	}
 }
 }
-
+.footer{
+	padding: 10px 20px; 
+	h2{
+	padding-top: 0;
+	padding-bottom: 0;
+	}
+}
 
 
 
