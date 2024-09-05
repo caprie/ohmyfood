@@ -1,0 +1,20 @@
+@import '../variables';
+
+.banner a {
+    text-decoration: none; /* Supprime le soulignement du lien */
+  }
+  
+
+.banner__icon {
+    position: absolute; /* Position absolue dans la bannière */
+    top: 15px;  /* Distance en haut de la bannière */
+    left: 20px; /* Distance à gauche de la bannière */
+    font-size: 24px; /* Taille de l'icône */
+    color: $black-font-color; /* Couleur de l'icône */
+    z-index: 10; /* icône apparaît au-dessus de l'image de la bannière */
+    cursor: pointer; /* Change le curseur en icône de main au survol */
+
+    &:hover {
+        color: $purple-dark; /* Couleur de l'icône au survol (ici jaune) */
+    }
+}

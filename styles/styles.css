@@ -211,7 +211,8 @@ section {
 .card__image img {
   width: 100%;
   height: 250px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 
@@ -242,7 +243,8 @@ section {
 .banner img {
   width: 100%;
   height: 360px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu {
@@ -306,6 +308,23 @@ section {
   margin-bottom: 14px;
 }
 
+.banner a {
+  text-decoration: none; /* Supprime le soulignement du lien */
+}
+
+.banner__icon {
+  position: absolute; /* Position absolue dans la bannière */
+  top: 15px; /* Distance en haut de la bannière */
+  left: 20px; /* Distance à gauche de la bannière */
+  font-size: 24px; /* Taille de l'icône */
+  color: #101010; /* Couleur de l'icône */
+  z-index: 10; /* icône apparaît au-dessus de l'image de la bannière */
+  cursor: pointer; /* Change le curseur en icône de main au survol */
+}
+.banner__icon:hover {
+  color: #9356DC; /* Couleur de l'icône au survol (ici jaune) */
+}
+
 body {
   margin: 0;
 }
@@ -316,6 +335,7 @@ main {
 }
 main .banner {
   width: 100%;
+  position: relative; /* position de l'icône dans la bannière */
 }
 main .container-restaurant {
   display: flex;
@@ -336,8 +356,8 @@ main .container-restaurant .restaurant-title {
   background-color: #f6f6f6;
 }
 main .container-restaurant .restaurant-title h4 {
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 28px;
+  font-weight: 400;
   margin: 0;
 }
 main .container-restaurant .restaurant-title .btn-heart {
@@ -479,5 +499,3 @@ footer a {
   text-decoration: none;
   color: inherit;
 }
-
-/*# sourceMappingURL=styles.css.map */

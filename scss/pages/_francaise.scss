@@ -1,5 +1,7 @@
 @import "../variables";
+@import "../layouts/arrow";
 @import "../layouts/mixins";
+
 
 
 body {
@@ -11,9 +13,11 @@ main {
 	flex-direction: column;
 	
 .banner {
-	width: 100%;	
-
+	width: 100%;
+	position: relative; /* position de l'icône dans la bannière */	
 } 
+
+
 
 .container-restaurant {
 	display: flex;
@@ -35,8 +39,8 @@ main {
 		background-color: $grey-label-background;	
 	
 		h4{
-			font-size: 18px;
-			font-weight: 300;
+			font-size: 28px;
+			font-weight: 400;
 			margin: 0;
 		}
 
