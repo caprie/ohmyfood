@@ -1,6 +1,7 @@
 @import "../variables";
 @import "../layouts/arrow";
 @import "../layouts/mixins";
+@import "../layouts/title";
 
 
 
@@ -14,25 +15,26 @@ main {
 	
 .banner {
 	width: 100%;
-	position: relative; /* position de l'icône dans la bannière */	
+	//position: relative; /* position de l'icône dans la bannière */	
 } 
-
-
 
 .container-restaurant {
 	display: flex;
 	flex-direction: column;
-	//border-radius: 25px 25px 0 0 ;
+	/*border-radius: 25px 25px 0 0 ;*/
 	background-color: transparent;
 	margin-top: -30px;
+	overflow: hidden;
 	.restaurant-title {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		//width: 100%;
-		background-color: white;
+		width: 100%; /* utilise toute la largeur */
+		box-sizing: border-box; /* 'box-sizing: border-box' englobe le padding et les bordures dans la largeur totale pour
+		pas que cela dépasse la largeur définie */
+	 
 		border-radius: 25px 25px 0 0 ;
-		padding: 30px 20px 0;
+		padding: 20px;
 		font-family: $shrikhand-font;
 		font-size: 28px;
 		color: $black-font-color;
@@ -51,16 +53,16 @@ main {
 			i{
 			font-size: 20px;
 			color: black;
-			//padding-right: 25px;
+			padding-right: 0px;
 			}
 
 			.btn-heart--solid{
 				color: transparent;
 			}
 
-			.btn-heart:hover
+			&:hover
 			.btn-heart--solid{
-				color: red; /* ne fonctionne pas ??? */
+				color: $purple-dark /* ne fonctionne pas ??? */
 			}
 		}
 	}

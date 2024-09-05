@@ -1,16 +1,11 @@
 @use './layouts/header';
 @use './pages/home';
-
 @use './pages/francaise';
-
-
-
+@use './layouts/arrow';
 @use './layouts/newcard';
-@use './layouts/restaurants';
 @use './layouts/heart';
-
-@use './layouts/subtitle';
 @use './layouts/title';
+@use './layouts/subtitle';
 @use './layouts/footer';
 
 
