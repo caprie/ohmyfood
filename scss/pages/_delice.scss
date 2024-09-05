@@ -1,8 +1,8 @@
+@import "../layouts/restaurants";
 @import "../variables";
 @import "../layouts/arrow";
 @import "../layouts/mixins";
 @import "../layouts/title";
-
 
 body {
 	margin: 0;
@@ -61,7 +61,7 @@ main {
 
 			&:hover
 			.btn-heart--solid{
-				color: $purple-dark;
+				color: $purple-dark /* ne fonctionne pas ??? */
 			}
 		}
 	}
