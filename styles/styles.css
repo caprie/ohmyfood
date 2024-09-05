@@ -421,12 +421,17 @@ main .container-restaurant .menu__list .lists .list .list__content h5 {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 18px;
+  margin: 10px 0 5px 0;
 }
 main .container-restaurant .menu__list .lists .list .list__content .list__subtitle {
   color: red;
   font-family: "Roboto";
   font-weight: 300;
   font-size: 16px;
+  position: relative;
+  top: -5px;
+  display: block;
+  margin-bottom: 10px;
 }
 main .container-restaurant .menu__button {
   color: white;
