@@ -34,7 +34,7 @@ main {
 		pas que cela dépasse la largeur définie */
 	 
 		border-radius: 25px 25px 0 0 ;
-		padding: 20px;
+		padding: 5px;
 		font-family: $shrikhand-font;
 		font-size: 28px;
 		color: $black-font-color;
@@ -76,7 +76,7 @@ main {
 		box-sizing: border-box;	
 	}
 		.menu__list{
-			margin: -5px 0;
+			margin: -30px 0;
 
 			h3{
 				font-family: $roboto-font;
@@ -84,6 +84,7 @@ main {
 				font-size: 16px;
 				position: relative; /* position de la ligne par rapport au titre */
 				margin-bottom: 15px;  /*espace sous le titre */
+				padding-top: 20px;
 				display: inline-block; /* position de la ligne par rapport au titre */
 
 					&::after{
@@ -96,6 +97,25 @@ main {
 						background-color: $under-line-color;
 						border-radius: 2px; /* leger arrondit des bords de la ligne */
 					}
+			}
+			.lists {
+				.list{
+					box-shadow: $box-shadow;
+					padding: 0px 22px 0px 10px;
+					.list__content{
+						h5{
+							font-family: $roboto-font;
+							font-weight: 500;
+							font-size: 18px;
+						}
+						.list__subtitle{
+							color: red;
+							font-family: $roboto-font;
+							font-weight: 300;
+							font-size: 16px;
+						}
+					}
+				}
 			}
 		}
 

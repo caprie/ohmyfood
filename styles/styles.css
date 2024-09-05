@@ -356,7 +356,7 @@ main .container-restaurant .restaurant-title {
   box-sizing: border-box; /* 'box-sizing: border-box' englobe le padding et les bordures dans la largeur totale pour
 pas que cela dépasse la largeur définie */
   border-radius: 25px 25px 0 0;
-  padding: 20px;
+  padding: 5px;
   font-family: "Shrikhand";
   font-size: 28px;
   color: #101010;
@@ -392,7 +392,7 @@ main .container-restaurant .menu__lists {
   box-sizing: border-box;
 }
 main .container-restaurant .menu__list {
-  margin: -5px 0;
+  margin: -30px 0;
 }
 main .container-restaurant .menu__list h3 {
   font-family: "Roboto";
@@ -400,6 +400,7 @@ main .container-restaurant .menu__list h3 {
   font-size: 16px;
   position: relative; /* position de la ligne par rapport au titre */
   margin-bottom: 15px; /*espace sous le titre */
+  padding-top: 20px;
   display: inline-block; /* position de la ligne par rapport au titre */
 }
 main .container-restaurant .menu__list h3::after {
@@ -411,6 +412,21 @@ main .container-restaurant .menu__list h3::after {
   height: 3px; /* largeur de la ligne */
   background-color: #99E2D0;
   border-radius: 2px; /* leger arrondit des bords de la ligne */
+}
+main .container-restaurant .menu__list .lists .list {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 0px 22px 0px 10px;
+}
+main .container-restaurant .menu__list .lists .list .list__content h5 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+}
+main .container-restaurant .menu__list .lists .list .list__content .list__subtitle {
+  color: red;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
 }
 main .container-restaurant .menu__button {
   color: white;
