@@ -1,10 +1,8 @@
-@import "../layouts/restaurants";
 @import "../variables";
 @import "../layouts/arrow";
 @import "../layouts/mixins";
 @import "../layouts/title";
-
-
+@import "../layouts/keyframes";
 
 
 body {
@@ -64,7 +62,7 @@ main {
 
 			&:hover
 			.btn-heart--solid{
-				color: $purple-dark /* ne fonctionne pas ??? */
+				color: $purple-dark;
 			}
 		}
 	}
@@ -104,7 +102,14 @@ main {
 				
 				.list{
 					box-shadow: $box-shadow;
-					padding: 0px 22px 0px 10px;
+					padding: 0px 0px 0px 10px;
+					height: 74px;
+					overflow: hidden;
+					&:hover .list__order{
+						margin-right: 0px;
+						animation: show-check 0.7s ease-in-out;
+					}
+					
 					
 					.list__content{
 						h5{
@@ -124,17 +129,25 @@ main {
 							display: block;
 							margin-bottom: 10px;
 						}
+					}
 					
 					/* NE FONCTIONNE PAS	
 						
 					.list__price {
 						color: red;
 						
-					}
-						.list__order{
-							padding-left: 2px;
-						}
-							*/
+					} */
+					.list__order{
+						padding-left: 2px;
+						height: 100%;
+						background-color: $under-line-color;
+						width: 60px;
+						margin-right: -62px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 0 15px 15px 0px;
+						
 					}
 						
 					
@@ -160,6 +173,7 @@ main {
 	padding-bottom: 0;
 	}
 }
+
 
 
 
