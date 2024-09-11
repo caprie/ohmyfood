@@ -87,7 +87,7 @@ main {
 				padding-top: 20px;
 				display: inline-block; /* position de la ligne par rapport au titre */
 
-					&::after{
+					&::after{  
 						content: "";
 						position: absolute;
 						bottom: -5px; /*place la ligne sous le texte */
