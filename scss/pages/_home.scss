@@ -81,26 +81,64 @@ section {
   color: $black-font-color;
 }
 
+.heart-checkbox{
+  display: none;
+}
+
 .btn-heart {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   // Le bouton "cœur" est un élément flexible avec alignement centré.
 }
 
-.btn-heart--outline {
-  position: absolute;
+  .btn-heart--outline {
+    position: absolute;
+    background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transform: scale(0);
+    transition: transform 0.3s ease;
 }
 
-.btn {
-  background-image: $gradient-button;
-  box-shadow: $box-shadow;
-  color: #fff;
-  padding: 15px 22px;
-  border-radius: 50px;
-  font-family: $roboto-font;
-}
+/*.btn-heart--solid {
+  position: absolute;
+  background: linear-gradient(180deg, $gradient-button 100%);
+  background-clip: text;
+  color: transparent;
+  transform: scale(0);
+  transition: transform 0.3s;
+}*/
+
+    /*.btn-heart:hover .btn-heart--solid {
+  transform: scale(1); /* Cœur plein visible au survol 
+}*/
+
+  .btn-heart:hover {
+    cursor: pointer;
+  }
+
+    .btn-heart:hover .btn-heart--outline{
+      transform: scale(1);
+    }
+    .btn-heart:hover .btn-heart--outline{
+      background: linear-gradient(180deg, $gradient-button 100%);
+      
+      background-clip: text;
+      color: $gradient-button;
+    }
+
+  .btn {
+     background-image: $gradient-button;
+      box-shadow: $box-shadow;
+      color: #fff;
+      padding: 15px 22px;
+      border-radius: 50px;
+      font-family: $roboto-font;
+  }
 
 // Location Section
 .location {
@@ -245,6 +283,7 @@ section {
 
 .card__icon {
   font-size: 24px;
+
 }
 
 .banner img {
