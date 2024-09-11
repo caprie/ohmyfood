@@ -413,15 +413,6 @@ pas que cela dépasse la largeur définie */
   cursor: pointer;
   // Le bouton "cœur" est un élément flexible avec alignement centré.
    }*/
-  /*.btn-heart--outline {
-  position: absolute;
-  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  transform: scale(0);
-  transition: transform 0.3s ease;
-   }*/
 }
 main .container-restaurant .restaurant-title h4 {
   font-size: 28px;
@@ -430,6 +421,15 @@ main .container-restaurant .restaurant-title h4 {
 }
 main .container-restaurant .restaurant-title .heart-checkbox {
   display: none;
+}
+main .container-restaurant .restaurant-title .btn-heart--outline {
+  position: absolute;
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transform: scale(0);
+  transition: transform 0.3s ease;
 }
 main .container-restaurant .restaurant-title .btn-heart {
   display: flex;
@@ -440,27 +440,18 @@ main .container-restaurant .restaurant-title .btn-heart {
   align-items: center;
   cursor: pointer;
 }
-main .container-restaurant .restaurant-title .btn-heart .btn-heart--outline {
-  position: absolute;
-  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  transform: scale(0);
-  transition: transform 0.3s ease;
-}
-main .container-restaurant .restaurant-title .btn-heart .btn-heart--outline i {
+main .container-restaurant .restaurant-title .btn-heart i {
   font-size: 20px;
   color: black;
   padding-right: 0px;
 }
-main .container-restaurant .restaurant-title .btn-heart .btn-heart--outline .btn-heart--solid {
+main .container-restaurant .restaurant-title .btn-heart .btn-heart--solid {
   color: transparent;
 }
-main .container-restaurant .restaurant-title .btn-heart .btn-heart--outline:hover .btn-heart--solid {
+main .container-restaurant .restaurant-title .btn-heart:hover .btn-heart--solid {
   color: #9356DC;
 }
-main .container-restaurant .restaurant-title .menu__lists {
+main .container-restaurant .menu__lists {
   width: 100%;
   background-color: #f6f6f6;
   padding: 12px;
@@ -469,10 +460,10 @@ main .container-restaurant .restaurant-title .menu__lists {
   gap: 20px;
   box-sizing: border-box;
 }
-main .container-restaurant .restaurant-title .menu__list {
+main .container-restaurant .menu__list {
   margin: -30px 0;
 }
-main .container-restaurant .restaurant-title .menu__list h3 {
+main .container-restaurant .menu__list h3 {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 16px;
@@ -481,7 +472,7 @@ main .container-restaurant .restaurant-title .menu__list h3 {
   padding-top: 20px;
   display: inline-block; /* position de la ligne par rapport au titre */
 }
-main .container-restaurant .restaurant-title .menu__list h3::after {
+main .container-restaurant .menu__list h3::after {
   content: "";
   position: absolute;
   bottom: -5px; /*place la ligne sous le texte */
@@ -491,7 +482,7 @@ main .container-restaurant .restaurant-title .menu__list h3::after {
   background-color: #99E2D0;
   border-radius: 2px; /* leger arrondit des bords de la ligne */
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list {
+main .container-restaurant .menu__list .lists .list {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 0px 0px 0px 10px;
   height: 74px;
@@ -503,18 +494,18 @@ main .container-restaurant .restaurant-title .menu__list .lists .list {
 
   } */
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list:hover .list__order {
+main .container-restaurant .menu__list .lists .list:hover .list__order {
   margin-right: 0px;
   animation: show-check 0.7s ease-in-out;
   color: white;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list .list__content h5 {
+main .container-restaurant .menu__list .lists .list .list__content h5 {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 18px;
   margin: 10px 0 5px 0;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list .list__content .list__subtitle {
+main .container-restaurant .menu__list .lists .list .list__content .list__subtitle {
   color: #101010;
   font-family: "Roboto";
   font-weight: 300;
@@ -524,7 +515,7 @@ main .container-restaurant .restaurant-title .menu__list .lists .list .list__con
   display: block;
   margin-bottom: 10px;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list .list__order {
+main .container-restaurant .menu__list .lists .list .list__order {
   padding-left: 2px;
   height: 100%;
   background-color: #99E2D0;
@@ -535,7 +526,7 @@ main .container-restaurant .restaurant-title .menu__list .lists .list .list__ord
   align-items: center;
   border-radius: 0 15px 15px 0px;
 }
-main .container-restaurant .restaurant-title .menu__button {
+main .container-restaurant .menu__button {
   color: white;
   font-weight: 400;
   padding: 16px 32px;
@@ -550,10 +541,11 @@ main .container-restaurant .restaurant-title .menu__button {
   margin-top: 60px;
   background-color: transparent;
 }
-main .footer {
+
+.footer {
   padding: 10px 20px;
 }
-main .footer h2 {
+.footer h2 {
   padding-top: 0;
   padding-bottom: 0;
 }
