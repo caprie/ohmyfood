@@ -14,7 +14,4 @@
     z-index: 10; /* icône apparaît au-dessus de l'image de la bannière */
     cursor: pointer; /* Change le curseur en icône de main au survol */
 
-    &:hover {
-        color: $purple-dark; /* Couleur de l'icône au survol (ici jaune) */
-    }
 }

@@ -1,0 +1,251 @@
+[33mcommit 84887adfd44f8a79ac0bf182d3324a73e5eb7963[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Capri <caprie@live.fr>
+Date:   Sat Sep 14 19:19:17 2024 +0200
+
+    remise en place animations btn apres changement div
+
+[33mcommit d1304d8ddd1c7e07f430b3ba124d602f63f9463f[m
+Author: Capri <caprie@live.fr>
+Date:   Thu Sep 12 09:56:57 2024 +0200
+
+    resolution heart animations
+
+[33mcommit edb2300ad7a7cefdedc824106f896a0d3f440c68[m
+Author: Capri <caprie@live.fr>
+Date:   Wed Sep 11 22:21:22 2024 +0200
+
+    rectification couleur checked + liens homepage pb btn heart animation vs2
+
+[33mcommit b32cfb8bdaf0683066d104c84c2e323ae3ed73f6[m
+Author: Capri <caprie@live.fr>
+Date:   Wed Sep 11 22:16:33 2024 +0200
+
+    rectification couleur checked + liens homepage pb btn heart animation
+
+[33mcommit 3f30431ffd648bdf69facd50835f2bd3351bbd49[m
+Author: Capri <caprie@live.fr>
+Date:   Wed Sep 11 12:57:58 2024 +0200
+
+    rectification retrait coeur solid
+
+[33mcommit b907d8bd9418ebc5bf996180f490a318146f5b63[m
+Author: Capri <caprie@live.fr>
+Date:   Wed Sep 11 12:55:08 2024 +0200
+
+    restification html heart
+
+[33mcommit 46784bb8e650e76c23caa3a4b4652b3477af7f21[m
+Author: Capri <caprie@live.fr>
+Date:   Fri Sep 6 13:25:55 2024 +0200
+
+    mise en place animation checked
+
+[33mcommit 2289b242d1c5ba43bef80b8bdde01c1a501f38a4[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Capri <caprie@live.fr>
+Date:   Thu Sep 5 22:15:47 2024 +0200
+
+    homepage + pages resto avec @import ok sans animations
+
+[33mcommit e87eb618a1deb5ea8a0d001fa2041a7c9dee4038[m
+Author: Capri <caprie@live.fr>
+Date:   Thu Sep 5 22:08:29 2024 +0200
+
+    homepage + pages resto ok sans animations
+
+[33mcommit 9054a40c75583376a28a82b3063bc17aa8aad8d1[m
+Author: Capri <caprie@live.fr>
+Date:   Thu Sep 5 20:41:13 2024 +0200
+
+    page francaise terminee
+
+[33mcommit 33462797578bf23427438a79fda97a26a4d81ab4[m
+Author: Capri <caprie@live.fr>
+Date:   Thu Sep 5 19:16:22 2024 +0200
+
+    menu title + subtitle ok
+
+[33mcommit 243a380268ef83290eb775409b80f43d3439ffd9[m
+Author: Capri <caprie@live.fr>
+Date:   Thu Sep 5 16:14:01 2024 +0200
+
+    list plats fonts entrees + desserts ok
+
+[33mcommit b5d4edc76c7e356ae2d2cb1dd6c48d60875061f8[m
+Author: Capri <caprie@live.fr>
+Date:   Thu Sep 5 15:07:36 2024 +0200
+
+    header + title ok
+
+[33mcommit 18f407060b80e8eae7bc473ed21de1f1c55d1990[m
+Author: Capri <caprie@live.fr>
+Date:   Thu Sep 5 11:59:05 2024 +0200
+
+    mise en place arrow
+
+[33mcommit 937ef35c8cdd6c1c6e09ce0ffe53486a88e357f0[m
+Author: Capri <caprie@live.fr>
+Date:   Wed Sep 4 21:02:35 2024 +0200
+
+    sauvegarde 1ere page restaurant non finalisee
+
+[33mcommit b2c234b494ddd97ebf772aecfb154ff7f805ca30[m
+Author: Capri <caprie@live.fr>
+Date:   Wed Sep 4 18:25:17 2024 +0200
+
+    sauvegarde 1ere page restaurant non finalisée
+
+[33mcommit 01be0f58009bc0f04efd406783a7c94495ab09b4[m
+Author: Capri <caprie@live.fr>
+Date:   Wed Sep 4 13:25:51 2024 +0200
+
+    mise en place coeur + footer page resto
+
+[33mcommit 167b7340b4ae6e81f8b77e2d5d019e2e65241dc0[m
+Author: Capri <caprie@live.fr>
+Date:   Tue Sep 3 21:04:02 2024 +0200
+
+    refonte homepage amelioration
+
+[33mcommit cc0dfd351ac687eb88a9092094b66d36350798ce[m
+Author: Capri <caprie@live.fr>
+Date:   Tue Sep 3 11:25:21 2024 +0200
+
+    sauvegarde temporaire modifications
+
+[33mcommit 7a21581a487ba397e4ad94c58149c996bc7a7293[m
+Author: Capri <caprie@live.fr>
+Date:   Thu Aug 29 22:46:06 2024 +0200
+
+    home ok + 1ere implementation pages resto
+
+[33mcommit ae39bd700c0c2ad1e5a91bfd520dfdff7718db3f[m
+Author: Capri <caprie@live.fr>
+Date:   Wed Aug 28 21:03:01 2024 +0200
+
+    home ok + debut animation
+
+[33mcommit 69e7e13eb5e38fcd55faf3b9494c13343cc4e3b2[m
+Author: Capri <caprie@live.fr>
+Date:   Wed Aug 21 22:01:35 2024 +0200
+
+    Mise en page sommaire des pages restaurants
+
+[33mcommit f3c1896177eb1c41e346e422b8cf692a08a96d0a[m
+Author: Capri <caprie@live.fr>
+Date:   Mon Aug 19 15:50:20 2024 +0200
+
+    avancement home
+
+[33mcommit 73cda78ed689cea1a991c841498deb54e2d74f44[m
+Author: Capri <caprie@live.fr>
+Date:   Wed Aug 14 19:10:11 2024 +0200
+
+    mise à jour home.scss avec nesting
+
+[33mcommit beb87516ab60f9ab427cb3709e1b22afc9ae668c[m
+Author: Capri <caprie@live.fr>
+Date:   Wed Aug 14 18:49:00 2024 +0200
+
+    fin mise en page home sans animations
+
+[33mcommit b8ca205ff5347c9cb54df4e0bdaf4e388175450b[m
+Author: Capri <caprie@live.fr>
+Date:   Tue Aug 13 21:09:13 2024 +0200
+
+    avancement mise en page home
+
+[33mcommit 7c25e6c5daf989ae674b92b4f4fe2884b3f4bd22[m
+Author: Capri <caprie@live.fr>
+Date:   Sun Aug 4 18:31:20 2024 +0200
+
+    home + implémentation restaurants
+
+[33mcommit b6a8439e2f650547ad6c5c2a0fb62b92d77861a6[m
+Author: Capri <caprie@live.fr>
+Date:   Sat Aug 3 08:28:21 2024 +0200
+
+    implementation home + section restaurant
+
+[33mcommit 8f58c7377e704b9dc73a1ec25983613f997ea12f[m
+Author: Capri <caprie@live.fr>
+Date:   Thu Aug 1 07:39:30 2024 +0200
+
+    correction intégration icones footer
+
+[33mcommit c521cea7a3536f4bbfa2ea77ad8f4067245c6c3a[m
+Author: Capri <caprie@live.fr>
+Date:   Thu Aug 1 07:03:57 2024 +0200
+
+    implémentation footer
+
+[33mcommit a8dc0c83fbacd0b4de9d89d4c7dd5f108a56d53d[m
+Author: Capri <caprie@live.fr>
+Date:   Sun Jul 28 22:29:45 2024 +0200
+
+    mobile complet sans css
+
+[33mcommit 4ac0efa0a74c9441c6e86b88a209ca00b13b9304[m
+Author: Capri <caprie@live.fr>
+Date:   Sun Jul 28 16:10:10 2024 +0200
+
+    home avec footer sans css
+
+[33mcommit dd67ec0d4f6ce1ee12f5fcf5cb85d27879bceb79[m
+Author: Capri <caprie@live.fr>
+Date:   Sun Jul 28 04:47:29 2024 +0200
+
+    homme avec debut footer - panne sass
+
+[33mcommit 5eef706ab537a7b3bb8663dcade896bd75c0aea9[m
+Author: Capri <caprie@live.fr>
+Date:   Sun Jul 28 02:15:35 2024 +0200
+
+    home pb cards
+
+[33mcommit 1d67cb12cbbe4c133cd6654302550f7018b34ba3[m
+Author: Capri <caprie@live.fr>
+Date:   Fri Jul 26 00:14:54 2024 +0200
+
+    home page avec restaurant intermediaire
+
+[33mcommit 3eb417e6513f2b8c454ee1542073a23d7ab09191[m
+Author: Capri <caprie@live.fr>
+Date:   Thu Jul 25 00:33:41 2024 +0200
+
+    home sans restaurants
+
+[33mcommit 997c39c8c26b982af1a488aaf69212be41161fda[m
+Author: Capri <caprie@live.fr>
+Date:   Wed Jul 24 20:21:25 2024 +0200
+
+    presentation et bouton gradient ok
+
+[33mcommit e165ecf6306a01eed9d60234c823814a457b2fc7[m
+Author: Capri <caprie@live.fr>
+Date:   Wed Jul 24 15:31:36 2024 +0200
+
+    banner + search-bar ok
+
+[33mcommit f5d7d65abce2c7a7b936623ad1ac1cf2534709d3[m
+Author: Capri <caprie@live.fr>
+Date:   Wed Jul 24 13:09:21 2024 +0200
+
+    header fonctionnel
+
+[33mcommit 124d504ce89e8b8316c80652c4538aa483ddca5e[m
+Author: Capri <caprie@live.fr>
+Date:   Wed Jul 24 01:26:40 2024 +0200
+
+    modifications scss
+
+[33mcommit 97de4b9695a3879c36e5118ea7df6b588c6ac49e[m
+Author: Capri <caprie@live.fr>
+Date:   Wed Jul 24 00:55:24 2024 +0200
+
+    deploiement premiere moitié page home
+
+[33mcommit a84955cdca2d694b643f8f19b05017b4bc36ac6b[m
+Author: Capri <caprie@live.fr>
+Date:   Tue Jul 23 19:27:20 2024 +0200
+
+    depot initial
