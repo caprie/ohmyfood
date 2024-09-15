@@ -170,6 +170,10 @@ section {
       font-family: $roboto-font;
       }
 
+      .btn:hover {
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Ombre plus grande et plus visible au survol */
+    }
+
 // Location Section
 .location {
   background-color: #eaeaea;

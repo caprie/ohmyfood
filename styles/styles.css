@@ -159,6 +159,10 @@ section {
   font-family: "Roboto";
 }
 
+.btn:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Ombre plus grande et plus visible au survol */
+}
+
 .location {
   background-color: #eaeaea;
   color: #353535;
