@@ -191,10 +191,10 @@ main {
 		
 	.menu__button {
 		@include btn-main;
-		padding: 0px 0px;
+		//padding: 0px 0px;
 		margin-bottom: 30px;
 		margin-top: 60px;
-		background-color: transparent;
+		//background-color: transparent;
 		//box-shadow: $box-shadow;
 	}
 }

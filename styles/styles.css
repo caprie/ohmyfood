@@ -3,7 +3,7 @@ header {
   font-family: "Shrikhand";
   text-align: center;
   justify-content: center;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
   margin: 0;
   height: 63px;
   display: flex;
@@ -152,7 +152,7 @@ section {
 /*       }   */
 .btn {
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
   color: #fff;
   padding: 15px 22px;
   border-radius: 50px;
@@ -208,7 +208,7 @@ section {
 
 .process__step {
   background-color: #f6f6f6;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   font-weight: 500;
   padding: 28px 35px;
@@ -247,7 +247,7 @@ section {
 .card {
   background-color: #fff;
   border-radius: 20px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
   text-decoration: none;
   color: #000;
   position: relative;
@@ -504,7 +504,7 @@ main .container-restaurant .menu__list h3::after {
   border-radius: 2px; /* leger arrondit des bords de la ligne */
 }
 main .container-restaurant .menu__list .lists .list {
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 0px 0px 0px 10px;
   height: 74px;
   overflow: hidden;
@@ -548,22 +548,8 @@ main .container-restaurant .menu__list .lists .list .list__order {
   border-radius: 0 15px 15px 0px;
 }
 main .container-restaurant .menu__button {
-  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  color: white;
-  padding: 16px 32px;
-  margin-bottom: -10px;
-  margin-top: 5px;
-  border-radius: 25px;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  padding: 0px 0px;
   margin-bottom: 30px;
   margin-top: 60px;
-  background-color: transparent;
 }
 
 .footer {
@@ -645,7 +631,6 @@ footer p {
   padding-bottom: 5px;
   text-decoration: none;
   font-size: 16px;
-  background-color: transparent;
 }
 footer p i {
   color: white;
