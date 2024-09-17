@@ -526,6 +526,10 @@ main .container-restaurant .menu__list .lists .list .list__content h5 {
   font-weight: 500;
   font-size: 18px;
   margin: 10px 0 5px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 250px;
 }
 main .container-restaurant .menu__list .lists .list .list__content .list__subtitle {
   color: #101010;
@@ -542,7 +546,7 @@ main .container-restaurant .menu__list .lists .list .list__price {
   font-size: 16px;
   font-family: "Roboto";
   margin-left: auto;
-  color: red;
+  color: #353535;
   margin-right: 10px;
 }
 main .container-restaurant .menu__list .lists .list .list__order {

@@ -127,27 +127,31 @@ main {
 					box-shadow: $box-shadow;
 					padding: 0px 0px 0px 10px;
 					height: 74px;
-					overflow: hidden;
+					overflow: hidden; //  cache tout contenu qui dépasse les dimensions définies ex: si contenu + large / + haut que container= coupé
 					&:hover .list__order{
 						margin-right: 0px;
 						animation: show-check 0.7s ease-in-out;
 						color: white;
 					}
 					.list__content{
-						h5{
+						h5{  //list_title
 							font-family: $roboto-font;
 							font-weight: 500;
 							font-size: 18px;
 							margin: 10px 0 5px 0;
+							white-space: nowrap;  // empeche texte de se diviser sur plusieurs lignes 
+  							overflow: hidden;  // Cache le texte qui dépasse du conteneur 
+  							text-overflow: ellipsis;  //affiche points de suspension à la fin si txt trop long 
+  							width: 250px; // ajuste la largeur -- verifier que container a 1 largeur fixe ou relative 
 						}
 						.list__subtitle{
 							color: $black-font-color;
 							font-family: $roboto-font;
 							font-weight: 300;
 							font-size: 16px;
-							position: relative;
+							position: relative; //  positionne elemt par rapport à sa position normale en laissant de la place à son emplacement d'origine
 							top: -5px;
-							display: block;
+							display: block;  // elemt occupe toute la largeur dispo et s'affiche comme un bloc (inline ne prend que la place du contenu).							
 							margin-bottom: 10px;
 						}
 					}		
@@ -159,7 +163,7 @@ main {
 						font-family: $roboto-font;
 						margin-left: auto;//pousse les prix à droite
 						//padding-bottom: 16px;
-						color: red;
+						color: #353535;
 						margin-right: 10px; // assure l'espace à droite de 10px
 					} 
 					.list__order{
