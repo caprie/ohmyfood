@@ -128,11 +128,72 @@ main {
 					padding: 0px 0px 0px 10px;
 					height: 74px;
 					overflow: hidden; //  cache tout contenu qui dépasse les dimensions définies ex: si contenu + large / + haut que container= coupé
-					&:hover .list__order{
-						margin-right: 0px;
-						animation: show-check 0.7s ease-in-out;
-						color: white;
+				}
+				
+// ??? QUESTION: pourquoi les éléments d'entrée plats et desserts apparaissent en même temps alors qu'ils sont paramétrés pour apparaitre les uns à la suite des autres
+				.list.fade-in {
+					opacity: 0;  // Définit opacité de depart à 0 
+					animation: fade-in-animation 3s ease-in forwards; // applique le fondu en 3 secondes avec une accélération et reste affiché
+				}
+					  
+				.list.fade-in:nth-child(1) {
+					animation-delay: calc(0.5s * 0); //fonction calc() permet de multiplier le délai de 0.5 s par le numéro de l'élément (0 pour 1er élément, 1 pour 2eme élément ...
+
+
 					}
+					  
+				.list.fade-in:nth-child(2) {
+					animation-delay: calc(0.5s * 1);
+				}
+					  
+				.list.fade-in:nth-child(3) {
+					animation-delay: calc(0.5s * 2);
+				}
+					  
+				.list.fade-in:nth-child(4) {
+					animation-delay: calc(0.5s * 3);
+				}
+
+				.list.fade-in:nth-child(5) {
+					animation-delay: calc(0.5s * 4);
+				}
+					  
+				.list.fade-in:nth-child(6) {
+					animation-delay: calc(0.5s * 5);
+				}
+				
+				.list.fade-in:nth-child(7) {
+					animation-delay: calc(0.5s * 6);
+				}
+				
+				.list.fade-in:nth-child(8) {
+					animation-delay: calc(0.5s * 7);
+				}
+
+				.list.fade-in:nth-child(9) {
+					animation-delay: calc(0.5s * 8);
+				}
+
+				.list.fade-in:nth-child(10) {
+					animation-delay: calc(0.5s * 9);
+				}
+
+				.list:hover .list__order{
+					margin-right: 0px;
+					animation: show-check 0.7s ease-in-out;
+					color: white;
+				}
+
+				
+				  @keyframes fade-in-animation {
+					from {
+					  opacity: 0;
+					}
+					to {
+					  opacity: 1;
+					}
+				  }
+
 					.list__content{
 						h5{  //list_title
 							font-family: $roboto-font;
@@ -189,7 +250,7 @@ main {
 		//box-shadow: $box-shadow;
 	}
 }
-}
+
 .footer{
 	padding: 10px 20px; 
 	h2{
