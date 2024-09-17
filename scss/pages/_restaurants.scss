@@ -33,14 +33,12 @@ main {
 		width: 100%; /* utilise toute la largeur */
 		box-sizing: border-box; /* 'box-sizing: border-box' englobe le padding et les bordures dans la largeur totale pour
 		pas que cela dépasse la largeur définie */
-	 
 		border-radius: 25px 25px 0 0 ;
 		padding: 5px;
 		font-family: $shrikhand-font;
 		font-size: 28px;
 		color: $black-font-color;
 		background-color: $grey-label-background;	
-	
 		h4{
 			font-size: 28px;
 			font-weight: 400;
@@ -49,7 +47,6 @@ main {
 		.heart-checkbox{
 			display: none;
 		  }
-		  
 		  /*.btn-heart {
 			position: relative;
 			display: flex;
@@ -58,7 +55,6 @@ main {
 			cursor: pointer;
 			// Le bouton "cœur" est un élément flexible avec alignement centré.
 		  }*/
-		  
 		  .btn-heart--outline {
 			position: absolute;
 			background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
@@ -68,7 +64,6 @@ main {
 			transform: scale(0);
 			transition: transform 0.3s ease;
 		  }
-		  
 		.btn-heart{
 			display: flex;
 			gap: 5px;
@@ -78,20 +73,14 @@ main {
 			align-items: center;
 			cursor: pointer;
 			// Le bouton "cœur" est un élément flexible avec alignement centré.
-		
-
-			
-
 			i{
 			font-size: 20px;
 			color: black;
 			padding-right: 0px;
 			}
-
 			.btn-heart--solid{
 				color: transparent;
 			}
-
 			&:hover
 			.btn-heart--solid{
 				color: $purple-dark;
@@ -131,8 +120,10 @@ main {
 					}
 			}
 			.lists {
-				
 				.list{
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
 					box-shadow: $box-shadow;
 					padding: 0px 0px 0px 10px;
 					height: 74px;
@@ -142,15 +133,12 @@ main {
 						animation: show-check 0.7s ease-in-out;
 						color: white;
 					}
-					
-					
 					.list__content{
 						h5{
 							font-family: $roboto-font;
 							font-weight: 500;
 							font-size: 18px;
 							margin: 10px 0 5px 0;
-						
 						}
 						.list__subtitle{
 							color: $black-font-color;
@@ -162,14 +150,18 @@ main {
 							display: block;
 							margin-bottom: 10px;
 						}
-					}
-					
-					/* NE FONCTIONNE PAS	
-						
+					}		
 					.list__price {
+						//height: 18px;
+						//width: 18px;
+						font-weight: 700;
+						font-size: 16px;
+						font-family: $roboto-font;
+						margin-left: auto;//pousse les prix à droite
+						//padding-bottom: 16px;
 						color: red;
-						
-					} */
+						margin-right: 10px; // assure l'espace à droite de 10px
+					} 
 					.list__order{
 						padding-left: 2px;
 						height: 100%;
@@ -179,16 +171,11 @@ main {
 						display: flex;
 						justify-content: center;
 						align-items: center;
-						border-radius: 0 15px 15px 0px;
-						
+						border-radius: 0 15px 15px 0px;	
 					}
-						
-					
 				}
 			}
-		}
-
-		
+		}	
 	.menu__button {
 		@include btn-main;
 		//padding: 0px 0px;
