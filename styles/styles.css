@@ -100,7 +100,6 @@ section {
   top: 0;
   left: 0;
   font-size: 24px;
-  margin-left: -15px;
 }
 
 .fa-solid {
@@ -412,7 +411,6 @@ heart {
   position: absolute;
   justify-content: right;
   bottom: 25px;
-  font-size: 24px;
 }
 
 body {
@@ -653,7 +651,6 @@ heart {
   position: absolute;
   justify-content: right;
   bottom: 25px;
-  font-size: 24px;
 }
 
 title {
