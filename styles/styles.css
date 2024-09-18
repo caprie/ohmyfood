@@ -100,6 +100,7 @@ section {
   top: 0;
   left: 0;
   font-size: 24px;
+  margin-left: -15px;
 }
 
 .fa-solid {
@@ -411,6 +412,7 @@ heart {
   position: absolute;
   justify-content: right;
   bottom: 25px;
+  font-size: 24px;
 }
 
 body {
@@ -443,30 +445,40 @@ main .container-restaurant .restaurant-title {
   font-size: 28px;
   color: #101010;
   background-color: #f6f6f6;
+  /*.btn-hearts{
+  	position: relative; // pour alignement correct
+  	//display: flex;
+  	//gap: 5px;
+  	//justify-content: center;
+  	//align-items: center;
+  	cursor: pointer;
+  	// bouton "coeur" est 1 elemt flexible avec alignement centré.
+  }
+  .btn-hearts i{
+  	font-size: 24px;
+  	color: blue;
+  	//padding-right: 0px;
+  }
+
+  .btn-hearts i.btn-hearts--outline {
+  	position: absolute;
+  	background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  	-webkit-background-clip: text;  // -webkit
+  	background-clip: text;
+  	color: transparent;
+  	transform: scale(0);
+  	//transition: transform 0.3s ease;
+  }	
+
+  //.btn-heart--solid{
+  //	color: transparent;
+  //	transform: scale(1);
+  //}*/
 }
 main .container-restaurant .restaurant-title h4 {
   font-size: 28px;
   font-weight: 400;
   margin: 0;
-}
-main .container-restaurant .restaurant-title .heart-checkbox {
-  display: none;
-}
-main .container-restaurant .restaurant-title .btn-heart {
-  position: relative;
-  cursor: pointer;
-}
-main .container-restaurant .restaurant-title .btn-heart i {
-  font-size: 20px;
-  color: blue;
-}
-main .container-restaurant .restaurant-title .btn-heart i.btn-heart--outline {
-  position: absolute;
-  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  transform: scale(0);
 }
 main .container-restaurant .menu__lists {
   width: 100%;
@@ -641,6 +653,7 @@ heart {
   position: absolute;
   justify-content: right;
   bottom: 25px;
+  font-size: 24px;
 }
 
 title {

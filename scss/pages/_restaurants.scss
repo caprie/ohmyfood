@@ -44,9 +44,9 @@ main {
 			font-weight: 400;
 			margin: 0;
 		}
-		.heart-checkbox{
-			display: none;
-		  }
+		//.heart-checkbox{
+		//	display: none;
+		//  }
 		  //.btn-heart {
 			//position: relative;
 			//display: flex;
@@ -57,7 +57,7 @@ main {
 		  //}
 		  
 		  //}
-		.btn-heart{
+		/*.btn-hearts{
 			position: relative; // pour alignement correct
 			//display: flex;
 			//gap: 5px;
@@ -66,13 +66,13 @@ main {
 			cursor: pointer;
 			// bouton "coeur" est 1 elemt flexible avec alignement centré.
 		}
-		.btn-heart i{
-			font-size: 20px;
+		.btn-hearts i{
+			font-size: 24px;
 			color: blue;
 			//padding-right: 0px;
 		}
 
-		.btn-heart i.btn-heart--outline {
+		.btn-hearts i.btn-hearts--outline {
 			position: absolute;
 			background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
 			-webkit-background-clip: text;  // -webkit
@@ -85,7 +85,7 @@ main {
 		//.btn-heart--solid{
 		//	color: transparent;
 		//	transform: scale(1);
-		//}
+		//}*/
 
 		//.btn-heart:hover .btn-heart--solid{
 		//	color: $purple-dark;
