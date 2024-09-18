@@ -6,28 +6,28 @@
 body {
   margin: 0;
   padding: 0;
-    // Supprime les marges et les paddings par défaut du body.
+    // supprime marges et paddings par défaut du body
 }
 
 a {
   text-decoration: none;
-   // Supprime le soulignement par défaut des liens.
+   // supprime le soulignement par défaut des liens
 }
 
 h2 {
   margin: 0;
-  // Supprime la marge par défaut des titres h2 pour un meilleur contrôle de l'espacement.
+  // supprime marge par défaut des titres h2 pour 1 meilleur controle de l'espacement
   font-family: $roboto-font;
 }
 
 section {
   padding: 50px 20px;
-  // Ajoute un padding interne aux sections pour créer de l'espace autour de leur contenu.
+  // ajoute 1 padding interne aux sections pour créer l'espace autour de leur contenu
 }
 
 .container {
   margin: auto;
-  // Centre les éléments en les rendant automatiquement marginés à gauche et à droite
+  // centre les elemts en les rendant automatiquement margines à gauche et à droite
 }
 
 .container--footer {
@@ -35,9 +35,9 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column; 
-  align-items: flex-start;  /* Aligne les éléments enfants en haut (start) du conteneur Flexbox. */
-    // Utilise Flexbox pour aligner les éléments du footer en colonne.
-  // Centrage horizontal et alignement vertical au début du conteneur.
+  align-items: flex-start;  // aligne elemts enfants en haut (start) du container flexbox
+    // utilise flexbox pour aligner les élémts du footer en colonne
+  // Centrage horizontal et alignement vertical au début du conteneur
   }
 
 
@@ -50,7 +50,7 @@ section {
 .footer a {
   text-decoration: none;
   color: #fff;
-  // Les liens dans le footer sont blancs et sans soulignement.
+  //  liens dans le footer blancs et sans soulignement
 }
 
 .footer__logo {
@@ -58,7 +58,7 @@ section {
   font-size: 20px;
 }
 
-.footer__list {
+.footer__list {  // mise en forme footer
   list-style: none;
   padding: 0;
   margin-bottom: 0;
@@ -91,47 +91,44 @@ section {
   justify-content: center;
   align-items: center;
   cursor: pointer;*/
-  position: relative;  /* Positionne le cœur par rapport au conteneur */
+  position: relative;  // positionne coeur par rapport au container 
   width: 24px;
   height: 24px;
   cursor: pointer;
-  
-  // Le bouton "cœur" est un élément flexible avec alignement centré.
+  // le bouton coeur est 1 élément flexible avec alignement centré
 }
 
 
-.btn-hearts .fa-regular, /* Cœur vide */
-.btn-hearts .fa-solid {  /* Cœur plein */
-  position: absolute; /* Positionne icônes par rapport au conteneur  */
-  top: 0; /* Place icones en haut */
-  left: 0; /* Place icones à gauche */
-  font-size: 24px; /* Taille de l'icône */
+.btn-hearts .fa-regular, // coeur vide 
+.btn-hearts .fa-solid {  //coeur plein 
+  position: absolute; // position icones par rapport au container  
+  top: 0; // place icones en haut 
+  left: 0; // place icones à gauche 
+  font-size: 24px; // taille de l'icone 
 }
 
 .fa-solid {
-  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%); /* applique dégradé au cœur */
-  -webkit-background-clip: text; /* fond seulement sur le background du coeur */
-  background-clip: text; /* fond uniquement sur le texte */
-  color: transparent; /* coeur transparent pour laisser apparaître le dégradé */
-  opacity: 0; /* coeur plein masqué par défaut */
-  transition: opacity 0.4s ease-in-out; /* transition apparition/disparition du cœur */
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%); // applique dégradé au coeur 
+  -webkit-background-clip: text; // fond seulement sur background du coeur 
+  background-clip: text; // fond uniquement sur le txt 
+  color: transparent; // coeur transparent pour laisser apparaître le dégradé 
+  opacity: 0; // coeur plein masqué par défaut 
+  transition: opacity 0.4s ease-in-out; // transition apparition/disparition du coeur 
 }
 
 .btn-hearts:hover .fa-regular {
   opacity: 0;
-  transition: opacity 0.4s ease-in-out; /* délai dès le survol */
+  transition: opacity 0.4s ease-in-out; // délai dès le survol 
 }
 
 .btn-hearts:hover .fa-solid {
   opacity: 1;
-  transition: opacity 0.4s ease-in-out; /* transition départ du survol */
+  transition: opacity 0.4s ease-in-out; // transition départ du survol 
 }
 
 .btn-hearts:active .fa-solid {
-  opacity: 1; /* cœur plein visible après le clic */
+  opacity: 1; // coeur plein visible après le clic 
 }
-
-
 
 /*.fa-heart {
   font-size: 24px;
@@ -144,22 +141,22 @@ section {
 
   /*.btn-hearts .fa-solid {
     background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
-    -webkit-background-clip: text;/*pour que le background soit appliqué uniquement sur le texte
-    "-webkit-" garantit que la propriété fonctionne sur tous les navigateurs.*/
-  /*  background-clip: text;/* sans le préfixe "-webkit-" garantit aussi que propriété fonctionne
-    également sur les navigateurs plus récents et modernes sans besoin du préfixe.*/
-  /*  color: transparent;
+    -webkit-background-clip: text;  //pour que le background soit appliqué uniquement sur le texte
+    // "-webkit-" garantit que la propriété fonctionne sur tous les navigateurs.
+    background-clip: text;  // sans le préfixe "-webkit-" garantit aussi que propriété fonctionne
+    également sur les navigateurs plus récents et modernes sans besoin du préfixe.
+    color: transparent;
     display: none;
     transition: all 300ms ease-in-out;
   }*/
    
-  /*  .btn-hearts:hover .fa-regular{ */
-  /*    display: none; /* quand (hover) sur .btn-hearts, icône .fa-regular invisible*/
-  /*     } 
+  /*  .btn-hearts:hover .fa-regular{ 
+      display: none; // quand (hover) sur .btn-hearts, icône .fa-regular invisible
+       }  /* 
 
   /*     .btn-hearts:hover .fa-solid {
-  /*      display: block;  /* même moment, icône .fa-solid devient visible avec display: block. remplace la 1ere icone par l'autre.*/
-  /*       }   */
+       display: block;  // même moment, icône .fa-solid devient visible avec display: block. remplace la 1ere icone par l'autre.
+         }   */
 
   .btn {
      background-image: $gradient-button;
@@ -171,7 +168,7 @@ section {
       }
 
       .btn:hover {
-        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Ombre plus grande et plus visible au survol */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); // ombre plus grande et plus visible au survol 
     }
 
 // Location Section
@@ -195,7 +192,7 @@ section {
   margin-right: 15px;
 }
 
-// explain Section
+// explain section
 .explain {
   text-align: center;
   padding: 40px 20px 70px;
@@ -258,9 +255,9 @@ section {
 
 .cards {
   display: flex;
-  flex-direction: column;  // Dispose les éléments en colonne
-  gap: 20px;               // Maintient l'espacement entre les éléments
-  padding: 25px 0 0;       // Garde le padding initial
+  flex-direction: column;  // dispose elemts en colonne
+  gap: 20px;               // maintient l'espacement entre les elemts
+  padding: 25px 0 0;       // garde le padding initial
 }
 
 .card {
@@ -281,7 +278,7 @@ section {
   top: 12px;
   right: 12px;
   font-family: $roboto-font;
-  // Étiquette "new" sur la carte, avec un fond et une couleur de texte spécifiques, positionnée en haut à droite.
+  // etiquette "new" sur carte, avec 1 fond + 1 couleur txt spécifiques, positionnée en haut à droite.
 }
 
 .card__image {
@@ -358,7 +355,7 @@ section {
   width: 100%;
 }
 
-.menu__list:first-child {  /* Cette règle supprime la marge à gauche uniquement pour le premier élément de la liste .menu__list. */
+.menu__list:first-child {  // regle supprime marge à gauche uniquement pour premier elemt de la liste .menu__list
   margin-left: 0;
 }
 

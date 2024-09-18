@@ -39,7 +39,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  align-items: flex-start; /* Aligne les éléments enfants en haut (start) du conteneur Flexbox. */
+  align-items: flex-start;
 }
 
 .footer {
@@ -88,41 +88,41 @@ section {
   justify-content: center;
   align-items: center;
   cursor: pointer;*/
-  position: relative; /* Positionne le cœur par rapport au conteneur */
+  position: relative;
   width: 24px;
   height: 24px;
   cursor: pointer;
 }
 
 .btn-hearts .fa-regular,
-.btn-hearts .fa-solid { /* Cœur plein */
-  position: absolute; /* Positionne icônes par rapport au conteneur  */
-  top: 0; /* Place icones en haut */
-  left: 0; /* Place icones à gauche */
-  font-size: 24px; /* Taille de l'icône */
+.btn-hearts .fa-solid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px;
 }
 
 .fa-solid {
-  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%); /* applique dégradé au cœur */
-  -webkit-background-clip: text; /* fond seulement sur le background du coeur */
-  background-clip: text; /* fond uniquement sur le texte */
-  color: transparent; /* coeur transparent pour laisser apparaître le dégradé */
-  opacity: 0; /* coeur plein masqué par défaut */
-  transition: opacity 0.4s ease-in-out; /* transition apparition/disparition du cœur */
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .btn-hearts:hover .fa-regular {
   opacity: 0;
-  transition: opacity 0.4s ease-in-out; /* délai dès le survol */
+  transition: opacity 0.4s ease-in-out;
 }
 
 .btn-hearts:hover .fa-solid {
   opacity: 1;
-  transition: opacity 0.4s ease-in-out; /* transition départ du survol */
+  transition: opacity 0.4s ease-in-out;
 }
 
 .btn-hearts:active .fa-solid {
-  opacity: 1; /* cœur plein visible après le clic */
+  opacity: 1;
 }
 
 /*.fa-heart {
@@ -135,21 +135,21 @@ section {
 }*/
 /*.btn-hearts .fa-solid {
   background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
-  -webkit-background-clip: text;/*pour que le background soit appliqué uniquement sur le texte
-  "-webkit-" garantit que la propriété fonctionne sur tous les navigateurs.*/
-/*  background-clip: text;/* sans le préfixe "-webkit-" garantit aussi que propriété fonctionne
-  également sur les navigateurs plus récents et modernes sans besoin du préfixe.*/
-/*  color: transparent;
+  -webkit-background-clip: text;  //pour que le background soit appliqué uniquement sur le texte
+  // "-webkit-" garantit que la propriété fonctionne sur tous les navigateurs.
+  background-clip: text;  // sans le préfixe "-webkit-" garantit aussi que propriété fonctionne
+  également sur les navigateurs plus récents et modernes sans besoin du préfixe.
+  color: transparent;
   display: none;
   transition: all 300ms ease-in-out;
 }*/
-/*  .btn-hearts:hover .fa-regular{ */
-/*    display: none; /* quand (hover) sur .btn-hearts, icône .fa-regular invisible*/
-/*     } 
+/*  .btn-hearts:hover .fa-regular{ 
+    display: none; // quand (hover) sur .btn-hearts, icône .fa-regular invisible
+     }  /* 
 
 /*     .btn-hearts:hover .fa-solid {
-/*      display: block;  /* même moment, icône .fa-solid devient visible avec display: block. remplace la 1ere icone par l'autre.*/
-/*       }   */
+     display: block;  // même moment, icône .fa-solid devient visible avec display: block. remplace la 1ere icone par l'autre.
+       }   */
 .btn {
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
@@ -160,7 +160,7 @@ section {
 }
 
 .btn:hover {
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Ombre plus grande et plus visible au survol */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
 }
 
 .location {
@@ -341,7 +341,7 @@ section {
   width: 100%;
 }
 
-.menu__list:first-child { /* Cette règle supprime la marge à gauche uniquement pour le premier élément de la liste .menu__list. */
+.menu__list:first-child {
   margin-left: 0;
 }
 
@@ -371,17 +371,17 @@ section {
 }
 
 .banner a {
-  text-decoration: none; /* Supprime le soulignement du lien */
+  text-decoration: none;
 }
 
 .banner__icon {
-  position: absolute; /* Position absolue dans la bannière */
-  top: 15px; /* Distance en haut de la bannière */
-  left: 20px; /* Distance à gauche de la bannière */
-  font-size: 24px; /* Taille de l'icône */
-  color: #101010; /* Couleur de l'icône */
-  z-index: 10; /* icône apparaît au-dessus de l'image de la bannière */
-  cursor: pointer; /* Change le curseur en icône de main au survol */
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 24px;
+  color: #101010;
+  z-index: 10;
+  cursor: pointer;
 }
 
 title {
@@ -398,6 +398,21 @@ title {
     margin-right: 0;
   }
 }
+@keyframes fade-in-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+heart {
+  font-size: 1.5rem;
+  position: absolute;
+  justify-content: right;
+  bottom: 25px;
+}
+
 body {
   margin: 0;
 }
@@ -412,7 +427,6 @@ main .banner {
 main .container-restaurant {
   display: flex;
   flex-direction: column;
-  /*border-radius: 25px 25px 0 0 ;*/
   background-color: transparent;
   margin-top: -30px;
   overflow: hidden;
@@ -421,23 +435,14 @@ main .container-restaurant .restaurant-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* utilise toute la largeur */
-  box-sizing: border-box; /* 'box-sizing: border-box' englobe le padding et les bordures dans la largeur totale pour
-pas que cela dépasse la largeur définie */
+  width: 100%;
+  box-sizing: border-box;
   border-radius: 25px 25px 0 0;
   padding: 5px;
   font-family: "Shrikhand";
   font-size: 28px;
   color: #101010;
   background-color: #f6f6f6;
-  /*.btn-heart {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  // Le bouton "cœur" est un élément flexible avec alignement centré.
-   }*/
 }
 main .container-restaurant .restaurant-title h4 {
   font-size: 28px;
@@ -447,34 +452,21 @@ main .container-restaurant .restaurant-title h4 {
 main .container-restaurant .restaurant-title .heart-checkbox {
   display: none;
 }
-main .container-restaurant .restaurant-title .btn-heart--outline {
+main .container-restaurant .restaurant-title .btn-heart {
+  position: relative;
+  cursor: pointer;
+}
+main .container-restaurant .restaurant-title .btn-heart i {
+  font-size: 20px;
+  color: blue;
+}
+main .container-restaurant .restaurant-title .btn-heart i.btn-heart--outline {
   position: absolute;
   background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   transform: scale(0);
-  transition: transform 0.3s ease;
-}
-main .container-restaurant .restaurant-title .btn-heart {
-  display: flex;
-  gap: 5px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-main .container-restaurant .restaurant-title .btn-heart i {
-  font-size: 20px;
-  color: black;
-  padding-right: 0px;
-}
-main .container-restaurant .restaurant-title .btn-heart .btn-heart--solid {
-  color: transparent;
-}
-main .container-restaurant .restaurant-title .btn-heart:hover .btn-heart--solid {
-  color: #9356DC;
 }
 main .container-restaurant .menu__lists {
   width: 100%;
@@ -492,20 +484,20 @@ main .container-restaurant .menu__list h3 {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 16px;
-  position: relative; /* position de la ligne par rapport au titre */
-  margin-bottom: 15px; /*espace sous le titre */
+  position: relative;
+  margin-bottom: 15px;
   padding-top: 20px;
-  display: inline-block; /* position de la ligne par rapport au titre */
+  display: inline-block;
 }
 main .container-restaurant .menu__list h3::after {
   content: "";
   position: absolute;
-  bottom: -5px; /*place la ligne sous le texte */
+  bottom: -5px;
   left: 0;
-  width: 40px; /* longueur de la ligne */
-  height: 3px; /* largeur de la ligne */
+  width: 40px;
+  height: 3px;
   background-color: #99E2D0;
-  border-radius: 2px; /* leger arrondit des bords de la ligne */
+  border-radius: 2px;
 }
 main .container-restaurant .menu__list .lists .list {
   display: flex;
@@ -602,7 +594,7 @@ main .container-restaurant .menu__list .lists .list__order {
   align-items: center;
   border-radius: 0 15px 15px 0px;
 }
-main .menu__button {
+main .container-restaurant .menu__button {
   margin-bottom: 30px;
   margin-top: 60px;
 }
@@ -616,17 +608,17 @@ main .menu__button {
 }
 
 .banner a {
-  text-decoration: none; /* Supprime le soulignement du lien */
+  text-decoration: none;
 }
 
 .banner__icon {
-  position: absolute; /* Position absolue dans la bannière */
-  top: 15px; /* Distance en haut de la bannière */
-  left: 20px; /* Distance à gauche de la bannière */
-  font-size: 24px; /* Taille de l'icône */
-  color: #101010; /* Couleur de l'icône */
-  z-index: 10; /* icône apparaît au-dessus de l'image de la bannière */
-  cursor: pointer; /* Change le curseur en icône de main au survol */
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 24px;
+  color: #101010;
+  z-index: 10;
+  cursor: pointer;
 }
 
 newcard {

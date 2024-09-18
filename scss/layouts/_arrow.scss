@@ -1,17 +1,16 @@
 @import '../variables';
 
 .banner a {
-    text-decoration: none; /* Supprime le soulignement du lien */
+    text-decoration: none; // supprime soulignement du lien 
   }
   
 
 .banner__icon {
-    position: absolute; /* Position absolue dans la bannière */
-    top: 15px;  /* Distance en haut de la bannière */
-    left: 20px; /* Distance à gauche de la bannière */
-    font-size: 24px; /* Taille de l'icône */
-    color: $black-font-color; /* Couleur de l'icône */
-    z-index: 10; /* icône apparaît au-dessus de l'image de la bannière */
-    cursor: pointer; /* Change le curseur en icône de main au survol */
-
+    position: absolute; // position absolue dans la bannière 
+    top: 15px;  // distance en haut de la bannière 
+    left: 20px; // distance à gauche de la bannière 
+    font-size: 24px; // taille de l'icône 
+    color: $black-font-color; // couleur de l'icône 
+    z-index: 10; // icône apparaît au-dessus de l'image de la bannière 
+    cursor: pointer; // change le curseur en icône de main au survol 
 }

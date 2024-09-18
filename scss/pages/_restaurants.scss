@@ -3,6 +3,7 @@
 @import "../layouts/mixins";
 @import "../layouts/title";
 @import "../layouts/keyframes";
+@import "../layouts/heart";
 
 
 body {
@@ -22,7 +23,7 @@ main {
 .container-restaurant {
 	display: flex;
 	flex-direction: column;
-	/*border-radius: 25px 25px 0 0 ;*/
+	//border-radius: 25px 25px 0 0 ;
 	background-color: transparent;
 	margin-top: -30px;
 	overflow: hidden;
@@ -30,9 +31,8 @@ main {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 100%; /* utilise toute la largeur */
-		box-sizing: border-box; /* 'box-sizing: border-box' englobe le padding et les bordures dans la largeur totale pour
-		pas que cela dépasse la largeur définie */
+		width: 100%; // utilise toute la largeur 
+		box-sizing: border-box; // "box-sizing: border-box" englobe le padding + les bordures dans la largeur totale pour ne pas dépasser la largeur définie 
 		border-radius: 25px 25px 0 0 ;
 		padding: 5px;
 		font-family: $shrikhand-font;
@@ -47,46 +47,51 @@ main {
 		.heart-checkbox{
 			display: none;
 		  }
-		  /*.btn-heart {
-			position: relative;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			cursor: pointer;
+		  //.btn-heart {
+			//position: relative;
+			//display: flex;
+			//justify-content: center;
+			//align-items: center;
+			//cursor: pointer;
 			// Le bouton "cœur" est un élément flexible avec alignement centré.
-		  }*/
-		  .btn-heart--outline {
+		  //}
+		  
+		  //}
+		.btn-heart{
+			position: relative; // pour alignement correct
+			//display: flex;
+			//gap: 5px;
+			//justify-content: center;
+			//align-items: center;
+			cursor: pointer;
+			// bouton "coeur" est 1 elemt flexible avec alignement centré.
+		}
+		.btn-heart i{
+			font-size: 20px;
+			color: blue;
+			//padding-right: 0px;
+		}
+
+		.btn-heart i.btn-heart--outline {
 			position: absolute;
 			background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
-			-webkit-background-clip: text;
+			-webkit-background-clip: text;  // -webkit
 			background-clip: text;
 			color: transparent;
 			transform: scale(0);
-			transition: transform 0.3s ease;
-		  }
-		.btn-heart{
-			display: flex;
-			gap: 5px;
-			position: relative;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			cursor: pointer;
-			// Le bouton "cœur" est un élément flexible avec alignement centré.
-			i{
-			font-size: 20px;
-			color: black;
-			padding-right: 0px;
-			}
-			.btn-heart--solid{
-				color: transparent;
-			}
-			&:hover
-			.btn-heart--solid{
-				color: $purple-dark;
-			}
+			//transition: transform 0.3s ease;
+		}	
+
+		//.btn-heart--solid{
+		//	color: transparent;
+		//	transform: scale(1);
+		//}
+
+		//.btn-heart:hover .btn-heart--solid{
+		//	color: $purple-dark;
 		}
-	}
+		
+
 	.menu__lists {
 		width: 100%;
 		background-color: $grey-label-background;
@@ -103,20 +108,20 @@ main {
 				font-family: $roboto-font;
 				font-weight: 300;
 				font-size: 16px;
-				position: relative; /* position de la ligne par rapport au titre */
-				margin-bottom: 15px;  /*espace sous le titre */
+				position: relative; // position de la ligne par rapport au titre 
+				margin-bottom: 15px;  // espace sous le titre 
 				padding-top: 20px;
-				display: inline-block; /* position de la ligne par rapport au titre */
+				display: inline-block; // position de la ligne par rapport au titre 
 
 					&::after{  
 						content: "";
 						position: absolute;
-						bottom: -5px; /*place la ligne sous le texte */
+						bottom: -5px; //place la ligne sous le texte 
 						left: 0;
-						width: 40px;  /* longueur de la ligne */
-						height: 3px;  /* largeur de la ligne */
+						width: 40px;  // longueur de la ligne 
+						height: 3px;  // largeur de la ligne 
 						background-color: $under-line-color;
-						border-radius: 2px; /* leger arrondit des bords de la ligne */
+						border-radius: 2px; // leger arrondit des bords de la ligne 
 					}
 			}
 			.lists {
@@ -130,16 +135,15 @@ main {
 					overflow: hidden; //  cache tout contenu qui dépasse les dimensions définies ex: si contenu + large / + haut que container= coupé
 				}
 				
-// ??? QUESTION: pourquoi les éléments d'entrée plats et desserts apparaissent en même temps alors qu'ils sont paramétrés pour apparaitre les uns à la suite des autres
+// ??? QUESTION: pourquoi les éléments d'entrées plats et desserts apparaissent en même temps alors qu'ils sont paramétrés pour apparaitre les uns à la suite des autres
 				.list.fade-in {
-					opacity: 0;  // Définit opacité de depart à 0 
+					opacity: 0;  // définit opacité de depart à 0 
 					animation: fade-in-animation 3s ease-in forwards; // applique le fondu en 3 secondes avec une accélération et reste affiché
 				}
-					  
+				
+// nth-child selecteur CSS permet de selectionner des élémts selon leur position dans 1 liste ou un parent. EX: ":nth-child(2)" cible le 2eme enfant d'1 elemt parent
 				.list.fade-in:nth-child(1) {
-					animation-delay: calc(0.5s * 0); //fonction calc() permet de multiplier le délai de 0.5 s par le numéro de l'élément (0 pour 1er élément, 1 pour 2eme élément ...
-
-
+					animation-delay: calc(0.5s * 0); // fonction calc() permet de multiplier le délai de 0.5 s par le numéro de l'elemt (0 pour 1er élément, 1 pour 2eme ...
 					}
 					  
 				.list.fade-in:nth-child(2) {
@@ -184,7 +188,6 @@ main {
 					color: white;
 				}
 
-				
 				  @keyframes fade-in-animation {
 					from {
 					  opacity: 0;
@@ -201,8 +204,8 @@ main {
 							font-size: 18px;
 							margin: 10px 0 5px 0;
 							white-space: nowrap;  // empeche texte de se diviser sur plusieurs lignes 
-  							overflow: hidden;  // Cache le texte qui dépasse du conteneur 
-  							text-overflow: ellipsis;  //affiche points de suspension à la fin si txt trop long 
+  							overflow: hidden;  // cache le texte qui dépasse du conteneur 
+  							text-overflow: ellipsis;  // affiche ... à la fin si txt trop long 
   							width: 250px; // ajuste la largeur -- verifier que container a 1 largeur fixe ou relative 
 						}
 						.list__subtitle{
@@ -210,7 +213,7 @@ main {
 							font-family: $roboto-font;
 							font-weight: 300;
 							font-size: 16px;
-							position: relative; //  positionne elemt par rapport à sa position normale en laissant de la place à son emplacement d'origine
+							position: relative; // positionne elemt par rapport à sa position normale en laissant de la place à son emplacement d'origine
 							top: -5px;
 							display: block;  // elemt occupe toute la largeur dispo et s'affiche comme un bloc (inline ne prend que la place du contenu).							
 							margin-bottom: 10px;
@@ -222,7 +225,7 @@ main {
 						font-weight: 700;
 						font-size: 16px;
 						font-family: $roboto-font;
-						margin-left: auto;//pousse les prix à droite
+						margin-left: auto;  //pousse les prix à droite
 						//padding-bottom: 16px;
 						color: #353535;
 						margin-right: 10px; // assure l'espace à droite de 10px
@@ -240,7 +243,7 @@ main {
 					}
 				}
 			}
-		}	
+			
 	.menu__button {
 		@include btn-main;
 		//padding: 0px 0px;
@@ -250,7 +253,7 @@ main {
 		//box-shadow: $box-shadow;
 	}
 }
-
+}
 .footer{
 	padding: 10px 20px; 
 	h2{

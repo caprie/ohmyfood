@@ -1,5 +1,14 @@
 @import "../variables";
 
-prices {
-    color: red;
+
+list__price {
+    //height: 18px;
+    //width: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: $roboto-font;
+    margin-left: auto; // pousse les prix à droite
+    //padding-bottom: 16px;
+    color: #353535;
+    margin-right: 10px; // assure l'espace à droite de 10px
 } 
