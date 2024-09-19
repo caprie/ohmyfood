@@ -112,7 +112,7 @@ section {
   -webkit-background-clip: text; // fond seulement sur background du coeur 
   background-clip: text; // fond uniquement sur le txt 
   color: transparent; // coeur transparent pour laisser apparaître le dégradé 
-  opacity: 0; // coeur plein masqué par défaut 
+  opacity: 1; // coeur plein masqué par défaut 
   transition: opacity 0.4s ease-in-out; // transition apparition/disparition du coeur 
 }
 
