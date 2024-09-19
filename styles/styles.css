@@ -46,30 +46,13 @@ section {
   background-color: #353535;
   padding: 30px 20px;
 }
-
 .footer a {
   text-decoration: none;
   color: #fff;
 }
-
-.footer__logo {
-  font-family: "Shrikhand";
-  font-size: 20px;
-}
-
-.footer__list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  font-family: "Roboto";
-}
-
-.footer__icon {
-  color: #fff;
-  margin-right: 8px;
+.footer p i {
+  opacity: 1;
+  color: white;
 }
 
 .header__logo {
@@ -107,7 +90,7 @@ section {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.4s ease-in-out;
 }
 
@@ -417,6 +400,10 @@ body {
   margin: 0;
 }
 
+.resto-header .fa-solid {
+  opacity: 1;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -565,6 +552,10 @@ main .container-restaurant .menu__list .lists .list:hover .list__order {
     opacity: 1;
   }
 }
+main .container-restaurant .menu__list .lists .list__content {
+  overflow: hidden;
+  white-space: nowrap;
+}
 main .container-restaurant .menu__list .lists .list__content h5 {
   font-family: "Roboto";
   font-weight: 500;
@@ -573,14 +564,15 @@ main .container-restaurant .menu__list .lists .list__content h5 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 250px;
 }
 main .container-restaurant .menu__list .lists .list__content .list__subtitle {
   color: #101010;
   font-family: "Roboto";
   font-weight: 300;
   font-size: 16px;
-  position: relative;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   top: -5px;
   display: block;
   margin-bottom: 10px;
@@ -603,6 +595,9 @@ main .container-restaurant .menu__list .lists .list__order {
   justify-content: center;
   align-items: center;
   border-radius: 0 15px 15px 0px;
+}
+main .container-restaurant .menu__list .lists .list__order i {
+  font-size: 25px;
 }
 main .container-restaurant .menu__button {
   margin-bottom: 30px;

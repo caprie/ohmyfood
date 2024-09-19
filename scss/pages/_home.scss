@@ -45,33 +45,26 @@ section {
 .footer {
   background-color: $color-font-footer-p-home;
   padding: 30px 20px;
+  a {
+    text-decoration: none;
+    color: #fff;
+    //  liens dans le footer blancs et sans soulignement
+  }
+  p{
+    i{
+      opacity: 1;
+      color: white;
+    }
+  }
 }
 
-.footer a {
-  text-decoration: none;
-  color: #fff;
-  //  liens dans le footer blancs et sans soulignement
-}
+ 
 
-.footer__logo {
-  font-family: $shrikhand-font;
-  font-size: 20px;
-}
 
-.footer__list {  // mise en forme footer
-  list-style: none;
-  padding: 0;
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  font-family: $roboto-font;
-}
 
-.footer__icon {
-  color: #fff;
-  margin-right: 8px;
-}
+
+
+
 
 // Header
 .header__logo {
@@ -112,7 +105,7 @@ section {
   -webkit-background-clip: text; // fond seulement sur background du coeur 
   background-clip: text; // fond uniquement sur le txt 
   color: transparent; // coeur transparent pour laisser apparaître le dégradé 
-  opacity: 1; // coeur plein masqué par défaut 
+  opacity: 0; // coeur plein masqué par défaut 
   transition: opacity 0.4s ease-in-out; // transition apparition/disparition du coeur 
 }
 

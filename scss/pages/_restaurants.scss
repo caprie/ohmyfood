@@ -9,7 +9,11 @@
 body {
 	margin: 0;
 }
-
+.resto-header{
+	.fa-solid{
+		opacity: 1;
+	}
+}
 
 main {
 	display: flex;
@@ -198,6 +202,8 @@ main {
 				  }
 
 					.list__content{
+						overflow: hidden;
+						white-space: nowrap;
 						h5{  //list_title
 							font-family: $roboto-font;
 							font-weight: 500;
@@ -206,14 +212,17 @@ main {
 							white-space: nowrap;  // empeche texte de se diviser sur plusieurs lignes 
   							overflow: hidden;  // cache le texte qui dépasse du conteneur 
   							text-overflow: ellipsis;  // affiche ... à la fin si txt trop long 
-  							width: 250px; // ajuste la largeur -- verifier que container a 1 largeur fixe ou relative 
+  							
+
 						}
 						.list__subtitle{
 							color: $black-font-color;
 							font-family: $roboto-font;
 							font-weight: 300;
 							font-size: 16px;
-							position: relative; // positionne elemt par rapport à sa position normale en laissant de la place à son emplacement d'origine
+							text-overflow: ellipsis;
+							overflow: hidden;
+							white-space: nowrap;
 							top: -5px;
 							display: block;  // elemt occupe toute la largeur dispo et s'affiche comme un bloc (inline ne prend que la place du contenu).							
 							margin-bottom: 10px;
@@ -240,6 +249,9 @@ main {
 						justify-content: center;
 						align-items: center;
 						border-radius: 0 15px 15px 0px;	
+						i{
+							font-size: 25px;
+						}
 					}
 				}
 			}
