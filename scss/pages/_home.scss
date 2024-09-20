@@ -55,7 +55,7 @@ section {
 .btn-hearts {
   position: relative;  // positionne coeur par rapport au container 
   //width: 0px;
-  height: 24px;
+  height: 20px;
   cursor: pointer;
   // le bouton coeur est 1 élément flexible avec alignement centré
 
@@ -64,7 +64,7 @@ section {
     position: absolute; // position icones par rapport au container  
     top: 0; // place icones en haut 
     left: 0; // place icones à gauche 
-    font-size: 24px; // taille de l'icone 
+    font-size: 20px; // taille de l'icone 
     background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%); // applique dégradé au coeur 
     -webkit-background-clip: text; // fond seulement sur background du coeur 
     background-clip: text; // fond uniquement sur le txt 
@@ -235,7 +235,7 @@ section {
   }
 
   &__icon {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 

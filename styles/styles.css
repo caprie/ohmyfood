@@ -54,7 +54,7 @@ section {
 
 .btn-hearts {
   position: relative;
-  height: 24px;
+  height: 20px;
   cursor: pointer;
 }
 .btn-hearts.fa-regular,
@@ -62,7 +62,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 24px;
+  font-size: 20px;
   background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -220,7 +220,7 @@ section {
   padding: 20px 40px 20px 15px;
 }
 .card__icon {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .banner img {
