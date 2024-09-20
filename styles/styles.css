@@ -54,7 +54,6 @@ section {
 
 .btn-hearts {
   position: relative;
-  width: 0px;
   height: 24px;
   cursor: pointer;
 }
