@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   font-family: "Shrikhand";
   text-align: center;
@@ -296,6 +297,19 @@ section {
   color: white;
 }
 
+/* styles pour présentation des cards resto en mode desktop */
+@media (min-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 0 180px;
+  }
+  .restaurants h2 {
+    padding-left: 180px;
+    padding-bottom: 28px;
+  }
+}
 .banner a {
   text-decoration: none;
 }
