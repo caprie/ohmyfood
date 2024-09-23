@@ -1,5 +1,6 @@
 @import "../variables";
 @import "../layouts/mixins";
+@import "../layouts/footer";
 
 
 // Styles Globaux
@@ -306,7 +307,7 @@ section {
 }
 
  // FOOTER
- .footer {
+ /*.footer {
   background-color: $color-font-footer-p-home;
   padding: 30px 20px;
   a {
@@ -320,7 +321,7 @@ section {
       color: white;
     }
   }
-}
+}*/
 
 /* styles pour présentation des cards resto en mode desktop */
 @media (min-width: 768px) {
@@ -331,8 +332,19 @@ section {
     padding: 0 180px;
   }
 
-  .restaurants h2 {
+  .restaurants h2,
+  .process h2 {
     padding-left: 180px;
     padding-bottom: 28px;
   }
+
+  /* styles pour section "process" mode desktop*/
+  .process__steps {
+    flex-direction: row;
+    padding: 0 180px 0 180px;
+  }
+
+  /* style pour footer mode desktop*/
+  
+  
 }

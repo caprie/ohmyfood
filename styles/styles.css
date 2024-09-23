@@ -12,6 +12,56 @@ header {
   z-index: 20;
 }
 
+footer {
+  background-color: #353535;
+  padding: 16px 32px;
+  color: white;
+}
+footer h2 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+footer p {
+  font-family: "Roboto";
+  padding-top: 5px;
+  padding-left: 0px;
+  margin: 0px;
+  display: flex;
+  gap: 10px;
+  font-weight: 400;
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+footer p i {
+  color: white;
+  width: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* style pour footer mode desktop*/
+@media (min-width: 768px) {
+  .footer {
+    min-height: 114px;
+    padding: 30px 25px;
+    gap: 7px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .footer .footer-element {
+    margin-left: auto;
+    min-height: 500px;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -284,19 +334,21 @@ section {
   margin-bottom: 14px;
 }
 
-.footer {
-  background-color: #353535;
+/*.footer {
+  background-color: $color-font-footer-p-home;
   padding: 30px 20px;
-}
-.footer a {
-  text-decoration: none;
-  color: #fff;
-}
-.footer p i {
-  opacity: 1;
-  color: white;
-}
-
+  a {
+    text-decoration: none;
+    color: #fff;
+    //  liens dans le footer blancs et sans soulignement
+  }
+  p{
+    i{
+      opacity: 1;
+      color: white;
+    }
+  }
+}*/
 /* styles pour présentation des cards resto en mode desktop */
 @media (min-width: 768px) {
   .cards {
@@ -305,10 +357,17 @@ section {
     gap: 50px;
     padding: 0 180px;
   }
-  .restaurants h2 {
+  .restaurants h2,
+  .process h2 {
     padding-left: 180px;
     padding-bottom: 28px;
   }
+  /* styles pour section "process" mode desktop*/
+  .process__steps {
+    flex-direction: row;
+    padding: 0 180px 0 180px;
+  }
+  /* style pour footer mode desktop*/
 }
 .banner a {
   text-decoration: none;
@@ -533,9 +592,6 @@ main .container-restaurant .menu__button {
   margin-top: 60px;
 }
 
-.footer {
-  padding: 10px 20px;
-}
 .footer h2 {
   padding-top: 0;
   padding-bottom: 0;
@@ -620,6 +676,24 @@ footer p i {
 footer a {
   text-decoration: none;
   color: inherit;
+}
+
+/* style pour footer mode desktop*/
+@media (min-width: 768px) {
+  .footer {
+    min-height: 114px;
+    padding: 30px 25px;
+    gap: 7px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .footer .footer-element {
+    margin-left: auto;
+    min-height: 500px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

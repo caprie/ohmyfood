@@ -35,4 +35,28 @@ footer {
     text-decoration: none;  // enleve la décorat° du txt (soulignement)
     color: inherit;         // utilise la meme couleur que le txt environnant
     }
-}	
+}
+
+
+/* style pour footer mode desktop*/
+@media (min-width: 768px) {
+    .footer {
+        min-height: 114px;
+        padding: 30px 25px;
+        gap: 7px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+       
+      }
+    
+      .footer .footer-element {
+        margin-left: auto;
+        min-height: 500px;
+        //margin-right: 50px;
+        //flex-wrap: wrap;
+        //flex-grow: 1;
+      }
+}
