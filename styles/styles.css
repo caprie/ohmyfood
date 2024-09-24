@@ -21,8 +21,6 @@ footer h2 {
   font-family: "Shrikhand";
   font-weight: 400;
   font-size: 18px;
-  padding-top: 20px;
-  padding-bottom: 10px;
 }
 footer p {
   font-family: "Roboto";
@@ -49,7 +47,7 @@ footer a {
 @media (min-width: 768px) {
   .footer {
     min-height: 114px;
-    padding: 30px 25px;
+    padding: 30px 20px 25px 40px;
     gap: 7px;
     display: flex;
     justify-content: flex-end;
@@ -58,8 +56,10 @@ footer a {
     box-sizing: border-box;
   }
   .footer .footer-element {
-    margin-left: auto;
-    min-height: 500px;
+    display: flex;
+  }
+  .footer h2 {
+    margin-right: -560px;
   }
 }
 body {
@@ -80,7 +80,6 @@ a {
 
 h2 {
   margin: 0;
-  font-family: "Roboto";
 }
 
 section {
@@ -593,7 +592,6 @@ main .container-restaurant .menu__button {
 
 .footer h2 {
   padding-top: 0;
-  padding-bottom: 0;
 }
 
 .banner a {
@@ -653,8 +651,6 @@ footer h2 {
   font-family: "Shrikhand";
   font-weight: 400;
   font-size: 18px;
-  padding-top: 20px;
-  padding-bottom: 10px;
 }
 footer p {
   font-family: "Roboto";
@@ -681,7 +677,7 @@ footer a {
 @media (min-width: 768px) {
   .footer {
     min-height: 114px;
-    padding: 30px 25px;
+    padding: 30px 20px 25px 40px;
     gap: 7px;
     display: flex;
     justify-content: flex-end;
@@ -690,8 +686,10 @@ footer a {
     box-sizing: border-box;
   }
   .footer .footer-element {
-    margin-left: auto;
-    min-height: 500px;
+    display: flex;
+  }
+  .footer h2 {
+    margin-right: -560px;
   }
 }
 

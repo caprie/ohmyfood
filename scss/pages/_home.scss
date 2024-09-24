@@ -3,12 +3,16 @@
 @import "../layouts/footer";
 
 
+
+
 // Styles Globaux
 body {
   margin: 0;
   padding: 0;
     // supprime marges et paddings par défaut du body
 }
+
+
 
 // Header
 .header__logo {
@@ -23,10 +27,12 @@ a {
    // supprime le soulignement par défaut des liens
 }
 
+
+
 h2 {
   margin: 0;
   // supprime marge par défaut des titres h2 pour 1 meilleur controle de l'espacement
-  font-family: $roboto-font;
+  //font-family: $roboto-font;
 }
 
 section {
@@ -306,6 +312,9 @@ section {
   margin-bottom: 14px;
 }
 
+
+
+
  // FOOTER
  /*.footer {
   background-color: $color-font-footer-p-home;
@@ -342,9 +351,5 @@ section {
   .process__steps {
     flex-direction: row;
     padding: 0 180px 0 180px;
-  }
-
-  
-  
-  
+  } 
 }
