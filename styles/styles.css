@@ -44,7 +44,7 @@ footer a {
 }
 
 /* style pour footer mode desktop*/
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1595px) {
   .footer {
     min-height: 114px;
     padding: 30px 20px 25px 40px;
@@ -435,7 +435,7 @@ section {
   }
 }*/
 /* styles pour présentation des cards resto en mode desktop */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1595px) {
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -773,7 +773,7 @@ footer a {
 }
 
 /* style pour footer mode desktop*/
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1595px) {
   .footer {
     min-height: 114px;
     padding: 30px 20px 25px 40px;
