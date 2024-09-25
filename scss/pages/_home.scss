@@ -307,25 +307,11 @@ section {
   margin-bottom: 14px;
 }
 
- // FOOTER
- /*.footer {
-  background-color: $color-font-footer-p-home;
-  padding: 30px 20px;
-  a {
-    text-decoration: none;
-    color: #fff;
-    //  liens dans le footer blancs et sans soulignement
-  }
-  p{
-    i{
-      opacity: 1;
-      color: white;
-    }
-  }
-}*/
+ 
+
 
 /* styles pour présentation des cards resto en mode desktop */
-@media (min-width: 768px) and (max-width: 1595px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

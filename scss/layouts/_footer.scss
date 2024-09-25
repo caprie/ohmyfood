@@ -53,6 +53,8 @@ footer {
     
       .footer .footer-element {
         display: flex;
+        flex-direction: row-reverse;
+        padding-left: 50px;
         //flex: 1;
         //gap: 100px;
         //margin-left: auto;

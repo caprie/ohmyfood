@@ -96,7 +96,7 @@ main {
 					overflow: hidden; //  cache tout contenu qui dépasse les dimensions définies ex: si contenu + large / + haut que container= coupé
 				}
 				
-// ??? QUESTION: pourquoi les éléments d'entrées plats et desserts apparaissent en même temps alors qu'ils sont paramétrés pour apparaitre les uns à la suite des autres
+
 				.list.fade-in {
 					opacity: 0;  // définit opacité de depart à 0 
 					animation: fade-in-animation 3s ease-in forwards; // applique le fondu en 3 secondes avec une accélération et reste affiché
