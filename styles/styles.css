@@ -13,6 +13,8 @@ header {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: #353535;
   padding: 16px 32px;
   color: white;
@@ -21,6 +23,10 @@ footer h2 {
   font-family: "Shrikhand";
   font-weight: 400;
   font-size: 18px;
+}
+footer .footer-element {
+  display: flex;
+  flex-direction: column;
 }
 footer p {
   font-family: "Roboto";
@@ -46,22 +52,13 @@ footer a {
 /* style pour footer mode desktop*/
 @media (min-width: 768px) and (max-width: 1595px) {
   .footer {
-    min-height: 114px;
-    padding: 30px 20px 25px 40px;
-    gap: 7px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 15px;
   }
   .footer .footer-element {
-    display: flex;
-    flex-direction: row-reverse;
-    padding-left: 50px;
-  }
-  .footer h2 {
-    margin-right: -560px;
+    flex-direction: row;
+    gap: 20px;
   }
 }
 /* Loader styles */
@@ -274,7 +271,6 @@ section {
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 25px;
 }
 .process__step {
@@ -422,35 +418,21 @@ section {
 }
 
 /* styles pour présentation des cards resto en mode desktop */
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1400px) {
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    padding: 0 180px;
+    padding: 0 20px;
   }
   .restaurants h2,
   .process h2 {
-    padding-left: 180px;
     padding-bottom: 28px;
   }
   /* styles pour section "process" mode desktop*/
-  .process__steps {
+  .process .process__steps {
     flex-direction: row;
-    padding: 0 180px 0 180px;
-  }
-  /* style pour footer mode desktop*/
-  .footer {
-    padding: 30px 25px;
-    gap: 7px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-  }
-  .footer .footer-element {
-    margin-left: auto;
+    justify-content: flex-start;
   }
 }
 .banner a {
@@ -492,7 +474,6 @@ title {
 heart {
   font-size: 1.5rem;
   position: absolute;
-  justify-content: right;
   bottom: 25px;
 }
 
@@ -712,7 +693,6 @@ newcard__text {
 heart {
   font-size: 1.5rem;
   position: absolute;
-  justify-content: right;
   bottom: 25px;
 }
 
@@ -729,6 +709,8 @@ subtitle {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: #353535;
   padding: 16px 32px;
   color: white;
@@ -737,6 +719,10 @@ footer h2 {
   font-family: "Shrikhand";
   font-weight: 400;
   font-size: 18px;
+}
+footer .footer-element {
+  display: flex;
+  flex-direction: column;
 }
 footer p {
   font-family: "Roboto";
@@ -762,22 +748,13 @@ footer a {
 /* style pour footer mode desktop*/
 @media (min-width: 768px) and (max-width: 1595px) {
   .footer {
-    min-height: 114px;
-    padding: 30px 20px 25px 40px;
-    gap: 7px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 15px;
   }
   .footer .footer-element {
-    display: flex;
-    flex-direction: row-reverse;
-    padding-left: 50px;
-  }
-  .footer h2 {
-    margin-right: -560px;
+    flex-direction: row;
+    gap: 20px;
   }
 }
 

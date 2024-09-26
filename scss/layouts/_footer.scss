@@ -1,6 +1,8 @@
 @import '../variables';
 
 footer {
+    display: flex;
+    flex-direction: column;
     background-color: #353535;
     padding: 16px 32px;
     color: white;
@@ -11,6 +13,10 @@ footer {
         font-size: 18px;
         //padding-top: 20px;
         //padding-bottom: 10px;
+    }
+    .footer-element{
+      display: flex;
+      flex-direction: column;
     }
 
     p {
@@ -41,30 +47,14 @@ footer {
 /* style pour footer mode desktop*/
 @media (min-width: 768px) and (max-width: 1595px) {
     .footer {
-        min-height: 114px;
-        padding: 30px 20px 25px 40px;
-        gap: 7px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-      }
-    
-      .footer .footer-element {
-        display: flex;
         flex-direction: row-reverse;
-        padding-left: 50px;
-        //flex: 1;
-        //gap: 100px;
-        //margin-left: auto;
-        //min-height: 500px;
-        //place-content: 450px;
-        //flex-wrap: wrap;
-        //flex-grow: 1;
-      }
+        align-items: flex-end;
+        gap: 15px;
+        
       
-      .footer h2 {
-        margin-right: -560px;
-      }
+      .footer-element{
+      flex-direction: row;
+      gap: 20px;
+    }
+    } 
 }
