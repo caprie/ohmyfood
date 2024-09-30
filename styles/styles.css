@@ -271,6 +271,7 @@ section {
   margin: 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 25px;
 }
 .process__step {
@@ -423,14 +424,14 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    padding: 0 20px;
+    padding: 0 80px;
   }
   .restaurants h2,
   .process h2 {
     padding-bottom: 28px;
   }
   /* styles pour section "process" mode desktop*/
-  .process .process__steps {
+  .process__steps {
     flex-direction: row;
     justify-content: flex-start;
   }
@@ -474,6 +475,7 @@ title {
 heart {
   font-size: 1.5rem;
   position: absolute;
+  justify-content: right;
   bottom: 25px;
 }
 
@@ -693,6 +695,7 @@ newcard__text {
 heart {
   font-size: 1.5rem;
   position: absolute;
+  justify-content: right;
   bottom: 25px;
 }
 
