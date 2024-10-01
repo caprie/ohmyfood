@@ -56,7 +56,6 @@ section {
 
 .btn-hearts {
   position: relative;  // positionne coeur par rapport au container 
-  //width: 0px;
   height: 20px;
   cursor: pointer;
   // le bouton coeur est 1 élément flexible avec alignement centré
@@ -79,6 +78,7 @@ section {
     transition: opacity 0.4s ease-in-out; // transition apparition/disparition du coeur 
   }
 }
+
 .btn-hearts:hover .fa-regular {
   opacity: 0;
   transition: opacity 0.4s ease-in-out; // délai dès le survol 
@@ -104,6 +104,7 @@ section {
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); // ombre plus grande et plus visible au survol 
     }
 }
+
 // Location Section
 .location {
   background-color: #eaeaea;
@@ -123,6 +124,7 @@ section {
   margin-right: 15px;
   }
 }
+
 // explain section
 .explain {
   text-align: center;
@@ -137,6 +139,7 @@ section {
     font-family: $roboto-font;
   }
 }
+
 // Process Section
 .process {
   background-color: #fff;
@@ -177,6 +180,7 @@ section {
     margin-right: 25px;
   }
 }
+
 // Restaurants Section
 .restaurants {
   background-color: $grey-label-background;
@@ -311,9 +315,6 @@ section {
   margin-bottom: 14px;
 }
 
- 
-
-
 /* styles pour présentation des cards resto en mode desktop */
 @media (min-width: 768px) and (max-width: 1400px) {
   .cards {
@@ -325,22 +326,12 @@ section {
 
   .restaurants h2,
   .process h2 {
-    
-    //padding-right: 180px;
     padding-bottom: 28px;
   }
 
   /* styles pour section "process" mode desktop*/
-  .process{
-    content: "";
-  }
   .process__steps {
     flex-direction: row;
-    justify-content: flex-start;
-    
-    
+    justify-content: flex-start; //éléments enfants du conteneur sur le côté gauche du conteneur.//
   }
-
-
-  
 }

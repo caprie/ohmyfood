@@ -1,8 +1,8 @@
 @import '../variables';
 
 footer {
-    display: flex;
-    flex-direction: column;
+    display: flex;  // inblock par defaut -> inline
+    flex-direction: column;  //affiche les element en colonne
     background-color: #353535;
     padding: 16px 32px;
     color: white;
@@ -11,8 +11,6 @@ footer {
         font-family: "Shrikhand";
         font-weight: 400;	
         font-size: 18px;
-        //padding-top: 20px;
-        //padding-bottom: 10px;
     }
     .footer-element{
       display: flex;
@@ -30,7 +28,7 @@ footer {
     padding-bottom: 5px;
     text-decoration: none;
     font-size: 16px;
-    //background-color: transparent; // enlever les etiquettes incrustées. Solution de contournement de probleme.
+    
     i {
         color: white;
         width: 20px;
@@ -47,14 +45,14 @@ footer {
 /* style pour footer mode desktop*/
 @media (min-width: 768px) and (max-width: 1595px) {
     .footer {
-        flex-direction: row-reverse;
-        align-items: flex-end;
-        gap: 15px;
+        flex-direction: row-reverse; /* affiche les éléments du footer en ligne et les inverse */
+        align-items: flex-end; /* aligne les éléments du footer en bas */
+        gap: 15px; /* espace entre les éléments du footer */
         
       
       .footer-element{
-      flex-direction: row;
-      gap: 20px;
+      flex-direction: row;  /* affiche les éléments enfants du footer en ligne */
+      gap: 20px;  /* espace entre les éléments enfants du footer */
     }
     } 
 }

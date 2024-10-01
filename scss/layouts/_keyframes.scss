@@ -1,19 +1,21 @@
-@keyframes show-check{
+// ---  fait apparaître un élément check le déplaçant de l'extérieur vers l'intérieur de la zone visible avec animation de défilement horizontal
+
+@keyframes show-check{  
     
     0% {
-       margin-right: -62px;
+       margin-right: -62px;  /* déplace le check vers la gauche (hors de la zone visible) */
     }
     100% {
-        margin-right: 0;
+        margin-right: 0; /* ramène check à sa position d'origine */
     }
     
 }
 
 @keyframes fade-in-animation {
     from {
-      opacity: 0;
+      opacity: 0; /* commence avec opacité de 0 (élément invisible) */
     }
     to {
-      opacity: 1;
+      opacity: 1; /* termine avec opacité de 1 (élément complètement visible) */
     }
   }

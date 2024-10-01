@@ -28,7 +28,6 @@ main {
 .container-restaurant {
 	display: flex;
 	flex-direction: column;
-	//border-radius: 25px 25px 0 0 ;
 	background-color: transparent;
 	margin-top: -30px;
 	overflow: hidden;
@@ -50,7 +49,6 @@ main {
 			margin: 0;
 		}
 		
-
 	.menu__lists {
 		width: 100%;
 		background-color: $grey-label-background;
@@ -184,13 +182,10 @@ main {
 						}
 					}		
 					.list__price {
-						//height: 18px;
-						//width: 18px;
 						font-weight: 700;
 						font-size: 16px;
 						font-family: $roboto-font;
 						margin-left: auto;  //pousse les prix à droite
-						//padding-bottom: 16px;
 						color: #353535;
 						margin-right: 10px; // assure l'espace à droite de 10px
 					} 
@@ -213,19 +208,14 @@ main {
 			
 	.menu__button {
 		@include btn-main;
-		//padding: 0px 0px;
 		margin-bottom: 30px;
 		margin-top: 60px;
-		//background-color: transparent;
-		//box-shadow: $box-shadow;
 	}
 }
 }
 .footer{
-	//padding: 10px 20px; 
 	h2{
 	padding-top: 0;
-	//padding-bottom: 0;
 	}
 }
 }

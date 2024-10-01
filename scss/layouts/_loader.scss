@@ -7,42 +7,42 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(230, 255, 251); /* Fond du loader */
+    background-color: rgb(230, 255, 251); /* couleur fond du loader */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Le loader reste au-dessus de tout */
-    animation: fadeOutLoader 4s forwards; /* Le loader va disparaître après 3 secondes */
+    z-index: 9999; /* le loader reste au-dessus de tout */
+    animation: fadeOutLoader 4s forwards; /* le loader va disparaître après 4 secondes */
 }
 
 /* Animation de disparition du loader */
 @keyframes fadeOutLoader {
     0% {
-        opacity: 1;
+        opacity: 1; /* opacité 100% (loader complètement visible) */
     }
     90% {
-        opacity: 0.1;
+        opacity: 0.1;  /* opacité 100% (loader complètement visible) */
     }
     100% {
-        display: none; /* Cache complètement le loader après la disparition */
-        opacity: 0;
+        display: none; /* cache complètement loader après disparition */
+        opacity: 0; /* pacité 0% (loader plus visible) */
     }
 }
 
 /* Style du spinner (loader circulaire) */
 .spinner {
-    border: 20px solid $nouveau-card-color; /* Bordures du loader */
-    border-top: 12px solid $purple-dark; /* Bordure qui tourne */
-    border-radius: 50%;
-    width: 150px;
-    height: 50px;
-    animation: spin 1.5s linear infinite; /* Animation de rotation continue */
+    border: 20px solid $nouveau-card-color; /* bordures loader */
+    border-top: 12px solid $purple-dark; /* bordure qui tourne */
+    border-radius: 50%; /* forme ronde */
+    width: 150px; /* largeur spinner */
+    height: 50px; /* hauteur spinner*/
+    animation: spin 1.5s linear infinite; /* animation de rotation continue */
 }
 
 /* Animation de rotation du loader */
 @keyframes spin {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(0deg); /* pas de rotation au demarrage (angle initial de 0 degré) */
     }
     35% {
         transform: rotate(90deg);
@@ -63,27 +63,28 @@
 
 /* Masquer le contenu principal au départ */
 .main-content {
-    display: none;
+    display: none; /* pas affiché à l'écran */
     opacity: 0;
-    animation: showContent 1s forwards; /* Le contenu apparaîtra après 3 secondes */
+    animation: showContent 1s forwards; /*utilise animation "showContent" pendant 1 seconde,
+     et garde l'état final de l'animation ("forwards") quand terminée. */
 }
 
 /* Animation d'apparition du contenu */
 @keyframes showContent {
     0% {
-        display: block;
-        opacity: 1;
+        display: block;   /* élément affiché */   // block utilise toute la largeur dispo et affichée dès début animation//
+        opacity: 1; // opacité complète //
     }
     50% {
         display: block;
-        opacity: 0.7;
+        opacity: 0.7; //opacité réduite 70% //
     }
     90%{
-        display: block;
-        opacity: 0.85;
+        display: block; 
+        opacity: 0.85;// opacité augmentée à 85% //
     }
     100% {
         display: block;
-        opacity: 1;
+        opacity: 1; // opacité complète //
     }
 }

@@ -2,14 +2,14 @@
 
 header {
     font-family: $shrikhand-font;
-	text-align: center;
-	justify-content: center;
-	box-shadow: $box-shadow;
-	margin: 0;
+	text-align: center;  // centre contenu header horizontalement
+	justify-content: center;  // centre contenu du header verticalement
+	box-shadow: $box-shadow;  // joute une ombre au header
+	margin: 0; // supprime marges par défaut du header
 	height: 63px; // hauteur de la banniere
-	display: flex;
-	align-items: center;
-	position: relative;	// là ou il se trouve nativement 
-	z-index: 20;
+	display: flex; // définit header comme conteneur flex
+	align-items: center;  // centre éléments du header verticalement
+	position: relative;	// position header par rapport à son emplacement d'origine
+	z-index: 20;  // profondeur d'empilement du header
 }
 	
