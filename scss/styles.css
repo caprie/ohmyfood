@@ -690,13 +690,6 @@ newcard__text {
   padding: 8px;
 }
 
-/*heart {
-    font-size: 1.5rem;
-    position:absolute;
-    justify-content: right;
-    //right: 5px;
-    bottom: $bottom;
-}*/
 title {
   margin: 15px 0px 5px 15px;
   font-weight: 400;

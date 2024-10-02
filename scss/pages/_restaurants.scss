@@ -93,9 +93,10 @@ main {
 				}
 				
 
-				.list.fade-in {
+				.list.fade-in {  // élément devient progressivement visible à l'écran + rend transitions + fluides //
 					opacity: 0;  // définit opacité de depart à 0 
-					animation: fade-in-animation 3s ease-in forwards; // applique le fondu en 3 secondes avec une accélération et reste affiché
+					animation: fade-in-animation 3s ease-in forwards; // ease-in timing vitesse 3 secondes __ forwards element rest à l'état final//
+				// forwards: reste dans son état final après la fin de l'animation //
 				}
 				
 // nth-child selecteur CSS permet de selectionner des élémts selon leur position dans 1 liste ou un parent. EX: ":nth-child(2)" cible le 2eme enfant d'1 elemt parent

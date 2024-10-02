@@ -21,7 +21,7 @@
         opacity: 1; /* opacité 100% (loader complètement visible) */
     }
     90% {
-        opacity: 0.1;  /* opacité 100% (loader complètement visible) */
+        opacity: 0.1;  /* opacité 10% (loader partiellement visible) */
     }
     100% {
         display: none; /* cache complètement loader après disparition */
