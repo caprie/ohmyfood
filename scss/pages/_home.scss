@@ -316,7 +316,8 @@ section {
 }
 
 /* styles pour présentation des cards resto en mode desktop */
-@media (min-width: 768px) and (max-width: 1400px) {
+@media (min-width: 768px) 
+ {
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

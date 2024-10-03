@@ -43,7 +43,7 @@ footer {
 
 
 /* style pour footer mode desktop*/
-@media (min-width: 768px) and (max-width: 1595px) {
+@media (min-width: 768px)  {
     .footer {
         flex-direction: row-reverse; /* affiche les éléments du footer en ligne et les inverse */
         align-items: flex-end; /* aligne les éléments du footer en bas */

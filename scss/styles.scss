@@ -1,10 +1,7 @@
 
 @use './layouts/header';
-@use './pages/home';
-@use './pages/restaurants';
 @use './layouts/arrow';
 @use './layouts/newcard';
-@use './layouts/heart';
 @use './layouts/title';
 @use './layouts/subtitle';
 @use './layouts/footer';
@@ -12,6 +9,8 @@
 @use './layouts/loader';
 @use './layouts/mixins';
 @use './layouts/prices';
+@use './pages/restaurants';
+@use './pages/home';
 
 
 
