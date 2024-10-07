@@ -2,11 +2,12 @@
 
 header {
     font-family: $shrikhand-font;
+	font-size: 20px;
 	text-align: center;  // centre contenu header horizontalement
 	justify-content: center;  // centre contenu du header verticalement
 	box-shadow: $box-shadow;  // joute une ombre au header
 	margin: 0; // supprime marges par défaut du header
-	height: 63px; // hauteur de la banniere
+	height: 60px; // hauteur de la banniere
 	display: flex; // définit header comme conteneur flex
 	align-items: center;  // centre éléments du header verticalement
 	position: relative;	// position header par rapport à son emplacement d'origine

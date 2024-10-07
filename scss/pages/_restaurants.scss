@@ -1,4 +1,3 @@
-
 @import "../variables";
 @import "../layouts/arrow";
 @import "../layouts/mixins";
@@ -23,7 +22,7 @@ main {
 	
 .banner {
 	width: 100%;
-	//position: relative; /* position de l'icône dans la bannière */	
+	//position: relative; /* position de l'icone dans la bannière */	
 } 
 
 .container-restaurant {
@@ -37,7 +36,7 @@ main {
 		justify-content: space-between;
 		align-items: center;
 		width: 100%; // utilise toute la largeur 
-		box-sizing: border-box; // "box-sizing: border-box" englobe le padding + les bordures dans la largeur totale pour ne pas dépasser la largeur définie 
+		box-sizing: border-box; // "box-sizing: border-box" englobe le padding + les bordures dans la largeur totale pour ne pas dÃ©passer la largeur dÃ©finie 
 		border-radius: 25px 25px 0 0 ;
 		padding: 5px;
 		font-family: $shrikhand-font;
@@ -90,19 +89,19 @@ main {
 					box-shadow: $box-shadow;
 					padding: 0px 0px 0px 10px;
 					height: 74px;
-					overflow: hidden; //  cache tout contenu qui dépasse les dimensions définies ex: si contenu + large / + haut que container= coupé
+					overflow: hidden; //  cache tout contenu qui dÃ©passe les dimensions dÃ©finies ex: si contenu + large / + haut que container= coupÃ©
 				}
 				
 
-				.list.fade-in {  // élément devient progressivement visible à l'écran + rend transitions + fluides //
-					opacity: 0;  // définit opacité de depart à 0 
-					animation: fade-in-animation 3s ease-in forwards; // applique le fondu en 3 secondes avec une accélération et reste affiché //
-				// forwards: reste dans son état final après la fin de l'animation //
+				.list.fade-in {  // Ã©lÃ©ment devient progressivement visible Ã  l'Ã©cran + rend transitions + fluides //
+					opacity: 0;  // dÃ©finit opacitÃ© de depart Ã  0 
+					animation: fade-in-animation 3s ease-in forwards; // applique le fondu en 3 secondes avec une accÃ©lÃ©ration et reste affichÃ© //
+				// forwards: reste dans son Ã©tat final aprÃ¨s la fin de l'animation //
 				}
 				
-// nth-child selecteur CSS permet de selectionner des élémts selon leur position dans 1 liste ou un parent. EX: ":nth-child(2)" cible le 2eme enfant d'1 elemt parent
+// nth-child selecteur CSS permet de selectionner des Ã©lÃ©mts selon leur position dans 1 liste ou un parent. EX: ":nth-child(2)" cible le 2eme enfant d'1 elemt parent
 				.list.fade-in:nth-child(1) {
-					animation-delay: calc(0.5s * 0); // fonction calc() permet de multiplier le délai de 0.5 s par le numéro de l'elemt (0 pour 1er élément, 1 pour 2eme ...
+					animation-delay: calc(0.5s * 0); // fonction calc() permet de multiplier le dÃ©lai de 0.5 s par le numÃ©ro de l'elemt (0 pour 1er Ã©lÃ©ment, 1 pour 2eme ...
 					}
 					  
 				.list.fade-in:nth-child(2) {
@@ -165,8 +164,8 @@ main {
 							font-size: 18px;
 							margin: 10px 0 5px 0;
 							white-space: nowrap;  // empeche texte de se diviser sur plusieurs lignes 
-  							overflow: hidden;  // cache le texte qui dépasse du conteneur 
-  							text-overflow: ellipsis;  // affiche ... à la fin si txt trop long 
+  							overflow: hidden;  // cache le texte qui dÃ©passe du conteneur 
+  							text-overflow: ellipsis;  // affiche ... Ã  la fin si txt trop long 
   							
 
 						}
@@ -187,9 +186,9 @@ main {
 						font-weight: 700;
 						font-size: 16px;
 						font-family: $roboto-font;
-						margin-left: auto;  //pousse les prix à droite
+						margin-left: auto;  //pousse les prix Ã  droite
 						color: #353535;
-						margin-right: 10px; // assure l'espace à droite de 10px
+						margin-right: 10px; // assure l'espace Ã  droite de 10px
 					} 
 					.list__order{
 						padding-left: 2px;
@@ -208,10 +207,23 @@ main {
 				}
 			}
 			
-	.menu__button {
+		.menu__button {
 		@include btn-main;
-		margin-bottom: 30px;
-		margin-top: 60px;
+		background-image: $gradient-button;
+		box-shadow: $box-shadow;
+		color: #fff;
+		padding-bottom: 50px;
+		
+		align-items: center;
+		padding: 15px 22px;
+		border-radius: 50px;
+		font-family: $roboto-font;
+		font-size: 17px;
+			
+	  
+		&:hover {
+		  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); // ombre plus grande et plus visible au survol 
+	  }
 	}
 }
 }

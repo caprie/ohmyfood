@@ -28,10 +28,11 @@ h2 {
   margin: 0;
   // supprime marge par défaut des titres h2 pour 1 meilleur controle de l'espacement
   font-family: $roboto-font;
+  //padding: 25px;
 }
 
 section {
-  padding: 50px 20px;
+  padding: 50px 35px;
   // ajoute 1 padding interne aux sections pour créer l'espace autour de leur contenu
 }
 
@@ -64,12 +65,12 @@ section {
 
   &.fa-regular, // coeur vide 
   .fa-solid {  //coeur plein 
-    justify-content: end; //repositionne le coeur
     display: flex;  //pour justify-content
+    justify-content: end; //repositionne le coeur
     position: absolute; // position icones par rapport au container  
     top: 0; // place icones en haut 
     left: 0; // place icones à gauche 
-    font-size: 20px; // taille de l'icone 
+    font-size: 22px; // taille de l'icone 
     background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%); // applique dégradé au coeur 
     -webkit-background-clip: text; // fond seulement sur background du coeur 
     background-clip: text; // fond uniquement sur le txt 
@@ -94,12 +95,20 @@ section {
 }
 
   .btn {
+   // @include btn-main;
      background-image: $gradient-button;
       box-shadow: $box-shadow;
       color: #fff;
+      //display: flex;
+      text-align: center;
+      align-items: center;
       padding: 15px 22px;
       border-radius: 50px;
       font-family: $roboto-font;
+      font-size: 17px;
+		  //width: 80px;
+      //height: 30px;
+    
       &:hover {
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); // ombre plus grande et plus visible au survol 
     }
@@ -151,6 +160,7 @@ section {
     flex-direction: column;
     justify-content: space-between;
     gap: 25px;
+   
   }
 
   &__step {
@@ -162,6 +172,7 @@ section {
     display: flex;
     margin: 0 14px;
     font-family: $roboto-font;
+    
   }
 
   &__number {
@@ -178,6 +189,9 @@ section {
     color: #7e7e7e;
     font-size: 20px;
     margin-right: 25px;
+    &:hover{
+      color: $purple-dark;
+    }
   }
 }
 
@@ -260,14 +274,12 @@ section {
   background-color: $grey-label-background;
   position: relative;
   margin-top: -50px;
+  
 
   &__header {
-    font-family: $shrikhand-font;
-    display: flex;
+    //display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
-    color: $black-font-color;
   }
 
   &__icon {
@@ -276,7 +288,7 @@ section {
   }
 
   &__lists {
-    display: flex;
+    
     flex-direction: row;
     align-content: space-between;
   }
@@ -301,7 +313,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 45px 0 8px;
+    margin: 45px 0 20px;
   }
 }
 .list {
@@ -315,7 +327,7 @@ section {
   margin-bottom: 14px;
 }
 
-/* styles pour présentation des cards resto en mode desktop */
+/* styles pour affichage cards resto mode desktop */
 @media (min-width: 768px) 
  {
   .cards {
@@ -328,11 +340,14 @@ section {
   .restaurants h2,
   .process h2 {
     padding-bottom: 28px;
+    flex-direction: 80px;
   }
 
   /* styles pour section "process" mode desktop*/
   .process__steps {
     flex-direction: row;
-    justify-content: flex-start; //éléments enfants du conteneur sur le côté gauche du conteneur.//
+    justify-content: center; //éléments enfants du conteneur sur le côté gauche du conteneur.//
+    //white-space: nowrap;
+   
   }
 }
