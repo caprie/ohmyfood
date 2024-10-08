@@ -289,7 +289,6 @@ section {
   font-weight: 500;
   padding: 28px 35px;
   display: flex;
-  margin: 0 14px;
   font-family: "Roboto";
 }
 .process__number {
@@ -414,14 +413,9 @@ section {
 }
 
 .list {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
   background-color: #fff;
   border-radius: 15px;
-  padding: 12px 22px 12px 10px;
-  margin-bottom: 14px;
+  box-shadow: #000;
 }
 
 /* styles pour affichage cards resto mode desktop */
@@ -501,6 +495,8 @@ main .container-restaurant {
   background-color: transparent;
   margin-top: -30px;
   overflow: hidden;
+  border: 2px solid red;
+  border-radius: 25px 25px 0 0;
 }
 main .container-restaurant .restaurant-title {
   display: flex;
@@ -509,7 +505,7 @@ main .container-restaurant .restaurant-title {
   width: 100%;
   box-sizing: border-box;
   border-radius: 25px 25px 0 0;
-  padding: 5px;
+  padding: 20px 10px 5px;
   font-family: "Shrikhand";
   font-size: 28px;
   color: #101010;
@@ -828,6 +824,15 @@ et garde l'état final de l'animation ("forwards") quand terminée. */
     opacity: 1;
   }
 }
+list__price {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Roboto";
+  margin-left: auto;
+  color: #353535;
+  margin-right: 10px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -876,14 +881,6 @@ footer a {
     flex-direction: row; /* affiche les éléments enfants du footer en ligne */
     gap: 20px; /* espace entre les éléments enfants du footer */
   }
-}
-list__price {
-  font-weight: 700;
-  font-size: 16px;
-  font-family: "Roboto";
-  margin-left: auto;
-  color: #353535;
-  margin-right: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

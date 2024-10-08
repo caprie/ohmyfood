@@ -31,14 +31,16 @@ main {
 	background-color: transparent;
 	margin-top: -30px;
 	overflow: hidden;
+	border: 2px solid red;
+	border-radius: 25px 25px 0 0;
 	.restaurant-title {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		width: 100%; // utilise toute la largeur 
-		box-sizing: border-box; // "box-sizing: border-box" englobe le padding + les bordures dans la largeur totale pour ne pas dÃ©passer la largeur dÃ©finie 
+		box-sizing: border-box; // "box-sizing: border-box" englobe le padding + les bordures dans la largeur totale pour ne pas dépasser la largeur définie 
 		border-radius: 25px 25px 0 0 ;
-		padding: 5px;
+		padding: 20px 10px 5px;
 		font-family: $shrikhand-font;
 		font-size: 28px;
 		color: $black-font-color;
@@ -47,6 +49,7 @@ main {
 			font-size: 28px;
 			font-weight: 400;
 			margin: 0;
+			
 		}
 		
 	.menu__lists {
@@ -60,7 +63,7 @@ main {
 	}
 		.menu__list{
 			margin: -30px 0;
-
+			
 			h3{
 				font-family: $roboto-font;
 				font-weight: 300;
@@ -89,19 +92,19 @@ main {
 					box-shadow: $box-shadow;
 					padding: 0px 0px 0px 10px;
 					height: 74px;
-					overflow: hidden; //  cache tout contenu qui dÃ©passe les dimensions dÃ©finies ex: si contenu + large / + haut que container= coupÃ©
+					overflow: hidden; //  cache tout contenu qui dépasse les dimensions définies ex: si contenu + large / + haut que container= coupé
 				}
 				
 
-				.list.fade-in {  // Ã©lÃ©ment devient progressivement visible Ã  l'Ã©cran + rend transitions + fluides //
-					opacity: 0;  // dÃ©finit opacitÃ© de depart Ã  0 
-					animation: fade-in-animation 3s ease-in forwards; // applique le fondu en 3 secondes avec une accÃ©lÃ©ration et reste affichÃ© //
-				// forwards: reste dans son Ã©tat final aprÃ¨s la fin de l'animation //
+				.list.fade-in {  // élément devient progressivement visible à  l'écran + rend transitions + fluides //
+					opacity: 0;  // définit opacité de depart Ã  0 
+					animation: fade-in-animation 3s ease-in forwards; // applique le fondu en 3 secondes avec une accélération et reste affiché //
+				// forwards: reste dans son état final aprÃ¨s la fin de l'animation //
 				}
 				
-// nth-child selecteur CSS permet de selectionner des Ã©lÃ©mts selon leur position dans 1 liste ou un parent. EX: ":nth-child(2)" cible le 2eme enfant d'1 elemt parent
+// nth-child selecteur CSS permet de selectionner des élémts selon leur position dans 1 liste ou un parent. EX: ":nth-child(2)" cible le 2eme enfant d'1 elemt parent
 				.list.fade-in:nth-child(1) {
-					animation-delay: calc(0.5s * 0); // fonction calc() permet de multiplier le dÃ©lai de 0.5 s par le numÃ©ro de l'elemt (0 pour 1er Ã©lÃ©ment, 1 pour 2eme ...
+					animation-delay: calc(0.5s * 0); // fonction calc() permet de multiplier le délai de 0.5 s par le numéro de l'elemt (0 pour 1er élément, 1 pour 2eme ...
 					}
 					  
 				.list.fade-in:nth-child(2) {
@@ -164,7 +167,7 @@ main {
 							font-size: 18px;
 							margin: 10px 0 5px 0;
 							white-space: nowrap;  // empeche texte de se diviser sur plusieurs lignes 
-  							overflow: hidden;  // cache le texte qui dÃ©passe du conteneur 
+  							overflow: hidden;  // cache le texte qui dépasse du conteneur 
   							text-overflow: ellipsis;  // affiche ... Ã  la fin si txt trop long 
   							
 
