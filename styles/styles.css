@@ -497,6 +497,13 @@ body {
   overflow: hidden;
   border-radius: 25px 25px 0 0;
 }
+@media (min-width: 768px) {
+  .resto-main .container-restaurant {
+    width: 75%;
+    margin: auto;
+    margin-top: -30px;
+  }
+}
 .resto-main .container-restaurant .restaurant-title {
   display: flex;
   justify-content: space-between;
