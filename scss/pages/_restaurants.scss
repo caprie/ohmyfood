@@ -16,7 +16,7 @@ body {
 	}
 }
 
-main {
+ .resto-main {
 	display: flex;
 	flex-direction: column;
 	
@@ -31,7 +31,7 @@ main {
 	background-color: transparent;
 	margin-top: -30px;
 	overflow: hidden;
-	border: 2px solid red;
+	
 	border-radius: 25px 25px 0 0;
 	.restaurant-title {
 		display: flex;
@@ -51,6 +51,7 @@ main {
 			margin: 0;
 			
 		}
+	}
 		
 	.menu__lists {
 		width: 100%;
@@ -60,7 +61,7 @@ main {
 		flex-direction: column;
 		gap: 20px;
 		box-sizing: border-box;	
-	}
+	
 		.menu__list{
 			margin: -30px 0;
 			
@@ -85,12 +86,15 @@ main {
 					}
 			}
 			.lists {
+				
 				.list{
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
 					box-shadow: $box-shadow;
 					padding: 0px 0px 0px 10px;
+					margin-top: 10px;
+					margin-bottom: 10px;
 					height: 74px;
 					overflow: hidden; //  cache tout contenu qui dépasse les dimensions définies ex: si contenu + large / + haut que container= coupé
 				}
@@ -209,6 +213,8 @@ main {
 					}
 				}
 			}
+		}
+		
 			
 		.menu__button {
 		@include btn-main;
@@ -235,4 +241,4 @@ main {
 	padding-top: 0;
 	}
 }
-}
+

@@ -482,23 +482,22 @@ body {
   padding-left: -50px;
 }
 
-main {
+.resto-main {
   display: flex;
   flex-direction: column;
 }
-main .banner {
+.resto-main .banner {
   width: 100%;
 }
-main .container-restaurant {
+.resto-main .container-restaurant {
   display: flex;
   flex-direction: column;
   background-color: transparent;
   margin-top: -30px;
   overflow: hidden;
-  border: 2px solid red;
   border-radius: 25px 25px 0 0;
 }
-main .container-restaurant .restaurant-title {
+.resto-main .container-restaurant .restaurant-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -511,12 +510,12 @@ main .container-restaurant .restaurant-title {
   color: #101010;
   background-color: #f6f6f6;
 }
-main .container-restaurant .restaurant-title h4 {
+.resto-main .container-restaurant .restaurant-title h4 {
   font-size: 28px;
   font-weight: 400;
   margin: 0;
 }
-main .container-restaurant .restaurant-title .menu__lists {
+.resto-main .container-restaurant .menu__lists {
   width: 100%;
   background-color: #f6f6f6;
   padding: 12px;
@@ -525,10 +524,10 @@ main .container-restaurant .restaurant-title .menu__lists {
   gap: 20px;
   box-sizing: border-box;
 }
-main .container-restaurant .restaurant-title .menu__list {
+.resto-main .container-restaurant .menu__lists .menu__list {
   margin: -30px 0;
 }
-main .container-restaurant .restaurant-title .menu__list h3 {
+.resto-main .container-restaurant .menu__lists .menu__list h3 {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 16px;
@@ -537,7 +536,7 @@ main .container-restaurant .restaurant-title .menu__list h3 {
   padding-top: 20px;
   display: inline-block;
 }
-main .container-restaurant .restaurant-title .menu__list h3::after {
+.resto-main .container-restaurant .menu__lists .menu__list h3::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -547,50 +546,52 @@ main .container-restaurant .restaurant-title .menu__list h3::after {
   background-color: #99E2D0;
   border-radius: 2px;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 0px 0px 0px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   height: 74px;
   overflow: hidden;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list.fade-in {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list.fade-in {
   opacity: 0;
   animation: fade-in-animation 3s ease-in forwards;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list.fade-in:nth-child(1) {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list.fade-in:nth-child(1) {
   animation-delay: 0s;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list.fade-in:nth-child(2) {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list.fade-in:nth-child(2) {
   animation-delay: 0.5s;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list.fade-in:nth-child(3) {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list.fade-in:nth-child(3) {
   animation-delay: 1s;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list.fade-in:nth-child(4) {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list.fade-in:nth-child(4) {
   animation-delay: 1.5s;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list.fade-in:nth-child(5) {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list.fade-in:nth-child(5) {
   animation-delay: 2s;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list.fade-in:nth-child(6) {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list.fade-in:nth-child(6) {
   animation-delay: 2.5s;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list.fade-in:nth-child(7) {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list.fade-in:nth-child(7) {
   animation-delay: 3s;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list.fade-in:nth-child(8) {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list.fade-in:nth-child(8) {
   animation-delay: 3.5s;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list.fade-in:nth-child(9) {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list.fade-in:nth-child(9) {
   animation-delay: 4s;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list.fade-in:nth-child(10) {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list.fade-in:nth-child(10) {
   animation-delay: 4.5s;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list:hover .list__order {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list:hover .list__order {
   margin-right: 0px;
   animation: show-check 0.7s ease-in-out;
   color: white;
@@ -603,11 +604,11 @@ main .container-restaurant .restaurant-title .menu__list .lists .list:hover .lis
     opacity: 1;
   }
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list__content {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list__content {
   overflow: hidden;
   white-space: nowrap;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list__content h5 {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list__content h5 {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 18px;
@@ -616,7 +617,7 @@ main .container-restaurant .restaurant-title .menu__list .lists .list__content h
   overflow: hidden;
   text-overflow: ellipsis;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list__content .list__subtitle {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list__content .list__subtitle {
   color: #101010;
   font-family: "Roboto";
   font-weight: 300;
@@ -628,7 +629,7 @@ main .container-restaurant .restaurant-title .menu__list .lists .list__content .
   display: block;
   margin-bottom: 10px;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list__price {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list__price {
   font-weight: 700;
   font-size: 16px;
   font-family: "Roboto";
@@ -636,7 +637,7 @@ main .container-restaurant .restaurant-title .menu__list .lists .list__price {
   color: #353535;
   margin-right: 10px;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list__order {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list__order {
   padding-left: 2px;
   height: 100%;
   background-color: #99E2D0;
@@ -647,10 +648,10 @@ main .container-restaurant .restaurant-title .menu__list .lists .list__order {
   align-items: center;
   border-radius: 0 15px 15px 0px;
 }
-main .container-restaurant .restaurant-title .menu__list .lists .list__order i {
+.resto-main .container-restaurant .menu__lists .menu__list .lists .list__order i {
   font-size: 25px;
 }
-main .container-restaurant .restaurant-title .menu__button {
+.resto-main .container-restaurant .menu__button {
   /*background-image: $gradient-button;
   box-shadow: $box-shadow;
   color: white;
@@ -675,10 +676,11 @@ main .container-restaurant .restaurant-title .menu__button {
   font-family: "Roboto";
   font-size: 17px;
 }
-main .container-restaurant .restaurant-title .menu__button:hover {
+.resto-main .container-restaurant .menu__button:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
 }
-main .footer h2 {
+
+.footer h2 {
   padding-top: 0;
 }
 
