@@ -218,8 +218,8 @@ body {
 			
 		.menu__button {
 		@include btn-main;
-		background-image: $gradient-button;
-		box-shadow: $box-shadow;
+		//background-image: $gradient-button;
+		//box-shadow: $box-shadow;
 		color: #fff;
 		padding-bottom: 50px;
 		
