@@ -56,6 +56,7 @@ body {
 			margin: 0;
 			
 		}
+		
 	}
 		
 	.menu__lists {
@@ -75,8 +76,8 @@ body {
 				font-weight: 300;
 				font-size: 16px;
 				position: relative; // position de la ligne par rapport au titre 
-				margin-bottom: 15px;  // espace sous le titre 
-				padding-top: 20px;
+				margin-bottom: 25px;  // espace sous le titre 
+				padding-top: 45px;
 				display: inline-block; // position de la ligne par rapport au titre 
 
 					&::after{  

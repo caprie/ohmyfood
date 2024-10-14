@@ -436,6 +436,12 @@ section {
     flex-direction: row;
     justify-content: center;
   }
+  h4 {
+    padding-left: 35%;
+  }
+  .btn-hearts {
+    margin-right: 300px;
+  }
 }
 .banner a {
   text-decoration: none;
@@ -539,8 +545,8 @@ body {
   font-weight: 300;
   font-size: 16px;
   position: relative;
-  margin-bottom: 15px;
-  padding-top: 20px;
+  margin-bottom: 25px;
+  padding-top: 45px;
   display: inline-block;
 }
 .resto-main .container-restaurant .menu__lists .menu__list h3::after {
