@@ -1,6 +1,5 @@
 @import "../variables";
 @import "../layouts/arrow";
-@import "../layouts/mixins";
 @import "../layouts/title";
 @import "../layouts/keyframes";
 
@@ -30,9 +29,9 @@ body {
 	flex-direction: column;
 	background-color: transparent;
 	margin-top: -30px;
-	overflow: hidden;
-	
+	overflow: hidden;	
 	border-radius: 25px 25px 0 0;
+
 	@media (min-width: 768px){
 		width: 75%;
 		margin: auto;
@@ -53,10 +52,17 @@ body {
 		h4{
 			font-size: 28px;
 			font-weight: 400;
-			margin: 0;
-			
-		}
-		
+			margin: 0;			
+		}		
+	}
+		h4 {
+			padding-left: 35%;
+	  	}
+	
+	.restaurant-title .btn-hearts {
+		margin-right: 300px;
+		white-space: nowrap;
+
 	}
 		
 	.menu__lists {
@@ -171,6 +177,7 @@ body {
 					.list__content{
 						overflow: hidden;
 						white-space: nowrap;
+
 						h5{  //list_title
 							font-family: $roboto-font;
 							font-weight: 500;
@@ -179,9 +186,8 @@ body {
 							white-space: nowrap;  // empeche texte de se diviser sur plusieurs lignes 
   							overflow: hidden;  // cache le texte qui dépasse du conteneur 
   							text-overflow: ellipsis;  // affiche ... Ã  la fin si txt trop long 
-  							
-
 						}
+
 						.list__subtitle{
 							color: $black-font-color;
 							font-family: $roboto-font;
@@ -223,22 +229,15 @@ body {
 		
 			
 		.menu__button {
-		@include btn-main;
-		//background-image: $gradient-button;
-		//box-shadow: $box-shadow;
 		color: #fff;
 		padding-bottom: 50px;
-		
 		align-items: center;
 		padding: 15px 22px;
 		border-radius: 50px;
 		font-family: $roboto-font;
 		font-size: 17px;
 			
-	  
-		&:hover {
-		  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); // ombre plus grande et plus visible au survol 
-	  }
+	
 	}
 }
 }

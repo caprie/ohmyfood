@@ -50,9 +50,9 @@ footer {
         gap: 15px; /* espace entre les éléments du footer */
         
       
-      .footer-element{
-      flex-direction: row;  /* affiche les éléments enfants du footer en ligne */
-      gap: 20px;  /* espace entre les éléments enfants du footer */
-    }
+        .footer-element{
+            flex-direction: row;  /* affiche les éléments enfants du footer en ligne */
+            gap: 20px;  /* espace entre les éléments enfants du footer */
+        }
     } 
 }

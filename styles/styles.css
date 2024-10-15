@@ -436,10 +436,10 @@ section {
     flex-direction: row;
     justify-content: center;
   }
-  h4 {
+  .process__steps h4 {
     padding-left: 35%;
   }
-  .restaurant-title .btn-hearts {
+  .process__steps .restaurant-title .btn-hearts {
     margin-right: 300px;
   }
 }
@@ -527,6 +527,13 @@ body {
   font-size: 28px;
   font-weight: 400;
   margin: 0;
+}
+.resto-main .container-restaurant h4 {
+  padding-left: 35%;
+}
+.resto-main .container-restaurant .restaurant-title .btn-hearts {
+  margin-right: 300px;
+  white-space: nowrap;
 }
 .resto-main .container-restaurant .menu__lists {
   width: 100%;
@@ -665,20 +672,6 @@ body {
   font-size: 25px;
 }
 .resto-main .container-restaurant .menu__button {
-  /*background-image: $gradient-button;
-  box-shadow: $box-shadow;
-  color: white;
-  padding: 0px 32px;
-  margin-bottom: 10px;
-  margin-top: 5px;
-
-  border-radius: 25px;
-  font-family: $roboto-font;
-  font-weight: 400;
-  //font-size: 14px;
-  cursor: pointer;
-
-  border: none;	*/
   color: #fff;
   padding-bottom: 50px;
   align-items: center;
@@ -686,9 +679,6 @@ body {
   border-radius: 50px;
   font-family: "Roboto";
   font-size: 17px;
-}
-.resto-main .container-restaurant .menu__button:hover {
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
 }
 
 .footer h2 {

@@ -1,5 +1,4 @@
 @import "../variables";
-@import "../layouts/mixins";
 @import "../layouts/footer";
 @import "../layouts/loader";
 
@@ -29,7 +28,6 @@ h2 {
   margin: 0;
   // supprime marge par défaut des titres h2 pour 1 meilleur controle de l'espacement
   font-family: $roboto-font;
-  //padding: 25px;
 }
 
 section {
@@ -62,7 +60,6 @@ section {
   cursor: pointer;
   // le bouton coeur est 1 élément flexible avec alignement centré
   display: flex;
-  
 
   &.fa-regular, // coeur vide 
   .fa-solid {  //coeur plein 
@@ -107,8 +104,6 @@ section {
       border-radius: 50px;
       font-family: $roboto-font;
       font-size: 17px;
-		  //width: 80px;
-      //height: 30px;
     
       &:hover {
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); // ombre plus grande et plus visible au survol 
@@ -130,6 +125,7 @@ section {
   font-weight: 500;
   font-family: $roboto-font;
   }
+
   &__icon {
   margin-right: 15px;
   }
@@ -276,7 +272,6 @@ section {
   position: relative;
   margin-top: -50px;
   
-
   &__header {
     //display: flex;
     justify-content: space-between;
@@ -288,11 +283,9 @@ section {
     margin-right: 20px;
   }
 
-  &__lists {
-    
+  &__lists {  
     flex-direction: row;
-    align-content: space-between;
-    
+    align-content: space-between; 
   }
 
   &__list {
@@ -319,14 +312,8 @@ section {
   }
 }
 .list {
-  //display: flex;
-  //flex-direction: row;
-  //align-items: flex-end;
-  //justify-content: space-between;
   background-color: #fff;
   border-radius: 15px;
-  //padding: 12px 22px 12px 10px;
-  //margin-bottom: 14px;
   box-shadow: #000;
 }
 
@@ -351,8 +338,8 @@ section {
     flex-direction: row;
     justify-content: center; //éléments enfants du conteneur sur le côté gauche du conteneur.//
     //white-space: nowrap;
-   
-  }
+  
+  
   h4 {
     padding-left: 35%;
   }
@@ -360,4 +347,5 @@ section {
   .restaurant-title .btn-hearts {
     margin-right: 300px;
   }
+}
 }
