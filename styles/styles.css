@@ -4,7 +4,7 @@ header {
   font-size: 20px;
   text-align: center;
   justify-content: center;
-  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.25);
   margin: 0;
   height: 60px;
   display: flex;
@@ -227,7 +227,7 @@ section {
 
 .btn {
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
-  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.25);
   color: #fff;
   text-align: center;
   align-items: center;
@@ -284,7 +284,7 @@ section {
 }
 .process__step {
   background-color: #f6f6f6;
-  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   font-weight: 500;
   padding: 28px 35px;
@@ -323,7 +323,7 @@ section {
 .card {
   background-color: #fff;
   border-radius: 20px;
-  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.25);
   text-decoration: none;
   color: #000;
   position: relative;
@@ -337,6 +337,7 @@ section {
   top: 12px;
   right: 12px;
   font-family: "Roboto";
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.25);
 }
 .card__image {
   display: flex;
@@ -570,7 +571,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.25);
   padding: 0px 0px 0px 10px;
   margin-top: 10px;
   margin-bottom: 10px;
