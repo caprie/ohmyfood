@@ -20,8 +20,7 @@ body {
 	flex-direction: column;
 	
 .banner {
-	width: 100%;
-	//position: relative; /* position de l'icone dans la bannière */	
+	width: 100%;	
 } 
 
 .container-restaurant {
@@ -39,8 +38,9 @@ body {
 	} 
 	.restaurant-title {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
+		gap: 20px;
 		width: 100%; // utilise toute la largeur 
 		box-sizing: border-box; // "box-sizing: border-box" englobe le padding + les bordures dans la largeur totale pour ne pas dépasser la largeur définie 
 		border-radius: 25px 25px 0 0 ;
@@ -55,12 +55,10 @@ body {
 			margin: 0;			
 		}		
 	}
-		h4 {
-			padding-left: 35%;
-	  	}
+		
 	
 	.restaurant-title .btn-hearts {
-		margin-right: 300px;
+		
 		white-space: nowrap;
 		
 	}
@@ -114,13 +112,15 @@ body {
 
 				.list.fade-in {  // élément devient progressivement visible à  l'écran + rend transitions + fluides //
 					opacity: 0;  // définit opacité de depart Ã  0 
-					animation: fade-in-animation 3s ease-in forwards; // applique le fondu en 3 secondes avec une accélération et reste affiché //
-				// forwards: reste dans son état final aprÃ¨s la fin de l'animation //
+					animation: fade-in-animation 3s ease-in forwards; // applique le fondu en 3 secondes avec une accélération et
+					 													//reste affiché 
+				// forwards: reste dans son état final après la fin de l'animation //
 				}
 				
 // nth-child selecteur CSS permet de selectionner des élémts selon leur position dans 1 liste ou un parent. EX: ":nth-child(2)" cible le 2eme enfant d'1 elemt parent
 				.list.fade-in:nth-child(1) {
-					animation-delay: calc(0.5s * 0); // fonction calc() permet de multiplier le délai de 0.5 s par le numéro de l'elemt (0 pour 1er élément, 1 pour 2eme ...
+					animation-delay: calc(0.5s * 0); // fonction calc() permet de multiplier le délai de 0.5 s par le numéro 
+													//de l'elemt (0 pour 1er élément, 1 pour 2eme ...
 					}
 					  
 				.list.fade-in:nth-child(2) {

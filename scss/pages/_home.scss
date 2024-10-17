@@ -93,11 +93,9 @@ section {
 }
 
   .btn {
-   // @include btn-main;
      background-image: $gradient-button;
       box-shadow: $box-shadow;
       color: #fff;
-      //display: flex;
       text-align: center;
       align-items: center;
       padding: 15px 22px;
@@ -229,10 +227,10 @@ section {
     display: flex;
 
     & img {
-  width: 100%;
-  height: 250px; // largeur minimum
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
+      width: 100%;
+      height: 250px; // largeur minimum
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
     }
   }
 
@@ -274,7 +272,6 @@ section {
   margin-top: -50px;
   
   &__header {
-    //display: flex;
     justify-content: space-between;
     align-items: center;
   }
@@ -338,7 +335,6 @@ section {
   .process__steps {
     flex-direction: row;
     justify-content: center; //éléments enfants du conteneur sur le côté gauche du conteneur.//
-    //white-space: nowrap;
   
   
   h4 {

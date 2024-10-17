@@ -513,8 +513,9 @@ body {
 }
 .resto-main .container-restaurant .restaurant-title {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
   width: 100%;
   box-sizing: border-box;
   border-radius: 25px 25px 0 0;
@@ -529,11 +530,7 @@ body {
   font-weight: 400;
   margin: 0;
 }
-.resto-main .container-restaurant h4 {
-  padding-left: 35%;
-}
 .resto-main .container-restaurant .restaurant-title .btn-hearts {
-  margin-right: 300px;
   white-space: nowrap;
 }
 .resto-main .container-restaurant .menu__lists {
