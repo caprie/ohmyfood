@@ -437,7 +437,10 @@ section {
   /* styles pour section "process" mode desktop*/
   .process__steps {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 28px 85px;
+    margin-left: -100px;
+    margin-right: -105px;
   }
   .process__steps h4 {
     padding-left: 35%;
