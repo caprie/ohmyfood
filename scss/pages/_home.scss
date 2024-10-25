@@ -163,6 +163,7 @@ section {
     box-shadow: $box-shadow;
     border-radius: 20px;
     font-weight: 500;
+    font-size: 17px;
     padding: 28px 35px;
     display: flex;
     //margin: 0 14px;
@@ -178,6 +179,7 @@ section {
     padding: 4px 9px;
     border-radius: 50px;
     margin-left: -50px;
+    margin-top: -4px;
   }
 
   &__icon {
