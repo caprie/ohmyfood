@@ -44,7 +44,7 @@ body {
 		width: 100%; // utilise toute la largeur 
 		box-sizing: border-box; // "box-sizing: border-box" englobe le padding + les bordures dans la largeur totale pour ne pas dépasser la largeur définie 
 		border-radius: 25px 25px 0 0 ;
-		padding: 20px 10px 5px;
+		padding: 50px 10px 5px; // hauteur entre nom resto et haut container
 		font-family: $shrikhand-font;
 		font-size: 28px;
 		color: $black-font-color;
@@ -111,7 +111,7 @@ body {
 				
 
 				.list.fade-in {  // élément devient progressivement visible à  l'écran + rend transitions + fluides //
-					opacity: 0;  // définit opacité de depart Ã  0 
+					opacity: 0;  // définit opacité de depart a 0 
 					animation: fade-in-animation 3s ease-in forwards; // applique le fondu en 3 secondes avec une accélération et
 					 													//reste affiché 
 				// forwards: reste dans son état final après la fin de l'animation //
