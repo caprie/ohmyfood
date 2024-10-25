@@ -545,12 +545,17 @@ body {
 .resto-main .container-restaurant .menu__lists {
   width: 100%;
   background-color: #f6f6f6;
-  padding: 0 110px;
+  padding: 0 15px;
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 16px;
   box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .resto-main .container-restaurant .menu__lists {
+    padding: 0 15px;
+  }
 }
 .resto-main .container-restaurant .menu__lists .menu__list {
   margin: -30px 0;
