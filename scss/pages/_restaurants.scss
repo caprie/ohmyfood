@@ -34,7 +34,7 @@ body {
 	@media (min-width: 768px){
 		width: 75%;
 		margin: auto;
-		margin-top: -30px;
+		margin-top: -40px;
 	} 
 	.restaurant-title {
 		display: flex;
@@ -44,7 +44,7 @@ body {
 		width: 100%; // utilise toute la largeur 
 		box-sizing: border-box; // "box-sizing: border-box" englobe le padding + les bordures dans la largeur totale pour ne pas dépasser la largeur définie 
 		border-radius: 25px 25px 0 0 ;
-		padding: 50px 10px 5px; // hauteur entre nom resto et haut container
+		padding: 30px 10px 5px; // hauteur entre nom resto et haut container
 		font-family: $shrikhand-font;
 		font-size: 28px;
 		color: $black-font-color;
