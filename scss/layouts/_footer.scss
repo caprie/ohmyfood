@@ -1,7 +1,7 @@
 @import '../variables';
 
 footer {
-    display: flex;  // inblock par defaut -> inline
+    display: flex;  // inblock par defaut -> inline Pas de largeur/hauteur définissables
     flex-direction: column;  //affiche les element en colonne
     background-color: #353535;
     padding: 16px 32px;
@@ -45,10 +45,14 @@ footer {
 /* style pour footer mode desktop*/
 @media (min-width: 768px)  {
     .footer {
-        flex-direction: row-reverse; /* affiche les éléments du footer en ligne et les inverse */
+        flex-direction: row; /* affiche les éléments du footer en ligne et les inverse */
+        justify-content: flex-end; // aligne les elements à droite
         align-items: flex-end; /* aligne les éléments du footer en bas */
         gap: 15px; /* espace entre les éléments du footer */
         
+        h2 {
+            order: 2; /* place le logo en dernier */ 
+        }
       
         .footer-element{
             flex-direction: row;  /* affiche les éléments enfants du footer en ligne */

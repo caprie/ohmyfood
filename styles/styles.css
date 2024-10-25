@@ -53,9 +53,13 @@ footer a {
 /* style pour footer mode desktop*/
 @media (min-width: 768px) {
   .footer {
-    flex-direction: row-reverse; /* affiche les éléments du footer en ligne et les inverse */
+    flex-direction: row; /* affiche les éléments du footer en ligne et les inverse */
+    justify-content: flex-end;
     align-items: flex-end; /* aligne les éléments du footer en bas */
     gap: 15px; /* espace entre les éléments du footer */
+  }
+  .footer h2 {
+    order: 2; /* place le logo en dernier */
   }
   .footer .footer-element {
     flex-direction: row; /* affiche les éléments enfants du footer en ligne */
@@ -880,9 +884,13 @@ footer a {
 /* style pour footer mode desktop*/
 @media (min-width: 768px) {
   .footer {
-    flex-direction: row-reverse; /* affiche les éléments du footer en ligne et les inverse */
+    flex-direction: row; /* affiche les éléments du footer en ligne et les inverse */
+    justify-content: flex-end;
     align-items: flex-end; /* aligne les éléments du footer en bas */
     gap: 15px; /* espace entre les éléments du footer */
+  }
+  .footer h2 {
+    order: 2; /* place le logo en dernier */
   }
   .footer .footer-element {
     flex-direction: row; /* affiche les éléments enfants du footer en ligne */
