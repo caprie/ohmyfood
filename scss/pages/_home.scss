@@ -2,8 +2,7 @@
 @import "../layouts/footer";
 @import "../layouts/loader";
 @import "../layouts/header";
-@import "../layouts/subtitle";
-@import "../layouts/title";
+
 
 
 // Styles Globaux
@@ -14,13 +13,16 @@ body {
 }
 
 // Header
-.header {
-  &__logo {
+.header__logo {
   font-family: $shrikhand-font;
   font-size: 30px;
   text-decoration: none;
   color: #101010;
-  }
+}
+
+a {
+  text-decoration: none;
+   // supprime le soulignement par défaut des liens
 }
 
 h2 {
@@ -37,9 +39,9 @@ section {
 .container {
   margin: auto;
   // centre les elemts en les rendant automatiquement margines à gauche et à droite
+}
 
-
-  &--footer {
+.container--footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +50,7 @@ section {
     // utilise flexbox pour aligner les élémts du footer en colonne
   // Centrage horizontal et alignement vertical au début du conteneur
   }
-}
+
 .heart-checkbox{
   display: none;
 }
@@ -75,17 +77,6 @@ section {
     opacity: 0; // coeur plein masqué par défaut 
     transition: opacity 0.4s ease-in-out; // transition apparition/disparition du coeur 
   }
-
-  &{
-    .fa-regular{
-      opacity: 0;
-      transition: opacity 0.4s ease-in-out; //délai dès le survol
-    }
-    .fa-solid {
-      opacity: 1;
-      transition: opacity 0.4s ease-in-out; //délai dès le survol
-    }
-  } 
 }
 
 .btn-hearts:hover .fa-regular {
@@ -112,9 +103,6 @@ section {
       border-radius: 50px;
       font-family: $roboto-font;
       font-size: 17px;
-      text-decoration: none;
-      position: relative;
-      top: 22px; // Déplace le bouton vers le bas de 22px
     
       &:hover {
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); // ombre plus grande et plus visible au survol 
@@ -147,7 +135,14 @@ section {
   text-align: center;
   padding: 40px 20px 70px;
   background-color: $grey-label-background;
-  font-family: $roboto-font;
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 12px 0 30px;
+    margin-top: 0;
+    font-family: $roboto-font;
+  }
 }
 
 // Process Section
@@ -160,7 +155,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    gap: 25px;
    
   }
 
@@ -172,8 +167,9 @@ section {
     font-size: 17px;
     padding: 28px 35px;
     display: flex;
+    //margin: 0 14px;
     font-family: $roboto-font;
-    margin-right: 30px;
+    
   }
 
   &__number {
@@ -191,7 +187,6 @@ section {
     color: #7e7e7e;
     font-size: 20px;
     margin-right: 25px;
-
     &:hover{
       color: $purple-dark;
     }
@@ -243,14 +238,15 @@ section {
   }
 
   &__title {
-    font-size: 21px;
-    margin: 0;
+    font-size: 18px;
+    margin: 0 0 5px;
     font-family: $roboto-font;
   }
 
   &__subtitle {
-    font-family: $roboto-font;
     font-size: 16px;
+    font-weight: 300;
+    font-family: $roboto-font;
   }
 
   &__footer {
@@ -338,21 +334,5 @@ section {
     flex-direction: 80px;
   }
 
-  /* styles pour section "process" mode desktop*/
-  .process__steps {
-    flex-direction: row;
-    justify-content: space-around; //éléments enfants du conteneur sur le côté gauche du conteneur.//
-    padding: 28px 85px;
-    margin-left: -100px;
-    margin-right: -105px;
   
-  
-  h4 {
-    padding-left: 35%;
-  }
-
-    .restaurant-title .btn-hearts {
-    margin-right: 300px;
-    }
-  }
 }

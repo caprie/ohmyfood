@@ -146,18 +146,6 @@ header {
   z-index: 20;
 }
 
-.subtitle {
-  margin: 0px 0px 0px 15px;
-  font-weight: 300;
-  font-size: 17px;
-}
-
-title {
-  margin: 15px 0px 5px 15px;
-  font-weight: 400;
-  font-size: 30px;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -168,6 +156,10 @@ body {
   font-size: 30px;
   text-decoration: none;
   color: #101010;
+}
+
+a {
+  text-decoration: none;
 }
 
 h2 {
@@ -182,6 +174,7 @@ section {
 .container {
   margin: auto;
 }
+
 .container--footer {
   display: flex;
   justify-content: center;
@@ -215,14 +208,6 @@ section {
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 }
-.btn-hearts .fa-regular {
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-}
-.btn-hearts .fa-solid {
-  opacity: 1;
-  transition: opacity 0.4s ease-in-out;
-}
 
 .btn-hearts:hover .fa-regular {
   opacity: 0;
@@ -248,9 +233,6 @@ section {
   border-radius: 50px;
   font-family: "Roboto";
   font-size: 17px;
-  text-decoration: none;
-  position: relative;
-  top: 22px;
 }
 .btn:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
@@ -278,6 +260,12 @@ section {
   text-align: center;
   padding: 40px 20px 70px;
   background-color: #f6f6f6;
+}
+.explain__subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 12px 0 30px;
+  margin-top: 0;
   font-family: "Roboto";
 }
 
@@ -290,7 +278,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 25px;
 }
 .process__step {
   background-color: #f6f6f6;
@@ -301,7 +289,6 @@ section {
   padding: 28px 35px;
   display: flex;
   font-family: "Roboto";
-  margin-right: 30px;
 }
 .process__number {
   background-color: #9356DC;
@@ -362,13 +349,14 @@ section {
   border-radius: 15px 15px 0 0;
 }
 .card__title {
-  font-size: 21px;
-  margin: 0;
+  font-size: 18px;
+  margin: 0 0 5px;
   font-family: "Roboto";
 }
 .card__subtitle {
-  font-family: "Roboto";
   font-size: 16px;
+  font-weight: 300;
+  font-family: "Roboto";
 }
 .card__footer {
   display: flex;
@@ -443,20 +431,6 @@ section {
   .process h2 {
     padding-bottom: 28px;
     flex-direction: 80px;
-  }
-  /* styles pour section "process" mode desktop*/
-  .process__steps {
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 28px 85px;
-    margin-left: -100px;
-    margin-right: -105px;
-  }
-  .process__steps h4 {
-    padding-left: 35%;
-  }
-  .process__steps .restaurant-title .btn-hearts {
-    margin-right: 300px;
   }
 }
 .banner a {
