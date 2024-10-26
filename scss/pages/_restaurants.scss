@@ -2,6 +2,7 @@
 @import "../layouts/arrow";
 @import "../layouts/title";
 @import "../layouts/keyframes";
+@import "../layouts/prices";
 
 
 
@@ -57,10 +58,8 @@ body {
 	}
 		
 	
-	.restaurant-title .btn-hearts {
-		
+	.restaurant-title /*.btn-hearts*/ {
 		white-space: nowrap;
-		
 	}
 		
 	.menu__lists {
@@ -166,18 +165,18 @@ body {
 
 				.list:hover .list__order{
 					margin-right: 0px;
-					animation: show-check 0.7s ease-in-out;
+					animation: show-check 0.7s ease-in-out; //feuille de style utilisée + parametres supp
 					color: white;
 				}
 
-				  @keyframes fade-in-animation {
+				/*@keyframes fade-in-animation {
 					from {
 					  opacity: 0;
 					}
 					to {
 					  opacity: 1;
 					}
-				  }
+				  }*/
 
 					.list__content{
 						overflow: hidden;
@@ -241,6 +240,7 @@ body {
 		border-radius: 50px;
 		font-family: $roboto-font;
 		font-size: 17px;
+		text-decoration: none;
 		//lié par la class .btn dans html home. class appelée dans HTML restaurants, 
 		//lien par link dans head, donc mise en forme reprise automatiquement 
 

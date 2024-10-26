@@ -1,6 +1,10 @@
 @import "../variables";
 @import "../layouts/footer";
 @import "../layouts/loader";
+@import "../layouts/header";
+@import "../layouts/subtitle";
+@import "../layouts/title";
+
 
 
 
@@ -19,10 +23,10 @@ body {
   color: #101010;
 }
 
-a {
+/*a {
   text-decoration: none;
    // supprime le soulignement par défaut des liens
-}
+}*/
 
 h2 {
   margin: 0;
@@ -102,6 +106,7 @@ section {
       border-radius: 50px;
       font-family: $roboto-font;
       font-size: 17px;
+      text-decoration: none;
     
       &:hover {
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); // ombre plus grande et plus visible au survol 
@@ -135,13 +140,13 @@ section {
   padding: 40px 20px 70px;
   background-color: $grey-label-background;
 
-  &__subtitle {
+  /*&__subtitle {
     font-size: 18px;
     font-weight: 300;
     padding: 12px 0 30px;
     margin-top: 0;
     font-family: $roboto-font;
-  }
+  }*/
 }
 
 // Process Section
@@ -243,8 +248,8 @@ section {
   }
 
   &__subtitle {
-    font-size: 16px;
-    font-weight: 300;
+    /*font-size: 16px;
+    font-weight: 300;*/
     font-family: $roboto-font;
   }
 

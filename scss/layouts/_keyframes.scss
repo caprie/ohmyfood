@@ -3,19 +3,19 @@
 @keyframes show-check{  
     
     0% {
-       margin-right: -62px;  /* déplace le check vers la gauche (hors de la zone visible) */
+       margin-right: -62px;  // déplace le check vers la gauche (hors de la zone visible) //
     }
     100% {
-        margin-right: 0; /* ramène check à sa position d'origine */
+        margin-right: 0; // ramène check à sa position d'origine //
     }
     
 }
 
 @keyframes fade-in-animation {
     from {
-      opacity: 0; /* commence avec opacité de 0 (élément invisible) */
+      opacity: 0; // commence avec opacité de 0 (élément invisible) //
     }
     to {
-      opacity: 1; /* termine avec opacité de 1 (élément complètement visible) */
+      opacity: 1; // termine avec opacité de 1 (élément complètement visible) //
     }
   }
