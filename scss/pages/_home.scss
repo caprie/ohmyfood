@@ -6,8 +6,6 @@
 @import "../layouts/title";
 
 
-
-
 // Styles Globaux
 body {
   margin: 0;
@@ -16,14 +14,14 @@ body {
 }
 
 // Header
-.header__logo {
+.header {
+  &__logo {
   font-family: $shrikhand-font;
   font-size: 30px;
   text-decoration: none;
   color: #101010;
+  }
 }
-
-
 
 h2 {
   margin: 0;
@@ -39,9 +37,9 @@ section {
 .container {
   margin: auto;
   // centre les elemts en les rendant automatiquement margines à gauche et à droite
-}
 
-.container--footer {
+
+  &--footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +48,7 @@ section {
     // utilise flexbox pour aligner les élémts du footer en colonne
   // Centrage horizontal et alignement vertical au début du conteneur
   }
-
+}
 .heart-checkbox{
   display: none;
 }
@@ -77,6 +75,17 @@ section {
     opacity: 0; // coeur plein masqué par défaut 
     transition: opacity 0.4s ease-in-out; // transition apparition/disparition du coeur 
   }
+
+  &{
+    .fa-regular{
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out; //délai dès le survol
+    }
+    .fa-solid {
+      opacity: 1;
+      transition: opacity 0.4s ease-in-out; //délai dès le survol
+    }
+  } 
 }
 
 .btn-hearts:hover .fa-regular {
@@ -151,7 +160,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 25px;
+    gap: 20px;
    
   }
 
@@ -164,7 +173,7 @@ section {
     padding: 28px 35px;
     display: flex;
     font-family: $roboto-font;
-    
+    margin-right: 30px;
   }
 
   &__number {
@@ -182,6 +191,7 @@ section {
     color: #7e7e7e;
     font-size: 20px;
     margin-right: 25px;
+
     &:hover{
       color: $purple-dark;
     }
@@ -341,8 +351,8 @@ section {
     padding-left: 35%;
   }
 
-  .restaurant-title .btn-hearts {
+    .restaurant-title .btn-hearts {
     margin-right: 300px;
-  }
+    }
   }
 }

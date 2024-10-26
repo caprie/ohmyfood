@@ -118,7 +118,7 @@ body {
 					opacity: 0;  // définit opacité de depart a 0 
 					animation: fade-in-animation 3s ease-in forwards; // applique le fondu en 3 secondes avec une accélération et
 					 													//reste affiché 
-				// forwards: reste dans son état final après la fin de l'animation //
+																		// forwards: reste dans son état final après la fin de l'animation 
 				}
 				
 // nth-child selecteur CSS permet de selectionner des élémts selon leur position dans 1 liste ou un parent. EX: ":nth-child(2)" cible le 2eme enfant d'1 elemt parent
@@ -221,7 +221,6 @@ body {
 				}
 			}
 		}
-		
 			
 		.menu__button {
 		color: #fff;
@@ -234,11 +233,11 @@ body {
 		text-decoration: none;
 		//lié par la class .btn dans html home. class appelée dans HTML restaurants, 
 		//lien par link dans head, donc mise en forme reprise automatiquement 
-
-	
+		}
 	}
 }
-}
+
+
 .footer{
 	h2{
 	padding-top: 0;

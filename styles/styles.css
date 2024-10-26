@@ -19,6 +19,7 @@ footer {
   background-color: #353535;
   padding: 16px 32px;
   color: white;
+  /* style pour footer mode desktop*/
 }
 footer h2 {
   font-family: "Shrikhand";
@@ -49,23 +50,22 @@ footer a {
   text-decoration: none;
   color: inherit;
 }
-
-/* style pour footer mode desktop*/
 @media (min-width: 768px) {
-  .footer {
+  footer {
     flex-direction: row; /* affiche les éléments du footer en ligne et les inverse */
     justify-content: flex-end;
     align-items: flex-end; /* aligne les éléments du footer en bas */
     gap: 15px; /* espace entre les éléments du footer */
   }
-  .footer h2 {
+  footer h2 {
     order: 2; /* place le logo en dernier */
   }
-  .footer .footer-element {
+  footer .footer-element {
     flex-direction: row; /* affiche les éléments enfants du footer en ligne */
     gap: 20px; /* espace entre les éléments enfants du footer */
   }
 }
+
 /* Loader styles */
 .loader {
   position: fixed; /*  loader reste visible même lors du défilement */
@@ -79,6 +79,23 @@ footer a {
   align-items: center;
   z-index: 9999; /* le loader reste au-dessus de tout */
   animation: fadeOutLoader 4s forwards; /* le loader va disparaître après 4 secondes */
+  /* Style du spinner (loader circulaire) */
+}
+.loader .spinner {
+  border: 20px solid #99E2D0; /* bordures loader */
+  border-top: 12px solid #9356DC; /* bordure qui tourne */
+  border-radius: 50%; /* forme ronde */
+  width: 150px; /* largeur spinner */
+  height: 50px; /* hauteur spinner*/
+  animation: spin 1.5s linear infinite; /* animation de rotation continue */
+}
+
+/* Masquer le contenu principal au départ */
+.main-content {
+  display: none; /* pas affiché à l'écran */
+  opacity: 0;
+  animation: showContent 1s forwards; /*utilise animation "showContent" pendant 1 seconde,
+et garde l'état final de l'animation ("forwards") quand terminée. */
 }
 
 /* Animation de disparition du loader */
@@ -94,16 +111,6 @@ footer a {
     opacity: 0; /* pacité 0% (loader plus visible) */
   }
 }
-/* Style du spinner (loader circulaire) */
-.spinner {
-  border: 20px solid #99E2D0; /* bordures loader */
-  border-top: 12px solid #9356DC; /* bordure qui tourne */
-  border-radius: 50%; /* forme ronde */
-  width: 150px; /* largeur spinner */
-  height: 50px; /* hauteur spinner*/
-  animation: spin 1.5s linear infinite; /* animation de rotation continue */
-}
-
 /* Animation de rotation du loader */
 @keyframes spin {
   0% {
@@ -125,14 +132,6 @@ footer a {
     transform: rotate(360deg);
   }
 }
-/* Masquer le contenu principal au départ */
-.main-content {
-  display: none; /* pas affiché à l'écran */
-  opacity: 0;
-  animation: showContent 1s forwards; /*utilise animation "showContent" pendant 1 seconde,
-et garde l'état final de l'animation ("forwards") quand terminée. */
-}
-
 header {
   font-family: "Shrikhand";
   font-size: 20px;
@@ -147,7 +146,7 @@ header {
   z-index: 20;
 }
 
-subtitle {
+.subtitle {
   margin: 0px 0px 0px 15px;
   font-weight: 300;
   font-size: 17px;
@@ -183,7 +182,6 @@ section {
 .container {
   margin: auto;
 }
-
 .container--footer {
   display: flex;
   justify-content: center;
@@ -215,6 +213,14 @@ section {
   background-clip: text;
   color: transparent;
   opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+.btn-hearts .fa-regular {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+.btn-hearts .fa-solid {
+  opacity: 1;
   transition: opacity 0.4s ease-in-out;
 }
 
@@ -284,7 +290,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 25px;
+  gap: 20px;
 }
 .process__step {
   background-color: #f6f6f6;
@@ -295,6 +301,7 @@ section {
   padding: 28px 35px;
   display: flex;
   font-family: "Roboto";
+  margin-right: 30px;
 }
 .process__number {
   background-color: #9356DC;
@@ -455,7 +462,6 @@ section {
 .banner a {
   text-decoration: none;
 }
-
 .banner__icon {
   position: absolute;
   top: 15px;
@@ -693,7 +699,6 @@ body {
 .banner a {
   text-decoration: none;
 }
-
 .banner__icon {
   position: absolute;
   top: 15px;
@@ -710,7 +715,7 @@ title {
   font-size: 30px;
 }
 
-subtitle {
+.subtitle {
   margin: 0px 0px 0px 15px;
   font-weight: 300;
   font-size: 17px;
@@ -745,6 +750,23 @@ subtitle {
   align-items: center;
   z-index: 9999; /* le loader reste au-dessus de tout */
   animation: fadeOutLoader 4s forwards; /* le loader va disparaître après 4 secondes */
+  /* Style du spinner (loader circulaire) */
+}
+.loader .spinner {
+  border: 20px solid #99E2D0; /* bordures loader */
+  border-top: 12px solid #9356DC; /* bordure qui tourne */
+  border-radius: 50%; /* forme ronde */
+  width: 150px; /* largeur spinner */
+  height: 50px; /* hauteur spinner*/
+  animation: spin 1.5s linear infinite; /* animation de rotation continue */
+}
+
+/* Masquer le contenu principal au départ */
+.main-content {
+  display: none; /* pas affiché à l'écran */
+  opacity: 0;
+  animation: showContent 1s forwards; /*utilise animation "showContent" pendant 1 seconde,
+et garde l'état final de l'animation ("forwards") quand terminée. */
 }
 
 /* Animation de disparition du loader */
@@ -760,16 +782,6 @@ subtitle {
     opacity: 0; /* pacité 0% (loader plus visible) */
   }
 }
-/* Style du spinner (loader circulaire) */
-.spinner {
-  border: 20px solid #99E2D0; /* bordures loader */
-  border-top: 12px solid #9356DC; /* bordure qui tourne */
-  border-radius: 50%; /* forme ronde */
-  width: 150px; /* largeur spinner */
-  height: 50px; /* hauteur spinner*/
-  animation: spin 1.5s linear infinite; /* animation de rotation continue */
-}
-
 /* Animation de rotation du loader */
 @keyframes spin {
   0% {
@@ -791,20 +803,13 @@ subtitle {
     transform: rotate(360deg);
   }
 }
-/* Masquer le contenu principal au départ */
-.main-content {
-  display: none; /* pas affiché à l'écran */
-  opacity: 0;
-  animation: showContent 1s forwards; /*utilise animation "showContent" pendant 1 seconde,
-et garde l'état final de l'animation ("forwards") quand terminée. */
-}
-
 footer {
   display: flex;
   flex-direction: column;
   background-color: #353535;
   padding: 16px 32px;
   color: white;
+  /* style pour footer mode desktop*/
 }
 footer h2 {
   font-family: "Shrikhand";
@@ -835,19 +840,17 @@ footer a {
   text-decoration: none;
   color: inherit;
 }
-
-/* style pour footer mode desktop*/
 @media (min-width: 768px) {
-  .footer {
+  footer {
     flex-direction: row; /* affiche les éléments du footer en ligne et les inverse */
     justify-content: flex-end;
     align-items: flex-end; /* aligne les éléments du footer en bas */
     gap: 15px; /* espace entre les éléments du footer */
   }
-  .footer h2 {
+  footer h2 {
     order: 2; /* place le logo en dernier */
   }
-  .footer .footer-element {
+  footer .footer-element {
     flex-direction: row; /* affiche les éléments enfants du footer en ligne */
     gap: 20px; /* espace entre les éléments enfants du footer */
   }

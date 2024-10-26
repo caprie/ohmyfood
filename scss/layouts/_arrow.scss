@@ -1,11 +1,12 @@
 @import '../variables';
 
-.banner a {
+.banner {
+    a {
     text-decoration: none; // supprime soulignement du lien 
-}
+    }
   
 
-.banner__icon {
+    &__icon {
     position: absolute; // position de l'élément avec des coordonnées absolues par rapport au parent. 
     top: 15px;  // distance en haut de la bannière 
     left: 20px; // distance à gauche de la bannière 
@@ -13,4 +14,5 @@
     color: $black-font-color; // couleur de l'icône 
     z-index: 10; // icône apparaît au-dessus de l'image de la bannière 
     cursor: pointer; // change le curseur en icône de main au survol 
+    }
 }

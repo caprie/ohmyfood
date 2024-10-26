@@ -29,6 +29,7 @@ footer {
         padding-bottom: 5px;
         text-decoration: none;
         font-size: 16px;
+
         i {
             color: white;
             width: 20px;
@@ -39,12 +40,11 @@ footer {
     text-decoration: none;  // enleve la décorat° du txt (soulignement)
     color: inherit;         // utilise la meme couleur que le txt environnant
     }
-}
+
 
 
 /* style pour footer mode desktop*/
 @media (min-width: 768px)  {
-    .footer {
         flex-direction: row; /* affiche les éléments du footer en ligne et les inverse */
         justify-content: flex-end; // aligne les elements à droite
         align-items: flex-end; /* aligne les éléments du footer en bas */
