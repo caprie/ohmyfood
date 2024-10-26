@@ -2,7 +2,7 @@
 @import "../layouts/arrow";
 @import "../layouts/title";
 @import "../layouts/keyframes";
-@import "../layouts/prices";
+
 
 
 
@@ -168,15 +168,6 @@ body {
 					animation: show-check 0.7s ease-in-out; //feuille de style utilisée + parametres supp
 					color: white;
 				}
-
-				/*@keyframes fade-in-animation {
-					from {
-					  opacity: 0;
-					}
-					to {
-					  opacity: 1;
-					}
-				  }*/
 
 					.list__content{
 						overflow: hidden;

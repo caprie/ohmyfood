@@ -23,10 +23,7 @@ body {
   color: #101010;
 }
 
-/*a {
-  text-decoration: none;
-   // supprime le soulignement par défaut des liens
-}*/
+
 
 h2 {
   margin: 0;
@@ -107,6 +104,8 @@ section {
       font-family: $roboto-font;
       font-size: 17px;
       text-decoration: none;
+      position: relative;
+      top: 22px; // Déplace le bouton vers le bas de 22px
     
       &:hover {
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); // ombre plus grande et plus visible au survol 
@@ -139,14 +138,7 @@ section {
   text-align: center;
   padding: 40px 20px 70px;
   background-color: $grey-label-background;
-
-  /*&__subtitle {
-    font-size: 18px;
-    font-weight: 300;
-    padding: 12px 0 30px;
-    margin-top: 0;
-    font-family: $roboto-font;
-  }*/
+  font-family: $roboto-font;
 }
 
 // Process Section
@@ -171,7 +163,6 @@ section {
     font-size: 17px;
     padding: 28px 35px;
     display: flex;
-    //margin: 0 14px;
     font-family: $roboto-font;
     
   }
@@ -242,15 +233,14 @@ section {
   }
 
   &__title {
-    font-size: 18px;
-    margin: 0 0 5px;
+    font-size: 21px;
+    margin: 0;
     font-family: $roboto-font;
   }
 
   &__subtitle {
-    /*font-size: 16px;
-    font-weight: 300;*/
     font-family: $roboto-font;
+    font-size: 16px;
   }
 
   &__footer {
@@ -354,5 +344,5 @@ section {
   .restaurant-title .btn-hearts {
     margin-right: 300px;
   }
-}
+  }
 }
