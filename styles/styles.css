@@ -430,7 +430,13 @@ section {
   .restaurants h2,
   .process h2 {
     padding-bottom: 28px;
-    flex-direction: 80px;
+    padding-left: 80px;
+  }
+  .process__steps {
+    margin-left: 80px;
+    margin-right: 90px;
+    display: flex;
+    flex-direction: row;
   }
 }
 .banner a {
